@@ -82,7 +82,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github:tuliren/tuliren.github.io.git
+  repository: git@github.com:tuliren/tuliren.github.io.git
   branch: master
   name: tuliren
   email: tuliren.git@outlook.com
