@@ -1,0 +1,50 @@
+# Deploy hexo site by travis-ci
+# https://github.com/jkeylu/deploy-hexo-site-by-travis-ci
+# LICENSE: MIT
+#
+# 1. Copy this file to the root of your repository, then rename it to '.travis.yml'
+# 2. Replace 'YOUR NAME' and 'YOUR EMAIL' at line 29
+# 3. Add an Environment Variable 'DEPLOY_REPO'
+#     1. Generate github access token on https://github.com/settings/applications#personal-access-tokens
+#     2. Add an Environment Variable on https://travis-ci.org/{github username}/{repository name}/settings/env_vars
+#         Variable Name: DEPLOY_REPO
+#         Variable Value: https://{githb access token}@github.com/{github username}/{repository name}.git
+#         Example: DEPLOY_REPO=https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@github.com/tuliren/tuliren.github.io.git
+
+language: node_js
+
+node_js:
+- 7
+
+branches:
+  only:
+  - hexo
+
+notifications:
+  email: false
+
+before_install:
+- npm install -g hexo
+
+install:
+- npm install
+
+before_script:
+- git config --global user.name 'LiRen Tu'
+- git config --global user.email 'tuliren.git@outlook.com'
+
+script:
+- hexo clean
+- hexo generate
+
+after_success:
+- mkdir .deploy
+- cd .deploy
+- git clone --depth 1 --branch master --single-branch $DEPLOY_REPO . || (git init && git remote add -t master origin $DEPLOY_REPO)
+- rm -rf ./*
+- cp -r ../public/* .
+- git add -A .
+- COMMIT_MESSAGE="Site updated by travis-ci `date '+%Y-%m-%d %H:%M:%S'`"
+- git commit -m "${COMMIT_MESSAGE}"
+- git branch -m master
+- git push -q -u origin master
