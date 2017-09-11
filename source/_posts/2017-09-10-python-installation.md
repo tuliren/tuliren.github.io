@@ -21,20 +21,21 @@ brew install python3
 > type python  # python is hashed (/usr/bin/python)
 ```
 
-# pip 安装
+# Pip 安装
 通过 brew 安装 Python 的时候，会同时安装 pip。如果 pip 已然不存在，需要重现 link python：
 ```
 brew unlink python && brew link python
 ```
 
-# virtualenv 安装
+# Virtualenv 安装
+参考：[链接](http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv)
 ```
 pip install virtualenv
 
 > virtualenv --version
 ```
 
-# virutalven 使用
+# Virutalven 使用
 ```
 # virtualenv -p <path-to-python> <env-name>
 
@@ -64,4 +65,50 @@ pip freeze > requirements.txt
 根据要求安装依赖包
 ```
 pip install -r requirements.txt
+```
+
+# Anaconda 安装
+在 [anaconda] 主站下载 Python3-anaconda 的安装包。安装之后，更新所有已经安装的包：
+```
+conda upgrade --all
+```
+
+如果出现 `conda command not found`，手动把 anaconda 添加到路径里去：
+```
+export PATH="/Users/<username>/anaconda/bin:$PATH"
+```
+
+# Anaconda 使用
+依赖包管理
+```
+# 显示
+conda list
+
+# 安装
+conda install <pagecakge-name> <more-packages>
+```
+
+环境管理
+```
+# 显示
+conda env list
+
+# 创建
+conda create -n <env-name> python=<python-version> <list-of-packages>
+
+# 创建 Python2 和 Python3
+conda create -n py2 python=2
+conda create -n py3 python=3
+
+# 激活
+source activate <env-name>
+
+# 退出
+source deactivate
+
+# 导出
+conda env export > environment.yaml
+
+# 导入
+conda env create -f environment.yaml
 ```
