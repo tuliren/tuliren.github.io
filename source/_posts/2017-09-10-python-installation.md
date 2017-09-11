@@ -1,7 +1,7 @@
 ---
 title: Python 相关程序安装
 date: 2017-09-10 17:07:16
-tags:
+tags: [python, 设置]
 ---
 
 Python 相关的程序实在是太多了，不仅有 Python 2 和 3，在 Mac 还可以通过 brew 安装。另外在不同的依赖管理程序（pip、conda）以及虚拟环境（virtualenv）中也可以制定不同的 Python 版本。所以非常有必要把安装设置过程写下来。
