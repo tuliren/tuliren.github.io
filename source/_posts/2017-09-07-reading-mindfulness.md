@@ -4,6 +4,8 @@ date: 2017-09-07 02:46:14
 tags: [读书笔记, 2017-09]
 ---
 
+链接：[专念：积极心理学的力量](https://book.douban.com/subject/10545175/)
+
 # 第一章 潜念的特征
   - 潜念：mindlessness
   - 归类陷阱
