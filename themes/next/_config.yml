@@ -53,6 +53,8 @@ menu:
   tags: /tags/
   #sitemap: /sitemap.xml
   #commonweal: /404/
+  repository: https://github.com/tuliren/tuliren.github.io
+  subscribe: https://tuliren.github.io/feed.xml
 
 # Enable/Disable menu icons.
 # Icon Mapping:
@@ -69,7 +71,9 @@ menu_icons:
   tags: tags
   archives: archive
   sitemap: sitemap
+  repository: github-alt
   commonweal: heartbeat
+  subscribe: rss
 
 # ---------------------------------------------------------------
 # Scheme Settings
