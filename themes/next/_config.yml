@@ -226,8 +226,8 @@ post_wordcount:
 # Declare license on posts
 post_copyright:
   enable: true
-  license: CC BY-NC-ND 3.0
-  license_url: https://creativecommons.org/licenses/by-nc-nd/3.0/
+  license: CC BY-NC-ND 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 
 # ---------------------------------------------------------------
