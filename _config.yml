@@ -86,3 +86,8 @@ deploy:
   branch: master
   name: tuliren
   email: tuliren.git@outlook.com
+
+feed:
+  type: rss2
+  path: feed.xml
+  limit: false
