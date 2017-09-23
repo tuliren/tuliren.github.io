@@ -22,7 +22,7 @@ brew install python3
 ```
 
 # Pip 安装
-通过 brew 安装 Python 的时候，会同时安装 pip。如果 pip 已然不存在，需要重现 link python：
+通过 brew 安装 Python 的时候，会同时安装 pip。如果 pip 依然不存在，需要重新 link python：
 ```
 brew unlink python && brew link python
 ```
@@ -35,7 +35,7 @@ pip install virtualenv
 > virtualenv --version
 ```
 
-# Virutalven 使用
+# Virutalenv 使用
 ```
 # virtualenv -p <path-to-python> <env-name>
 
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 ```
 
 # Anaconda 安装
-在 [anaconda] 主站下载 Python3-anaconda 的安装包。安装之后，更新所有已经安装的包：
+在 [anaconda](https://www.anaconda.com/download/) 主站下载 Python3-anaconda 的安装包。安装之后，更新所有已经安装的包：
 ```
 conda upgrade --all
 ```
