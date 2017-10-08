@@ -8,8 +8,28 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 07 Oct 2017 23:48:25 GMT</pubDate>
+    <pubDate>Sun, 08 Oct 2017 00:08:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Udacity React Nanodegree Curriculum</title>
+      <link>http://tuliren.github.io/2017/10/07/react-syllabus/</link>
+      <guid>http://tuliren.github.io/2017/10/07/react-syllabus/</guid>
+      <pubDate>Sat, 07 Oct 2017 17:01:05 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h1 id=&quot;React-Fundamentals&quot;&gt;&lt;a href=&quot;#React-Fundamentals&quot; class=&quot;headerlink&quot; title=&quot;React Fundamentals&quot;&gt;&lt;/a&gt;React Fundamentals&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="React-Fundamentals"><a href="#React-Fundamentals" class="headerlink" title="React Fundamentals"></a>React Fundamentals</h1><ul><li>Why React?</li><li>Render UI with React</li><li>State Management</li><li>Render UI with External Data</li><li>React Router</li><li>Project: MyReads</li></ul><hr><h1 id="React-amp-Redux"><a href="#React-amp-Redux" class="headerlink" title="React &amp; Redux"></a>React &amp; Redux</h1><ul><li>Why Redux?</li><li>Redux Core</li><li>React &amp; Redux</li><li>Redux Store</li><li>Redux Middleware</li><li>Project: Readable</li></ul><hr><h1 id="React-Native"><a href="#React-Native" class="headerlink" title="React Native"></a>React Native</h1><ul><li>Up and Running with React Native</li><li>React vs React Native</li><li>Styling &amp; Layout</li><li>Navigation</li><li>Native Features</li><li>Project: Mobile Flashcards</li></ul>]]></content:encoded>
+      
+      <comments>http://tuliren.github.io/2017/10/07/react-syllabus/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>读书笔记：如何阅读一本书</title>
@@ -32,8 +52,8 @@
     
     <item>
       <title>Udacity Self Driving Car Term 1 Curriculum</title>
-      <link>http://tuliren.github.io/2017/10/05/self-driving-car-syllabus/</link>
-      <guid>http://tuliren.github.io/2017/10/05/self-driving-car-syllabus/</guid>
+      <link>http://tuliren.github.io/2017/10/05/sdr-self-driving-car-syllabus/</link>
+      <guid>http://tuliren.github.io/2017/10/05/sdr-self-driving-car-syllabus/</guid>
       <pubDate>Thu, 05 Oct 2017 15:19:32 GMT</pubDate>
       <description>
       
@@ -46,7 +66,7 @@
       
       <content:encoded><![CDATA[<p>Reference: <a href="https://medium.com/self-driving-cars/term-1-in-depth-on-udacitys-self-driving-car-curriculum-ffcf46af0c08" target="_blank" rel="external">Term 1 Curriculum</a></p><h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><h2 id="Meet-the-instructors"><a href="#Meet-the-instructors" class="headerlink" title="Meet the instructors"></a>Meet the instructors</h2><p>  Learn about the systems that comprise a self-driving car, and the structure of the program.</p><h2 id="Project-Detect-Lane-Lines"><a href="#Project-Detect-Lane-Lines" class="headerlink" title="Project Detect Lane Lines"></a>Project Detect Lane Lines</h2><p>  Detect highway lane lines from a video stream. Use OpenCV image analysis techniques to identify lines, including Hough transforms and Canny edge detection.</p><ul><li>2017-10-12</li></ul><hr><h1 id="Deep-Learning"><a href="#Deep-Learning" class="headerlink" title="Deep Learning"></a>Deep Learning</h1><h2 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h2><p>  Review fundamentals of machine learning, including regression and classification.</p><h2 id="Neural-Networks"><a href="#Neural-Networks" class="headerlink" title="Neural Networks"></a>Neural Networks</h2><p>  Learn about perceptrons, activation functions, and basic neural networks. Implement your own neural network in Python.</p><h2 id="Logistic-Classifier"><a href="#Logistic-Classifier" class="headerlink" title="Logistic Classifier"></a>Logistic Classifier</h2><p>  Study how to train a logistic classifier, using machine learning. Implement a logistic classifier in TensorFlow.</p><h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><p>  Investigate techniques for optimizing classifier performance, including validation and test sets, gradient descent, momentum, and learning rates.</p><h2 id="Rectified-Linear-Units"><a href="#Rectified-Linear-Units" class="headerlink" title="Rectified Linear Units"></a>Rectified Linear Units</h2><p>  Evaluate activation functions and how they affect performance.</p><h2 id="Regularization"><a href="#Regularization" class="headerlink" title="Regularization"></a>Regularization</h2><p>  Learn techniques, including dropout, to avoid overfitting a network to the training data.</p><h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><p>  Study the building blocks of convolutional neural networks, including filters, stride, and pooling.</p><h2 id="Project-Traffic-Sign-Classification"><a href="#Project-Traffic-Sign-Classification" class="headerlink" title="Project Traffic Sign Classification"></a>Project Traffic Sign Classification</h2><p>  Implement and train a convolutional neural network to classify traffic signs. Use validation sets, pooling, and dropout to choose a network architecture and improve performance.</p><ul><li>2017-11-13</li></ul><h2 id="Keras"><a href="#Keras" class="headerlink" title="Keras"></a>Keras</h2><p>  Build a multi-layer convolutional network in Keras. Compare the simplicity of Keras to the flexibility of TensorFlow.</p><h2 id="Transfer-Learning"><a href="#Transfer-Learning" class="headerlink" title="Transfer Learning"></a>Transfer Learning</h2><p>  Finetune pre-trained networks to solve your own problems. Study cannonical networks such as AlexNet, VGG, GoogLeNet, and ResNet.</p><h2 id="Project-Behavioral-Cloning"><a href="#Project-Behavioral-Cloning" class="headerlink" title="Project Behavioral Cloning"></a>Project Behavioral Cloning</h2><p>  Architect and train a deep neural network to drive a car in a simulator. Collect your own training data and use it to clone your own driving behavior on a test track.</p><ul><li>2017-12-04</li></ul><hr><h1 id="Computer-Vision"><a href="#Computer-Vision" class="headerlink" title="Computer Vision"></a>Computer Vision</h1><h2 id="Cameras"><a href="#Cameras" class="headerlink" title="Cameras"></a>Cameras</h2><p>  Learn the physics of cameras, and how to calibrate, undistort, and transform image perspectives.</p><h2 id="Lane-Finding"><a href="#Lane-Finding" class="headerlink" title="Lane Finding"></a>Lane Finding</h2><p>  Study advanced techniques for lane detection with curved roads, adverse weather, and varied lighting.</p><h2 id="Project-Advanced-Lane-Detection"><a href="#Project-Advanced-Lane-Detection" class="headerlink" title="Project Advanced Lane Detection"></a>Project Advanced Lane Detection</h2><p>  Detect lane lines in a variety of conditions, including changing road surfaces, curved roads, and variable lighting. Use OpenCV to implement camera calibration and transforms, as well as filters, polynomial fits, and splines.</p><ul><li>2017-12-18</li></ul><h2 id="Support-Vector-Machines"><a href="#Support-Vector-Machines" class="headerlink" title="Support Vector Machines"></a>Support Vector Machines</h2><p>  Implement support vector machines and apply them to image classification.</p><h2 id="Decision-Trees"><a href="#Decision-Trees" class="headerlink" title="Decision Trees"></a>Decision Trees</h2><p>  Implement decision trees and apply them to image classification.</p><h2 id="Histogram-of-Oriented-Gradients"><a href="#Histogram-of-Oriented-Gradients" class="headerlink" title="Histogram of Oriented Gradients"></a>Histogram of Oriented Gradients</h2><p>  Implement histogram of oriented gradients and apply it to image classification.</p><h2 id="Deep-Neural-Networks"><a href="#Deep-Neural-Networks" class="headerlink" title="Deep Neural Networks"></a>Deep Neural Networks</h2><p>  Compare the classification performance of support vector machines, decision trees, histogram of oriented gradients, and deep neural networks.</p><h2 id="Vehicle-Tracking"><a href="#Vehicle-Tracking" class="headerlink" title="Vehicle Tracking"></a>Vehicle Tracking</h2><p>  Review how to apply image classification techniques to vehicle tracking, along with basic filters to integrate vehicle position over time.</p><h2 id="Project-Vehicle-Tracking"><a href="#Project-Vehicle-Tracking" class="headerlink" title="Project Vehicle Tracking"></a>Project Vehicle Tracking</h2><p>  Track vehicles in camera images using image classifiers such as SVMs, decision trees, HOG, and DNNs. Apply filters to fuse position data.</p><ul><li>2017-01-01</li></ul>]]></content:encoded>
       
-      <comments>http://tuliren.github.io/2017/10/05/self-driving-car-syllabus/#disqus_thread</comments>
+      <comments>http://tuliren.github.io/2017/10/05/sdr-self-driving-car-syllabus/#disqus_thread</comments>
     </item>
     
     <item>
