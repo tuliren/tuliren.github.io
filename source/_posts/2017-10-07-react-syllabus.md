@@ -1,7 +1,7 @@
 ---
 title: Udacity React Nanodegree Curriculum
 date: 2017-10-07 17:01:05
-tags:
+tags: [Udacity, react]
 ---
 
 # React Fundamentals
