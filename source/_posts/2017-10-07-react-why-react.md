@@ -78,7 +78,7 @@ tags: [React]
   - Only the parent component can change the data.
   - If child component needs to make a change to the data, it would send the updated data to the parent component where the change will actually be made.
 
-  {% img [class names] /images/2017-10-07-react-why-react/data-flow.png 400 225 %}
+  {% img /images/2017-10-07-react-why-react/data-flow.png 400 225 %}
 
 ----
 
