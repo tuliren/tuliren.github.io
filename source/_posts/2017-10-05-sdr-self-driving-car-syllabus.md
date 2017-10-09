@@ -8,7 +8,7 @@ Reference: [Term 1 Curriculum](https://medium.com/self-driving-cars/term-1-in-de
 
 # Introduction
 
-## Meet the instructors
+## [Welcome](/2017/10/08/dsr-welcome)
   Learn about the systems that comprise a self-driving car, and the structure of the program.
 
 ## Project Detect Lane Lines
