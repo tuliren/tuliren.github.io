@@ -1,11 +1,11 @@
 ---
 title: Udacity React Nanodegree Curriculum
 date: 2017-10-07 17:01:05
-tags: [Udacity, react]
+tags: [React]
 ---
 
 # React Fundamentals
-- Why React?
+- [Why React?](/2017/10/07/react-why-react)
 - Render UI with React
 - State Management
 - Render UI with External Data
