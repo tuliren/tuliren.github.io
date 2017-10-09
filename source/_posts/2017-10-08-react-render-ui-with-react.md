@@ -1,5 +1,5 @@
 ---
-title: Render UI with React
+title: React - Render UI with React
 date: 2017-10-08 18:37:43
 tags: [React]
 ---
