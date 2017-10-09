@@ -1,7 +1,7 @@
 ---
 title: Udacity Self Driving Car Term 1 Curriculum
 date: 2017-10-05 15:19:32
-tags: [Udacity, self-driving-car]
+tags: ["Self Driving Car"]
 ---
 
 Reference: [Term 1 Curriculum](https://medium.com/self-driving-cars/term-1-in-depth-on-udacitys-self-driving-car-curriculum-ffcf46af0c08)
