@@ -6,7 +6,7 @@ tags: [React]
 
 # React Fundamentals
 - [Why React?](/2017/10/07/react-why-react)
-- Render UI with React
+- [Render UI with React](/2017/10/08/react-render-ui-with-react)
 - State Management
 - Render UI with External Data
 - React Router
