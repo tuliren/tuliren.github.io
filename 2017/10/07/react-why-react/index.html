@@ -76,7 +76,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="python,设置," />
+  <meta name="keywords" content="React," />
 
 
 
@@ -94,18 +94,20 @@
 
 
 
-<meta name="description" content="Python 相关的程序实在是太多了，不仅有 Python 2 和 3，在 Mac 还可以通过 brew 安装。另外在不同的依赖管理程序（pip、conda）以及虚拟环境（virtualenv）中也可以制定不同的 Python 版本。所以非常有必要把安装设置过程写下来。 Python 安装参考：链接12345678910brew install pythonbrew install python3">
-<meta name="keywords" content="python,设置">
+<meta name="description" content="Intro What makes React special? Compositional model Declarative nature The way data flows from parent to child React is just JavaScript     Composition React code composes functions to get UI.  Compos">
+<meta name="keywords" content="React">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python 相关程序安装">
-<meta property="og:url" content="http://tuliren.github.io/2017/09/10/python-installation/index.html">
+<meta property="og:title" content="Why React?">
+<meta property="og:url" content="http://tuliren.github.io/2017/10/07/react-why-react/index.html">
 <meta property="og:site_name" content="海盘车的领地">
-<meta property="og:description" content="Python 相关的程序实在是太多了，不仅有 Python 2 和 3，在 Mac 还可以通过 brew 安装。另外在不同的依赖管理程序（pip、conda）以及虚拟环境（virtualenv）中也可以制定不同的 Python 版本。所以非常有必要把安装设置过程写下来。 Python 安装参考：链接12345678910brew install pythonbrew install python3">
+<meta property="og:description" content="Intro What makes React special? Compositional model Declarative nature The way data flows from parent to child React is just JavaScript     Composition React code composes functions to get UI.  Compos">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://tuliren.github.io/images/2017-10-07-react-why-react/data-flow.png">
 <meta property="og:updated_time" content="2017-10-09T03:13:52.008Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python 相关程序安装">
-<meta name="twitter:description" content="Python 相关的程序实在是太多了，不仅有 Python 2 和 3，在 Mac 还可以通过 brew 安装。另外在不同的依赖管理程序（pip、conda）以及虚拟环境（virtualenv）中也可以制定不同的 Python 版本。所以非常有必要把安装设置过程写下来。 Python 安装参考：链接12345678910brew install pythonbrew install python3">
+<meta name="twitter:title" content="Why React?">
+<meta name="twitter:description" content="Intro What makes React special? Compositional model Declarative nature The way data flows from parent to child React is just JavaScript     Composition React code composes functions to get UI.  Compos">
+<meta name="twitter:image" content="http://tuliren.github.io/images/2017-10-07-react-why-react/data-flow.png">
 
 
 
@@ -134,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://tuliren.github.io/2017/09/10/python-installation/"/>
+  <link rel="canonical" href="http://tuliren.github.io/2017/10/07/react-why-react/"/>
 
 
 
 
 
-  <title>Python 相关程序安装 | 海盘车的领地</title>
+  <title>Why React? | 海盘车的领地</title>
   
 
 
@@ -283,7 +285,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://tuliren.github.io/2017/09/10/python-installation/">
+    <link itemprop="mainEntityOfPage" href="http://tuliren.github.io/2017/10/07/react-why-react/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tuliren">
@@ -300,7 +302,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Python 相关程序安装</h2>
+          <h2 class="post-title" itemprop="name headline">Why React?</h2>
         
 
         <div class="post-meta">
@@ -312,8 +314,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-10T17:07:16+00:00">
-                2017-09-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-07T17:09:25+00:00">
+                2017-10-07
               </time>
             
 
@@ -331,9 +333,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/09/10/python-installation/#comments" itemprop="discussionUrl">
+                <a href="/2017/10/07/react-why-react/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/09/10/python-installation/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/10/07/react-why-react/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -366,19 +368,82 @@
       
 
       
-        <p>Python 相关的程序实在是太多了，不仅有 Python 2 和 3，在 Mac 还可以通过 brew 安装。另外在不同的依赖管理程序（pip、conda）以及虚拟环境（virtualenv）中也可以制定不同的 Python 版本。所以非常有必要把安装设置过程写下来。</p>
-<h1 id="Python-安装"><a href="#Python-安装" class="headerlink" title="Python 安装"></a>Python 安装</h1><p>参考：<a href="http://docs.python-guide.org/en/latest/starting/install/osx/" target="_blank" rel="external">链接</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">brew install python</div><div class="line">brew install python3</div><div class="line"></div><div class="line">&gt; python -V    # 系统 Python banben</div><div class="line">&gt; python2 -V   # brew Python 2 版本</div><div class="line">&gt; python3 -V   # brew Python 3 版本</div><div class="line"></div><div class="line">&gt; type python2 # python2 is /usr/local/bin/python2</div><div class="line">&gt; type python3 # python3 is /usr/local/bin/python3</div><div class="line">&gt; type python  # python is hashed (/usr/bin/python)</div></pre></td></tr></table></figure></p>
-<h1 id="Pip-安装"><a href="#Pip-安装" class="headerlink" title="Pip 安装"></a>Pip 安装</h1><p>通过 brew 安装 Python 的时候，会同时安装 pip。如果 pip 依然不存在，需要重新 link python：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew unlink python &amp;&amp; brew link python</div></pre></td></tr></table></figure></p>
-<h1 id="Virtualenv-安装"><a href="#Virtualenv-安装" class="headerlink" title="Virtualenv 安装"></a>Virtualenv 安装</h1><p>参考：<a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv" target="_blank" rel="external">链接</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">pip install virtualenv</div><div class="line"></div><div class="line">&gt; virtualenv --version</div></pre></td></tr></table></figure></p>
-<h1 id="Virutalenv-使用"><a href="#Virutalenv-使用" class="headerlink" title="Virutalenv 使用"></a>Virutalenv 使用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># virtualenv -p &lt;path-to-python&gt; &lt;env-name&gt;</div><div class="line"></div><div class="line"># python 2</div><div class="line">virtualenv -p /usr/local/bin/python2 venv</div><div class="line"></div><div class="line"># python 3</div><div class="line">virtualenv -p /usr/local/bin/python3 venv</div></pre></td></tr></table></figure>
-<p>运行后，当前目录下会出现 <code>venv</code> 文件夹，其中包括了项目所需的所有可执行文件以及 pip。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 激活创建的环境</div><div class="line">source venv/bin/activate</div><div class="line"></div><div class="line"># 退出本地环境</div><div class="line">deactivate</div></pre></td></tr></table></figure>
-<p>使用 pip 安装依赖包之后，输出当前环境<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip freeze &gt; requirements.txt</div></pre></td></tr></table></figure></p>
-<p>根据要求安装依赖包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install -r requirements.txt</div></pre></td></tr></table></figure></p>
-<h1 id="Anaconda-安装"><a href="#Anaconda-安装" class="headerlink" title="Anaconda 安装"></a>Anaconda 安装</h1><p>在 <a href="https://www.anaconda.com/download/" target="_blank" rel="external">anaconda</a> 主站下载 Python3-anaconda 的安装包。安装之后，更新所有已经安装的包：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">conda upgrade --all</div></pre></td></tr></table></figure></p>
-<p>如果出现 <code>conda command not found</code>，手动把 anaconda 添加到路径里去：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export PATH=&quot;/Users/&lt;username&gt;/anaconda/bin:$PATH&quot;</div></pre></td></tr></table></figure></p>
-<h1 id="Anaconda-使用"><a href="#Anaconda-使用" class="headerlink" title="Anaconda 使用"></a>Anaconda 使用</h1><p>依赖包管理<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 显示</div><div class="line">conda list</div><div class="line"></div><div class="line"># 安装</div><div class="line">conda install &lt;pagecakge-name&gt; &lt;more-packages&gt;</div></pre></td></tr></table></figure></p>
-<p>环境管理<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"># 显示</div><div class="line">conda env list</div><div class="line"></div><div class="line"># 创建</div><div class="line">conda create -n &lt;env-name&gt; python=&lt;python-version&gt; &lt;list-of-packages&gt;</div><div class="line"></div><div class="line"># 创建 Python2 和 Python3</div><div class="line">conda create -n py2 python=2</div><div class="line">conda create -n py3 python=3</div><div class="line"></div><div class="line"># 激活</div><div class="line">source activate &lt;env-name&gt;</div><div class="line"></div><div class="line"># 退出</div><div class="line">source deactivate</div><div class="line"></div><div class="line"># 导出</div><div class="line">conda env export &gt; environment.yaml</div><div class="line"></div><div class="line"># 导入</div><div class="line">conda env create -f environment.yaml</div></pre></td></tr></table></figure></p>
+        <h1 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h1><ul>
+<li>What makes React special?<ul>
+<li>Compositional model</li>
+<li>Declarative nature</li>
+<li>The way data flows from parent to child</li>
+<li>React is just JavaScript</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="Composition"><a href="#Composition" class="headerlink" title="Composition"></a>Composition</h1><ul>
+<li><p>React code composes functions to get UI.</p>
+</li>
+<li><p>Composition</p>
+<ul>
+<li>Combine simple functions to build complicated ones.</li>
+<li>Good function follows DOT rule (Do One Thing).</li>
+</ul>
+</li>
+<li><p>React component</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">// simple components</div><div class="line"><span class="tag">&lt;<span class="name">Page</span> /&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">Article</span> /&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">Sidebar</span> /&gt;</span></div><div class="line"></div><div class="line">// component composition</div><div class="line"><span class="tag">&lt;<span class="name">Page</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">Article</span> /&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">Sidebar</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">Page</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h1 id="Declarative-Code"><a href="#Declarative-Code" class="headerlink" title="Declarative Code"></a>Declarative Code</h1><ul>
+<li><p>Imperative code</p>
+<ul>
+<li>Imperative: expressing a command; commanding.</li>
+<li><p>Exactly <strong><em>what to do</em></strong> and <strong><em>how to do</em></strong> it.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> people = [<span class="string">'Amanda'</span>, <span class="string">'Geoff'</span>, <span class="string">'Michael'</span>, <span class="string">'Richard'</span>, <span class="string">'Ryan'</span>, <span class="string">'Tyler'</span>]</div><div class="line"><span class="keyword">const</span> excitedPeople = []</div><div class="line"></div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; people.length; i++) &#123;</div><div class="line">  excitedPeople[i] = people[i] + <span class="string">'!'</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>Declarative code</p>
+<ul>
+<li>Declare <strong><em>what to be done</em></strong>.<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> excitedPeople = people.map(<span class="function"><span class="params">name</span> =&gt;</span> name + <span class="string">'!'</span>)</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="Unidirectional-Data-Flow"><a href="#Unidirectional-Data-Flow" class="headerlink" title="Unidirectional Data Flow"></a>Unidirectional Data Flow</h1><ul>
+<li>Data-binding in other frameworks<ul>
+<li><a href="https://angular.io/guide/template-syntax#binding-syntax-an-overview" target="_blank" rel="external">Angular</a><ul>
+<li>From source to view</li>
+<li>From view to source</li>
+<li>Two-way</li>
+</ul>
+</li>
+<li><a href="https://guides.emberjs.com/v2.13.0/object-model/bindings/" target="_blank" rel="external">Ember</a><ul>
+<li>Two-way: <code>Ember.computed.alias()</code></li>
+<li>One-way: <code>Ember.computed.oneWay()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>React’s data-flow</p>
+<ul>
+<li>Data lives in the parent component.</li>
+<li>Data is accessible by both the parent and child components.</li>
+<li>Only the parent component can change the data.</li>
+<li>If child component needs to make a change to the data, it would send the updated data to the parent component where the change will actually be made.</li>
+</ul>
+<img src="/images/2017-10-07-react-why-react/data-flow.png" class="[class names]" width="400" height="225">
+</li>
+</ul>
+<hr>
+<h1 id="Just-JavaScript"><a href="#Just-JavaScript" class="headerlink" title="Just JavaScript"></a>Just JavaScript</h1><ul>
+<li>JS functional programming<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank" rel="external"><code>Array.map()</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank" rel="external"><code>Array.filter()</code></a></li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -395,7 +460,7 @@
         <ul class="post-copyright">
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://tuliren.github.io/2017/09/10/python-installation/" title="Python 相关程序安装">http://tuliren.github.io/2017/09/10/python-installation/</a>
+    <a href="http://tuliren.github.io/2017/10/07/react-why-react/" title="Why React?">http://tuliren.github.io/2017/10/07/react-why-react/</a>
   </li>
   <li class="post-copyright-license">
     <strong>许可协议： </strong>
@@ -410,9 +475,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/python/" rel="tag"># python</a>
-          
-            <a href="/tags/设置/" rel="tag"># 设置</a>
+            <a href="/tags/React/" rel="tag"># React</a>
           
         </div>
       
@@ -425,8 +488,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/07/reading-mindfulness/" rel="next" title="读书笔记：专念">
-                <i class="fa fa-chevron-left"></i> 读书笔记：专念
+              <a href="/2017/10/07/react-syllabus/" rel="next" title="Udacity React Nanodegree Curriculum">
+                <i class="fa fa-chevron-left"></i> Udacity React Nanodegree Curriculum
               </a>
             
           </div>
@@ -434,10 +497,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/21/reading-the-happiness-hypothesis/" rel="prev" title="读书笔记：象与骑象人">
-                读书笔记：象与骑象人 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -606,7 +665,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python-安装"><span class="nav-number">1.</span> <span class="nav-text">Python 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Pip-安装"><span class="nav-number">2.</span> <span class="nav-text">Pip 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Virtualenv-安装"><span class="nav-number">3.</span> <span class="nav-text">Virtualenv 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Virutalenv-使用"><span class="nav-number">4.</span> <span class="nav-text">Virutalenv 使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Anaconda-安装"><span class="nav-number">5.</span> <span class="nav-text">Anaconda 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Anaconda-使用"><span class="nav-number">6.</span> <span class="nav-text">Anaconda 使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Intro"><span class="nav-number">1.</span> <span class="nav-text">Intro</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Composition"><span class="nav-number">2.</span> <span class="nav-text">Composition</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Declarative-Code"><span class="nav-number">3.</span> <span class="nav-text">Declarative Code</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Unidirectional-Data-Flow"><span class="nav-number">4.</span> <span class="nav-text">Unidirectional Data Flow</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Just-JavaScript"><span class="nav-number">5.</span> <span class="nav-text">Just JavaScript</span></a></li></ol></div>
             
 
           </div>
@@ -769,9 +828,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://tuliren.github.io/2017/09/10/python-installation/';
-          this.page.identifier = '2017/09/10/python-installation/';
-          this.page.title = 'Python 相关程序安装';
+          this.page.url = 'http://tuliren.github.io/2017/10/07/react-why-react/';
+          this.page.identifier = '2017/10/07/react-why-react/';
+          this.page.title = 'Why React?';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://tuliren.disqus.com/embed.js';
