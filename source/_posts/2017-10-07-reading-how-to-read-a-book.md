@@ -4,7 +4,7 @@ date: 2017-10-07 16:37:36
 tags: [读书笔记, 2017-10]
 ---
 
-链接：[如何高效学习](https://book.douban.com/subject/1013208/)
+链接：[如何阅读一本书](https://book.douban.com/subject/1013208/)
 
 # 第一篇 阅读的层次
 
