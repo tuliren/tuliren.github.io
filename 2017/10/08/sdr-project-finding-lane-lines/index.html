@@ -94,18 +94,21 @@
 
 
 
-<meta name="description" content="Self Driving Car Syllabus Two approaches Robotic Fuse output from sensors to measure vehicel surroundings and navigate accordingly   Deep learning Learn how to drive by mimicking human driving behavio">
+<meta name="description" content="Setting up the ProblemFeatures for lane lines detection  Color Shape Orientation Position  Color Selection Color channel 0 darkest possible value 255 brightest possible value White in RGB: [255, 255,">
 <meta name="keywords" content="Self Driving Car">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Self Driving Car - Welcome">
-<meta property="og:url" content="http://tuliren.github.io/2017/10/08/sdr-welcome/index.html">
+<meta property="og:title" content="Self Driving Car - Project Finding Lane Lines on the Road">
+<meta property="og:url" content="http://tuliren.github.io/2017/10/08/sdr-project-finding-lane-lines/index.html">
 <meta property="og:site_name" content="海盘车的领地">
-<meta property="og:description" content="Self Driving Car Syllabus Two approaches Robotic Fuse output from sensors to measure vehicel surroundings and navigate accordingly   Deep learning Learn how to drive by mimicking human driving behavio">
+<meta property="og:description" content="Setting up the ProblemFeatures for lane lines detection  Color Shape Orientation Position  Color Selection Color channel 0 darkest possible value 255 brightest possible value White in RGB: [255, 255,">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://tuliren.github.io/images/2017-10-08-sdr-project-finding-lane-lines/color-selection-original.jpg">
+<meta property="og:image" content="http://tuliren.github.io/images/2017-10-08-sdr-project-finding-lane-lines/color-selection-after-color-selection.png">
 <meta property="og:updated_time" content="2017-10-11T00:48:15.126Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Self Driving Car - Welcome">
-<meta name="twitter:description" content="Self Driving Car Syllabus Two approaches Robotic Fuse output from sensors to measure vehicel surroundings and navigate accordingly   Deep learning Learn how to drive by mimicking human driving behavio">
+<meta name="twitter:title" content="Self Driving Car - Project Finding Lane Lines on the Road">
+<meta name="twitter:description" content="Setting up the ProblemFeatures for lane lines detection  Color Shape Orientation Position  Color Selection Color channel 0 darkest possible value 255 brightest possible value White in RGB: [255, 255,">
+<meta name="twitter:image" content="http://tuliren.github.io/images/2017-10-08-sdr-project-finding-lane-lines/color-selection-original.jpg">
 
 
 
@@ -134,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://tuliren.github.io/2017/10/08/sdr-welcome/"/>
+  <link rel="canonical" href="http://tuliren.github.io/2017/10/08/sdr-project-finding-lane-lines/"/>
 
 
 
 
 
-  <title>Self Driving Car - Welcome | 海盘车的领地</title>
+  <title>Self Driving Car - Project Finding Lane Lines on the Road | 海盘车的领地</title>
   
 
 
@@ -283,7 +286,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://tuliren.github.io/2017/10/08/sdr-welcome/">
+    <link itemprop="mainEntityOfPage" href="http://tuliren.github.io/2017/10/08/sdr-project-finding-lane-lines/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tuliren">
@@ -300,7 +303,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Self Driving Car - Welcome</h2>
+          <h2 class="post-title" itemprop="name headline">Self Driving Car - Project Finding Lane Lines on the Road</h2>
         
 
         <div class="post-meta">
@@ -312,7 +315,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-08T21:38:07+00:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-08T22:27:53+00:00">
                 2017-10-08
               </time>
             
@@ -331,9 +334,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/10/08/sdr-welcome/#comments" itemprop="discussionUrl">
+                <a href="/2017/10/08/sdr-project-finding-lane-lines/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/10/08/sdr-welcome/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/10/08/sdr-project-finding-lane-lines/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -366,19 +369,37 @@
       
 
       
-        <p><a href="/2017/10/05/sdr-self-driving-car-syllabus">Self Driving Car Syllabus</a></p>
-<h1 id="Two-approaches"><a href="#Two-approaches" class="headerlink" title="Two approaches"></a>Two approaches</h1><ul>
-<li>Robotic<ul>
-<li>Fuse output from sensors to measure vehicel surroundings and navigate accordingly</li>
+        <h1 id="Setting-up-the-Problem"><a href="#Setting-up-the-Problem" class="headerlink" title="Setting up the Problem"></a>Setting up the Problem</h1><p>Features for lane lines detection</p>
+<ul>
+<li>Color</li>
+<li>Shape</li>
+<li>Orientation</li>
+<li>Position</li>
+</ul>
+<h1 id="Color-Selection"><a href="#Color-Selection" class="headerlink" title="Color Selection"></a>Color Selection</h1><ul>
+<li>Color channel<ul>
+<li>0 darkest possible value</li>
+<li>255 brightest possible value</li>
+<li>White in RGB: <code>[255, 255, 255]</code></li>
 </ul>
 </li>
-<li>Deep learning<ul>
-<li>Learn how to drive by mimicking human driving behavior</li>
 </ul>
-</li>
-<li>Both approaches will be taught in this program</li>
-</ul>
-
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</div><div class="line"><span class="keyword">import</span> matplotlib.image <span class="keyword">as</span> mpimg</div><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"></div><div class="line"><span class="comment"># Read in the image and print out some stats</span></div><div class="line">image = mpimg.imread(<span class="string">'test.jpg'</span>)</div><div class="line">print(<span class="string">'This image is: '</span>,type(image),</div><div class="line">         <span class="string">'with dimensions:'</span>, image.shape)</div><div class="line"></div><div class="line"><span class="comment"># Grab the x and y size and make a copy of the image</span></div><div class="line">ysize = image.shape[<span class="number">0</span>]</div><div class="line">xsize = image.shape[<span class="number">1</span>]</div><div class="line"><span class="comment"># Note: always make a copy rather than simply using "="</span></div><div class="line">color_select = np.copy(image)</div><div class="line"></div><div class="line"><span class="comment"># Define our color selection criteria</span></div><div class="line">red_threshold = <span class="number">200</span></div><div class="line">green_threshold = <span class="number">200</span></div><div class="line">blue_threshold = <span class="number">200</span></div><div class="line">rgb_threshold = [red_threshold, green_threshold, blue_threshold]</div><div class="line"></div><div class="line"><span class="comment"># Identify pixels below the threshold</span></div><div class="line">thresholds = (image[:,:,<span class="number">0</span>] &lt; rgb_threshold[<span class="number">0</span>]) \</div><div class="line">            | (image[:,:,<span class="number">1</span>] &lt; rgb_threshold[<span class="number">1</span>]) \</div><div class="line">            | (image[:,:,<span class="number">2</span>] &lt; rgb_threshold[<span class="number">2</span>])</div><div class="line"><span class="comment"># Retain pixels that are above the threshold</span></div><div class="line"><span class="comment"># Black out pixels that are below the threshold</span></div><div class="line">color_select[thresholds] = [<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>]</div><div class="line"></div><div class="line"><span class="comment"># Display the image</span></div><div class="line">plt.imshow(color_select)</div><div class="line">plt.show()</div><div class="line"></div><div class="line"><span class="comment"># Save image</span></div><div class="line"><span class="comment"># mpimg.imsave("test-after.png", color_select)</span></div></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Original</th>
+<th>After color selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/images/2017-10-08-sdr-project-finding-lane-lines/color-selection-original.jpg" width="492" height="276"></td>
+<td><img src="/images/2017-10-08-sdr-project-finding-lane-lines/color-selection-after-color-selection.png" class="|" width="492" height="276"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="Region-Masking"><a href="#Region-Masking" class="headerlink" title="Region Masking"></a>Region Masking</h1><h1 id="Color-and-Region-Masking"><a href="#Color-and-Region-Masking" class="headerlink" title="Color and Region Masking"></a>Color and Region Masking</h1><h1 id="Finding-Lines-of-Any-Color"><a href="#Finding-Lines-of-Any-Color" class="headerlink" title="Finding Lines of Any Color"></a>Finding Lines of Any Color</h1><h1 id="Canny-Edge-Detection"><a href="#Canny-Edge-Detection" class="headerlink" title="Canny Edge Detection"></a>Canny Edge Detection</h1><h1 id="Canny-to-Detect-Lane-Lines"><a href="#Canny-to-Detect-Lane-Lines" class="headerlink" title="Canny to Detect Lane Lines"></a>Canny to Detect Lane Lines</h1><h1 id="Hough-Transform"><a href="#Hough-Transform" class="headerlink" title="Hough Transform"></a>Hough Transform</h1><h1 id="Hough-Transform-to-Find-Lane-Lines"><a href="#Hough-Transform-to-Find-Lane-Lines" class="headerlink" title="Hough Transform to Find Lane Lines"></a>Hough Transform to Find Lane Lines</h1><h1 id="Project-Intro"><a href="#Project-Intro" class="headerlink" title="Project Intro"></a>Project Intro</h1><h1 id="Starter-Kit-Installation"><a href="#Starter-Kit-Installation" class="headerlink" title="Starter Kit Installation"></a>Starter Kit Installation</h1>
       
     </div>
     
@@ -394,7 +415,7 @@
         <ul class="post-copyright">
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://tuliren.github.io/2017/10/08/sdr-welcome/" title="Self Driving Car - Welcome">http://tuliren.github.io/2017/10/08/sdr-welcome/</a>
+    <a href="http://tuliren.github.io/2017/10/08/sdr-project-finding-lane-lines/" title="Self Driving Car - Project Finding Lane Lines on the Road">http://tuliren.github.io/2017/10/08/sdr-project-finding-lane-lines/</a>
   </li>
   <li class="post-copyright-license">
     <strong>许可协议： </strong>
@@ -422,8 +443,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/08/react-render-ui-with-react/" rel="next" title="React - Render UI with React">
-                <i class="fa fa-chevron-left"></i> React - Render UI with React
+              <a href="/2017/10/08/sdr-welcome/" rel="next" title="Self Driving Car - Welcome">
+                <i class="fa fa-chevron-left"></i> Self Driving Car - Welcome
               </a>
             
           </div>
@@ -431,10 +452,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/08/sdr-project-finding-lane-lines/" rel="prev" title="Self Driving Car - Project Finding Lane Lines on the Road">
-                Self Driving Car - Project Finding Lane Lines on the Road <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -603,7 +620,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Two-approaches"><span class="nav-number">1.</span> <span class="nav-text">Two approaches</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Setting-up-the-Problem"><span class="nav-number">1.</span> <span class="nav-text">Setting up the Problem</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Color-Selection"><span class="nav-number">2.</span> <span class="nav-text">Color Selection</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Region-Masking"><span class="nav-number">3.</span> <span class="nav-text">Region Masking</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Color-and-Region-Masking"><span class="nav-number">4.</span> <span class="nav-text">Color and Region Masking</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Finding-Lines-of-Any-Color"><span class="nav-number">5.</span> <span class="nav-text">Finding Lines of Any Color</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Canny-Edge-Detection"><span class="nav-number">6.</span> <span class="nav-text">Canny Edge Detection</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Canny-to-Detect-Lane-Lines"><span class="nav-number">7.</span> <span class="nav-text">Canny to Detect Lane Lines</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hough-Transform"><span class="nav-number">8.</span> <span class="nav-text">Hough Transform</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hough-Transform-to-Find-Lane-Lines"><span class="nav-number">9.</span> <span class="nav-text">Hough Transform to Find Lane Lines</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Project-Intro"><span class="nav-number">10.</span> <span class="nav-text">Project Intro</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Starter-Kit-Installation"><span class="nav-number">11.</span> <span class="nav-text">Starter Kit Installation</span></a></li></ol></div>
             
 
           </div>
@@ -766,9 +783,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://tuliren.github.io/2017/10/08/sdr-welcome/';
-          this.page.identifier = '2017/10/08/sdr-welcome/';
-          this.page.title = 'Self Driving Car - Welcome';
+          this.page.url = 'http://tuliren.github.io/2017/10/08/sdr-project-finding-lane-lines/';
+          this.page.identifier = '2017/10/08/sdr-project-finding-lane-lines/';
+          this.page.title = 'Self Driving Car - Project Finding Lane Lines on the Road';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://tuliren.disqus.com/embed.js';
