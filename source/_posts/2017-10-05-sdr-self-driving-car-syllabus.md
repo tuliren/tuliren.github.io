@@ -11,7 +11,7 @@ Reference: [Term 1 Curriculum](https://medium.com/self-driving-cars/term-1-in-de
 ## [Welcome](/2017/10/08/sdr-welcome)
   Learn about the systems that comprise a self-driving car, and the structure of the program.
 
-## Project Detect Lane Lines
+## [Project Detect Lane Lines](/2017/10/08/sdr-project-finding-lane-lines)
   Detect highway lane lines from a video stream. Use OpenCV image analysis techniques to identify lines, including Hough transforms and Canny edge detection.
   - 2017-10-12
 
