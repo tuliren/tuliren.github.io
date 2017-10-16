@@ -6,6 +6,11 @@ tags: ["Self Driving Car"]
 
 [Self Driving Car Syllabus](/2017/10/05/sdr-self-driving-car-syllabus)
 
+# Summary
+Two methods
+- [Color selection](https://github.com/tuliren/sdc-nd/blob/master/01-lane-line-detection/color_selection_and_region.ipynb)
+- [Edge detection](https://github.com/tuliren/sdc-nd/blob/master/01-lane-line-detection/canny_edge_detection.ipynb)
+
 # Setting up the Problem
 Features for lane lines detection
 - Color
