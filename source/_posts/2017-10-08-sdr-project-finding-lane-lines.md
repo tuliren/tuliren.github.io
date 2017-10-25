@@ -8,8 +8,8 @@ tags: ["Self Driving Car"]
 
 # Summary
 Two methods
-- [Color selection](https://github.com/tuliren/sdc-nd/blob/master/01-lane-line-detection/color_selection_and_region.ipynb)
-- [Edge detection](https://github.com/tuliren/sdc-nd/blob/master/01-lane-line-detection/canny_edge_detection.ipynb)
+- [Color selection](https://github.com/tuliren/self-driving-car-nd/blob/master/01-lane-line-detection/color_selection_and_region.ipynb)
+- [Edge detection](https://github.com/tuliren/self-driving-car-nd/blob/master/01-lane-line-detection/canny_edge_detection.ipynb)
 
 # Setting up the Problem
 Features for lane lines detection
