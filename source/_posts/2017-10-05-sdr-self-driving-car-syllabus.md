@@ -11,13 +11,18 @@ Reference: [Term 1 Curriculum](https://medium.com/self-driving-cars/term-1-in-de
 ## [Welcome](/2017/10/08/sdr-welcome)
   Learn about the systems that comprise a self-driving car, and the structure of the program.
 
-## [Project Detect Lane Lines](/2017/10/08/sdr-project-finding-lane-lines)
+## Project Detect Lane Lines
   Detect highway lane lines from a video stream. Use OpenCV image analysis techniques to identify lines, including Hough transforms and Canny edge detection.
-  - 2017-10-12
+  - Deadline 2017-10-12
+  - [Project notes](/2017/10/08/sdr-project-01-finding-lane-lines)
+  - [Project report](/2017/10/27/sdr-project-01-report)
 
 ----
 
 # Deep Learning
+
+## [Introduction to Neural Networks](/2017/10/28/sdr-introduction-to-neural-networks)
+  Learn to build and train neural networks, starting with the foundations in linear and logistic regression, and culminating in backpropagation and multiplayer perceptron networks.
 
 ## Machine Learning
   Review fundamentals of machine learning, including regression and classification.

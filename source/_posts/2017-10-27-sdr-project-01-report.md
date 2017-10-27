@@ -4,6 +4,8 @@ date: 2017-10-27 01:07:48
 tags: ["Self Driving Car"]
 ---
 
+[Self Driving Car Syllabus](/2017/10/05/sdr-self-driving-car-syllabus)
+
 Links
 - [Project repository](https://github.com/tuliren/CarND-LaneLines-P1)
 - [Python notebook](https://github.com/tuliren/CarND-LaneLines-P1/blob/master/P1.ipynb)
