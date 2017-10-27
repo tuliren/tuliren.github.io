@@ -95,6 +95,7 @@ scheme: Mist
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
   GitHub: https://github.com/tuliren
+  LinkedIn: https://www.linkedin.com/in/tuliren/
   Weibo: http://weibo.com/tuliren
 
 # Social Links Icons
@@ -119,6 +120,7 @@ social_icons:
   Instagram: instagram
   StackOverflow: stack-overflow
   Weibo: weibo
+  LinkedIn: linkedin-square
 
 # Blog rolls
 #links_title: Links
