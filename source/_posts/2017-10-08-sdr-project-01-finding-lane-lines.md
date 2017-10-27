@@ -1,5 +1,5 @@
 ---
-title: Self Driving Car - Project Finding Lane Lines on the Road
+title: Self Driving Car - Project 01 - Finding Lane Lines on the Road
 date: 2017-10-08 22:27:53
 tags: ["Self Driving Car"]
 ---
