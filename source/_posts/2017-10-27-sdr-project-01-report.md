@@ -1,5 +1,5 @@
 ---
-title: Self Driving Car - Project 01 Report
+title: Self Driving Car - Project 01 Report - Finding Lane Lines on the Road
 date: 2017-10-27 01:07:48
 tags: ["Self Driving Car"]
 ---
@@ -9,29 +9,23 @@ Links
 - [Python notebook](https://github.com/tuliren/CarND-LaneLines-P1/blob/master/P1.ipynb)
 - [Original report](https://github.com/tuliren/CarND-LaneLines-P1/blob/master/project_report.md)
 
-
-Finding Lane Lines on the Road
-====
-
 ## Goal
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on the work in a written report
 
 ## Results
-- Image analysis pipeline
+### Image analysis pipeline
+![](https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_images_output/intermediate-solidWhiteCurve.jpg)
 
-  ![](test_images_output/intermediate-solidWhiteCurve.jpg)
-
-- Lane detection
-
-  Solid White Line | Solid Yellow Line | Challenge
-  ---------------- | ----------------- | ---------
-  ![](test_videos_output/solidWhiteRight.gif) | ![](test_videos_output/solidYellowLeft.gif) | ![](test_videos_output/challenge.gif)
-  [Video](https://github.com/tuliren/CarND-LaneLines-P1/blob/master/test_videos_output/solidWhiteRight.mp4) | [Video](https://github.com/tuliren/CarND-LaneLines-P1/blob/master/test_videos_output/solidYellowLeft.mp4) | [Video](https://github.com/tuliren/CarND-LaneLines-P1/blob/master/test_videos_output/challenge.mp4)
+### Lane detection
+| Solid White Line | Solid Yellow Line | Challenge |
+| ---------------- | ----------------- | --------- |
+| ![](https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_videos_output/solidWhiteRight.gif) | ![](https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_videos_output/solidYellowLeft.gif) | ![](https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_videos_output/challenge.gif) |
+| [Video](https://github.com/tuliren/CarND-LaneLines-P1/blob/master/test_videos_output/solidWhiteRight.mp4) | [Video](https://github.com/tuliren/CarND-LaneLines-P1/blob/master/test_videos_output/solidYellowLeft.mp4) | [Video](https://github.com/tuliren/CarND-LaneLines-P1/blob/master/test_videos_output/challenge.mp4) |
 
 ## Implementation
-[Notebook](P1.ipynb)
+[Notebook](https://github.com/tuliren/CarND-LaneLines-P1/blob/master/P1.ipynb)
 
 ## Reflection
 
@@ -64,9 +58,9 @@ In order to draw a single line on the left and right lanes, the `draw_lines` fun
 
 - Generated lines are not robust to road color and shadows
   - From the output of the challenge video, my current pipeline is not robust when the road has a light color and it is sunny. For those cases, the actual lane line almost disappears in gray scale and Canny image. Here is an example:
-    ![](/test_images_output/intermediate-lightRoadColor.jpg)
+    ![](https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_images_output/intermediate-lightRoadColor.jpg)
     - A **possible improvement** is to enhance white and yellow color before converting the image to gray scale.
 
   - Also shadows on the road can severely interfere with lane detection. Shadow introduces considerable amount of white dots in the Canny image such that the correct line is no longer the median line.
-    ![](/test_images_output/intermediate-roadShadow.jpg)
+    ![](https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_images_output/intermediate-roadShadow.jpg)
     - A **possible improvement** is to further tune the Canny thresholds. Another possible approach is to select the pivot line not by simply choosing the median one, but chose one that appears in a cluster of lines.
