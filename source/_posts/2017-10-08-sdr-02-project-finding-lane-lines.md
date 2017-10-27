@@ -1,10 +1,10 @@
 ---
-title: Self Driving Car - Project 01 - Finding Lane Lines on the Road
+title: Self Driving Car - 02 Project - Finding Lane Lines on the Road
 date: 2017-10-08 22:27:53
 tags: ["Self Driving Car"]
 ---
 
-[Self Driving Car Syllabus](/2017/10/05/sdr-self-driving-car-syllabus)
+[Self Driving Car Syllabus](/2017/10/05/sdr-00-self-driving-car-syllabus)
 
 # Summary
 Two methods

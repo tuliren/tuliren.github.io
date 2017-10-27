@@ -1,10 +1,10 @@
 ---
-title: Self Driving Car - Project 01 Report - Finding Lane Lines on the Road
+title: Self Driving Car - 02 Project Report - Finding Lane Lines on the Road
 date: 2017-10-27 01:07:48
 tags: ["Self Driving Car"]
 ---
 
-[Self Driving Car Syllabus](/2017/10/05/sdr-self-driving-car-syllabus)
+[Self Driving Car Syllabus](/2017/10/05/sdr-00-self-driving-car-syllabus)
 
 Links
 - [Project repository](https://github.com/tuliren/CarND-LaneLines-P1)
