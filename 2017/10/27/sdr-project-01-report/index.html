@@ -94,18 +94,25 @@
 
 
 
-<meta name="description" content="Reference: Term 1 Curriculum IntroductionWelcome  Learn about the systems that comprise a self-driving car, and the structure of the program. Project Detect Lane Lines  Detect highway lane lines from">
+<meta name="description" content="Links  Project repository Python notebook Original report  GoalThe goals / steps of this project are the following:  Make a pipeline that finds lane lines on the road Reflect on the work in a written">
 <meta name="keywords" content="Self Driving Car">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Udacity Self Driving Car Term 1 Curriculum">
-<meta property="og:url" content="http://tuliren.github.io/2017/10/05/sdr-self-driving-car-syllabus/index.html">
+<meta property="og:title" content="Self Driving Car - Project 01 Report - Finding Lane Lines on the Road">
+<meta property="og:url" content="http://tuliren.github.io/2017/10/27/sdr-project-01-report/index.html">
 <meta property="og:site_name" content="海盘车的领地">
-<meta property="og:description" content="Reference: Term 1 Curriculum IntroductionWelcome  Learn about the systems that comprise a self-driving car, and the structure of the program. Project Detect Lane Lines  Detect highway lane lines from">
+<meta property="og:description" content="Links  Project repository Python notebook Original report  GoalThe goals / steps of this project are the following:  Make a pipeline that finds lane lines on the road Reflect on the work in a written">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_images_output/intermediate-solidWhiteCurve.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_videos_output/solidWhiteRight.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_videos_output/solidYellowLeft.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_videos_output/challenge.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_images_output/intermediate-lightRoadColor.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_images_output/intermediate-roadShadow.jpg">
 <meta property="og:updated_time" content="2017-10-27T08:20:55.735Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Udacity Self Driving Car Term 1 Curriculum">
-<meta name="twitter:description" content="Reference: Term 1 Curriculum IntroductionWelcome  Learn about the systems that comprise a self-driving car, and the structure of the program. Project Detect Lane Lines  Detect highway lane lines from">
+<meta name="twitter:title" content="Self Driving Car - Project 01 Report - Finding Lane Lines on the Road">
+<meta name="twitter:description" content="Links  Project repository Python notebook Original report  GoalThe goals / steps of this project are the following:  Make a pipeline that finds lane lines on the road Reflect on the work in a written">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_images_output/intermediate-solidWhiteCurve.jpg">
 
 
 
@@ -134,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="http://tuliren.github.io/2017/10/05/sdr-self-driving-car-syllabus/"/>
+  <link rel="canonical" href="http://tuliren.github.io/2017/10/27/sdr-project-01-report/"/>
 
 
 
 
 
-  <title>Udacity Self Driving Car Term 1 Curriculum | 海盘车的领地</title>
+  <title>Self Driving Car - Project 01 Report - Finding Lane Lines on the Road | 海盘车的领地</title>
   
 
 
@@ -283,7 +290,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://tuliren.github.io/2017/10/05/sdr-self-driving-car-syllabus/">
+    <link itemprop="mainEntityOfPage" href="http://tuliren.github.io/2017/10/27/sdr-project-01-report/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tuliren">
@@ -300,7 +307,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Udacity Self Driving Car Term 1 Curriculum</h2>
+          <h2 class="post-title" itemprop="name headline">Self Driving Car - Project 01 Report - Finding Lane Lines on the Road</h2>
         
 
         <div class="post-meta">
@@ -312,8 +319,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-05T15:19:32+00:00">
-                2017-10-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-27T01:07:48+00:00">
+                2017-10-27
               </time>
             
 
@@ -331,9 +338,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/10/05/sdr-self-driving-car-syllabus/#comments" itemprop="discussionUrl">
+                <a href="/2017/10/27/sdr-project-01-report/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/10/05/sdr-self-driving-car-syllabus/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/10/27/sdr-project-01-report/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -366,45 +373,88 @@
       
 
       
-        <p>Reference: <a href="https://medium.com/self-driving-cars/term-1-in-depth-on-udacitys-self-driving-car-curriculum-ffcf46af0c08" target="_blank" rel="external">Term 1 Curriculum</a></p>
-<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><h2 id="Welcome"><a href="#Welcome" class="headerlink" title="Welcome"></a><a href="/2017/10/08/sdr-welcome">Welcome</a></h2><p>  Learn about the systems that comprise a self-driving car, and the structure of the program.</p>
-<h2 id="Project-Detect-Lane-Lines"><a href="#Project-Detect-Lane-Lines" class="headerlink" title="Project Detect Lane Lines"></a><a href="/2017/10/08/sdr-project-finding-lane-lines">Project Detect Lane Lines</a></h2><p>  Detect highway lane lines from a video stream. Use OpenCV image analysis techniques to identify lines, including Hough transforms and Canny edge detection.</p>
+        <p>Links</p>
 <ul>
-<li>2017-10-12</li>
+<li><a href="https://github.com/tuliren/CarND-LaneLines-P1" target="_blank" rel="external">Project repository</a></li>
+<li><a href="https://github.com/tuliren/CarND-LaneLines-P1/blob/master/P1.ipynb" target="_blank" rel="external">Python notebook</a></li>
+<li><a href="https://github.com/tuliren/CarND-LaneLines-P1/blob/master/project_report.md" target="_blank" rel="external">Original report</a></li>
 </ul>
-<hr>
-<h1 id="Deep-Learning"><a href="#Deep-Learning" class="headerlink" title="Deep Learning"></a>Deep Learning</h1><h2 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h2><p>  Review fundamentals of machine learning, including regression and classification.</p>
-<h2 id="Neural-Networks"><a href="#Neural-Networks" class="headerlink" title="Neural Networks"></a>Neural Networks</h2><p>  Learn about perceptrons, activation functions, and basic neural networks. Implement your own neural network in Python.</p>
-<h2 id="Logistic-Classifier"><a href="#Logistic-Classifier" class="headerlink" title="Logistic Classifier"></a>Logistic Classifier</h2><p>  Study how to train a logistic classifier, using machine learning. Implement a logistic classifier in TensorFlow.</p>
-<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><p>  Investigate techniques for optimizing classifier performance, including validation and test sets, gradient descent, momentum, and learning rates.</p>
-<h2 id="Rectified-Linear-Units"><a href="#Rectified-Linear-Units" class="headerlink" title="Rectified Linear Units"></a>Rectified Linear Units</h2><p>  Evaluate activation functions and how they affect performance.</p>
-<h2 id="Regularization"><a href="#Regularization" class="headerlink" title="Regularization"></a>Regularization</h2><p>  Learn techniques, including dropout, to avoid overfitting a network to the training data.</p>
-<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><p>  Study the building blocks of convolutional neural networks, including filters, stride, and pooling.</p>
-<h2 id="Project-Traffic-Sign-Classification"><a href="#Project-Traffic-Sign-Classification" class="headerlink" title="Project Traffic Sign Classification"></a>Project Traffic Sign Classification</h2><p>  Implement and train a convolutional neural network to classify traffic signs. Use validation sets, pooling, and dropout to choose a network architecture and improve performance.</p>
+<h2 id="Goal"><a href="#Goal" class="headerlink" title="Goal"></a>Goal</h2><p>The goals / steps of this project are the following:</p>
 <ul>
-<li>2017-11-13</li>
+<li>Make a pipeline that finds lane lines on the road</li>
+<li>Reflect on the work in a written report</li>
 </ul>
-<h2 id="Keras"><a href="#Keras" class="headerlink" title="Keras"></a>Keras</h2><p>  Build a multi-layer convolutional network in Keras. Compare the simplicity of Keras to the flexibility of TensorFlow.</p>
-<h2 id="Transfer-Learning"><a href="#Transfer-Learning" class="headerlink" title="Transfer Learning"></a>Transfer Learning</h2><p>  Finetune pre-trained networks to solve your own problems. Study cannonical networks such as AlexNet, VGG, GoogLeNet, and ResNet.</p>
-<h2 id="Project-Behavioral-Cloning"><a href="#Project-Behavioral-Cloning" class="headerlink" title="Project Behavioral Cloning"></a>Project Behavioral Cloning</h2><p>  Architect and train a deep neural network to drive a car in a simulator. Collect your own training data and use it to clone your own driving behavior on a test track.</p>
+<h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><h3 id="Image-analysis-pipeline"><a href="#Image-analysis-pipeline" class="headerlink" title="Image analysis pipeline"></a>Image analysis pipeline</h3><p><img src="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_images_output/intermediate-solidWhiteCurve.jpg" alt=""></p>
+<h3 id="Lane-detection"><a href="#Lane-detection" class="headerlink" title="Lane detection"></a>Lane detection</h3><table>
+<thead>
+<tr>
+<th>Solid White Line</th>
+<th>Solid Yellow Line</th>
+<th>Challenge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_videos_output/solidWhiteRight.gif" alt=""></td>
+<td><img src="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_videos_output/solidYellowLeft.gif" alt=""></td>
+<td><img src="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_videos_output/challenge.gif" alt=""></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tuliren/CarND-LaneLines-P1/blob/master/test_videos_output/solidWhiteRight.mp4" target="_blank" rel="external">Video</a></td>
+<td><a href="https://github.com/tuliren/CarND-LaneLines-P1/blob/master/test_videos_output/solidYellowLeft.mp4" target="_blank" rel="external">Video</a></td>
+<td><a href="https://github.com/tuliren/CarND-LaneLines-P1/blob/master/test_videos_output/challenge.mp4" target="_blank" rel="external">Video</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h2><p><a href="https://github.com/tuliren/CarND-LaneLines-P1/blob/master/P1.ipynb" target="_blank" rel="external">Notebook</a></p>
+<h2 id="Reflection"><a href="#Reflection" class="headerlink" title="Reflection"></a>Reflection</h2><h3 id="Lane-detection-pipeline"><a href="#Lane-detection-pipeline" class="headerlink" title="Lane detection pipeline"></a>Lane detection pipeline</h3><p>My pipeline consisted of the following steps:</p>
 <ul>
-<li>2017-12-04</li>
+<li>Convert the image to gray scale.</li>
+<li>Apply Gaussian blur.</li>
+<li>Perform Canny transform to detect edges.</li>
+<li>Create a polygon image mask to focus on the lane line area.</li>
+<li>Use Hough line transform to detect lines in the masked area.</li>
 </ul>
-<hr>
-<h1 id="Computer-Vision"><a href="#Computer-Vision" class="headerlink" title="Computer Vision"></a>Computer Vision</h1><h2 id="Cameras"><a href="#Cameras" class="headerlink" title="Cameras"></a>Cameras</h2><p>  Learn the physics of cameras, and how to calibrate, undistort, and transform image perspectives.</p>
-<h2 id="Lane-Finding"><a href="#Lane-Finding" class="headerlink" title="Lane Finding"></a>Lane Finding</h2><p>  Study advanced techniques for lane detection with curved roads, adverse weather, and varied lighting.</p>
-<h2 id="Project-Advanced-Lane-Detection"><a href="#Project-Advanced-Lane-Detection" class="headerlink" title="Project Advanced Lane Detection"></a>Project Advanced Lane Detection</h2><p>  Detect lane lines in a variety of conditions, including changing road surfaces, curved roads, and variable lighting. Use OpenCV to implement camera calibration and transforms, as well as filters, polynomial fits, and splines.</p>
+<p>In order to draw a single line on the left and right lanes, the <code>draw_lines</code> function is modified as described below.</p>
 <ul>
-<li>2017-12-18</li>
+<li>Lines are separated into two groups, one group for lines with positive slopes, the other with negative slopes.</li>
+<li>Within each group, all lines are consolidated into one line as follows (in the <code>draw_one_lane_line</code> function).<ul>
+<li>Lines with proper slope are selected. The slope range is (0.35, 0.85) and (-0.85, -0.35).</li>
+<li>Lines with positive slopes must reside on the left hand side of the image, vice versa for lines with negative slopes. The criteria is that the intercept of a line with the top of the mask polygon should be roughly on one side of the image.</li>
+<li>Lines are then sorted by slope.</li>
+<li>The line with median slope is chosen as the pivot line.</li>
+<li>All lines close to the pivot line are selected. Here closeness means their difference in slope is less than 0.5.</li>
+<li>The slope and intercept values of the selected lines are averaged together to get a mean slope and intercept, which is considered the final lane line.<ul>
+<li>I choose to average on all lines close to the pivot line hoping that this will make the final lane line more “stabilized”, meaning that it does not shake too much from frame to frame in the video. But it is not as useful as I thought. The result does not change much if I just use the pivot line as the final output.</li>
 </ul>
-<h2 id="Support-Vector-Machines"><a href="#Support-Vector-Machines" class="headerlink" title="Support Vector Machines"></a>Support Vector Machines</h2><p>  Implement support vector machines and apply them to image classification.</p>
-<h2 id="Decision-Trees"><a href="#Decision-Trees" class="headerlink" title="Decision Trees"></a>Decision Trees</h2><p>  Implement decision trees and apply them to image classification.</p>
-<h2 id="Histogram-of-Oriented-Gradients"><a href="#Histogram-of-Oriented-Gradients" class="headerlink" title="Histogram of Oriented Gradients"></a>Histogram of Oriented Gradients</h2><p>  Implement histogram of oriented gradients and apply it to image classification.</p>
-<h2 id="Deep-Neural-Networks"><a href="#Deep-Neural-Networks" class="headerlink" title="Deep Neural Networks"></a>Deep Neural Networks</h2><p>  Compare the classification performance of support vector machines, decision trees, histogram of oriented gradients, and deep neural networks.</p>
-<h2 id="Vehicle-Tracking"><a href="#Vehicle-Tracking" class="headerlink" title="Vehicle Tracking"></a>Vehicle Tracking</h2><p>  Review how to apply image classification techniques to vehicle tracking, along with basic filters to integrate vehicle position over time.</p>
-<h2 id="Project-Vehicle-Tracking"><a href="#Project-Vehicle-Tracking" class="headerlink" title="Project Vehicle Tracking"></a>Project Vehicle Tracking</h2><p>  Track vehicles in camera images using image classifiers such as SVMs, decision trees, HOG, and DNNs. Apply filters to fuse position data.</p>
+</li>
+<li>Intercepts of this lane line and the masked area are calculated, and then drawn to the image.</li>
+</ul>
+</li>
+</ul>
+<h3 id="Potential-shortcomings-and-possible-improvements"><a href="#Potential-shortcomings-and-possible-improvements" class="headerlink" title="Potential shortcomings and possible improvements"></a>Potential shortcomings and possible improvements</h3><ul>
+<li><p>Generated lines shakes from frame to frame</p>
 <ul>
-<li>2017-01-01</li>
+<li>The lane lines from my video output shake a lot in the video. I noticed that whenever there are small white dots besides the actual line, the generated line tends to shift slightly towards those dots. They are not as stable as those shown in the sample video. <ul>
+<li>A <strong>possible improvement</strong> is to create every new line based on the line in the previous frame. This is based on the assumption that actual lane line does not have sharp curves, so the slope of the generated lines should not differ significantly from one frame to another.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Generated lines are not robust to road color and shadows</p>
+<ul>
+<li><p>From the output of the challenge video, my current pipeline is not robust when the road has a light color and it is sunny. For those cases, the actual lane line almost disappears in gray scale and Canny image. Here is an example:<br><img src="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_images_output/intermediate-lightRoadColor.jpg" alt=""></p>
+<ul>
+<li>A <strong>possible improvement</strong> is to enhance white and yellow color before converting the image to gray scale.</li>
+</ul>
+</li>
+<li><p>Also shadows on the road can severely interfere with lane detection. Shadow introduces considerable amount of white dots in the Canny image such that the correct line is no longer the median line.<br><img src="https://raw.githubusercontent.com/tuliren/CarND-LaneLines-P1/master/test_images_output/intermediate-roadShadow.jpg" alt=""></p>
+<ul>
+<li>A <strong>possible improvement</strong> is to further tune the Canny thresholds. Another possible approach is to select the pivot line not by simply choosing the median one, but chose one that appears in a cluster of lines.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
       
@@ -422,7 +472,7 @@
         <ul class="post-copyright">
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://tuliren.github.io/2017/10/05/sdr-self-driving-car-syllabus/" title="Udacity Self Driving Car Term 1 Curriculum">http://tuliren.github.io/2017/10/05/sdr-self-driving-car-syllabus/</a>
+    <a href="http://tuliren.github.io/2017/10/27/sdr-project-01-report/" title="Self Driving Car - Project 01 Report - Finding Lane Lines on the Road">http://tuliren.github.io/2017/10/27/sdr-project-01-report/</a>
   </li>
   <li class="post-copyright-license">
     <strong>许可协议： </strong>
@@ -450,8 +500,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/21/reading-the-happiness-hypothesis/" rel="next" title="读书笔记：象与骑象人">
-                <i class="fa fa-chevron-left"></i> 读书笔记：象与骑象人
+              <a href="/2017/10/10/reading-learn-more-study-less/" rel="next" title="读书笔记：如何高效学习（Learn More, Study Less）">
+                <i class="fa fa-chevron-left"></i> 读书笔记：如何高效学习（Learn More, Study Less）
               </a>
             
           </div>
@@ -459,10 +509,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/07/reading-how-to-read-a-book/" rel="prev" title="读书笔记：如何阅读一本书">
-                读书笔记：如何阅读一本书 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -631,7 +677,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Welcome"><span class="nav-number">1.1.</span> <span class="nav-text">Welcome</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Project-Detect-Lane-Lines"><span class="nav-number">1.2.</span> <span class="nav-text">Project Detect Lane Lines</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Deep-Learning"><span class="nav-number">2.</span> <span class="nav-text">Deep Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Machine-Learning"><span class="nav-number">2.1.</span> <span class="nav-text">Machine Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Neural-Networks"><span class="nav-number">2.2.</span> <span class="nav-text">Neural Networks</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Logistic-Classifier"><span class="nav-number">2.3.</span> <span class="nav-text">Logistic Classifier</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">2.4.</span> <span class="nav-text">Optimization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rectified-Linear-Units"><span class="nav-number">2.5.</span> <span class="nav-text">Rectified Linear Units</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Regularization"><span class="nav-number">2.6.</span> <span class="nav-text">Regularization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Convolutional-Neural-Networks"><span class="nav-number">2.7.</span> <span class="nav-text">Convolutional Neural Networks</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Project-Traffic-Sign-Classification"><span class="nav-number">2.8.</span> <span class="nav-text">Project Traffic Sign Classification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Keras"><span class="nav-number">2.9.</span> <span class="nav-text">Keras</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Transfer-Learning"><span class="nav-number">2.10.</span> <span class="nav-text">Transfer Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Project-Behavioral-Cloning"><span class="nav-number">2.11.</span> <span class="nav-text">Project Behavioral Cloning</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Computer-Vision"><span class="nav-number">3.</span> <span class="nav-text">Computer Vision</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cameras"><span class="nav-number">3.1.</span> <span class="nav-text">Cameras</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lane-Finding"><span class="nav-number">3.2.</span> <span class="nav-text">Lane Finding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Project-Advanced-Lane-Detection"><span class="nav-number">3.3.</span> <span class="nav-text">Project Advanced Lane Detection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Support-Vector-Machines"><span class="nav-number">3.4.</span> <span class="nav-text">Support Vector Machines</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Decision-Trees"><span class="nav-number">3.5.</span> <span class="nav-text">Decision Trees</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Histogram-of-Oriented-Gradients"><span class="nav-number">3.6.</span> <span class="nav-text">Histogram of Oriented Gradients</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Deep-Neural-Networks"><span class="nav-number">3.7.</span> <span class="nav-text">Deep Neural Networks</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vehicle-Tracking"><span class="nav-number">3.8.</span> <span class="nav-text">Vehicle Tracking</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Project-Vehicle-Tracking"><span class="nav-number">3.9.</span> <span class="nav-text">Project Vehicle Tracking</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Goal"><span class="nav-number">1.</span> <span class="nav-text">Goal</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Results"><span class="nav-number">2.</span> <span class="nav-text">Results</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Image-analysis-pipeline"><span class="nav-number">2.1.</span> <span class="nav-text">Image analysis pipeline</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lane-detection"><span class="nav-number">2.2.</span> <span class="nav-text">Lane detection</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Implementation"><span class="nav-number">3.</span> <span class="nav-text">Implementation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reflection"><span class="nav-number">4.</span> <span class="nav-text">Reflection</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Lane-detection-pipeline"><span class="nav-number">4.1.</span> <span class="nav-text">Lane detection pipeline</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Potential-shortcomings-and-possible-improvements"><span class="nav-number">4.2.</span> <span class="nav-text">Potential shortcomings and possible improvements</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -794,9 +840,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://tuliren.github.io/2017/10/05/sdr-self-driving-car-syllabus/';
-          this.page.identifier = '2017/10/05/sdr-self-driving-car-syllabus/';
-          this.page.title = 'Udacity Self Driving Car Term 1 Curriculum';
+          this.page.url = 'http://tuliren.github.io/2017/10/27/sdr-project-01-report/';
+          this.page.identifier = '2017/10/27/sdr-project-01-report/';
+          this.page.title = 'Self Driving Car - Project 01 Report - Finding Lane Lines on the Road';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://tuliren.disqus.com/embed.js';
