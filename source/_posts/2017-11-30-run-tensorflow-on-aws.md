@@ -70,7 +70,7 @@ tags: [GPU, Tenforflow, AWS]
 
 {% img /images/2017-11-30-run-tensorflow-on-aws/stop.png %}
 
-- Stop 相当于关机，硬盘资料不会丢失，开机之后还可以继续用。关机之后会收取少量的存储费用，不会这个非常便宜。
+- Stop 相当于关机，硬盘资料不会丢失，开机之后还可以继续用。关机之后会收取少量的存储费用，不过非常便宜。
 - Terminate 相当于销毁 instance。一旦销毁，再需要 instance 就必须重建。销毁之后不会有任何费用。
 
 # 第四部 运行
