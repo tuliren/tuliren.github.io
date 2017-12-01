@@ -100,17 +100,17 @@
 <meta property="og:title" content="如何在 AWS 上跑 GPU Tensorflow">
 <meta property="og:url" content="http://tuliren.github.io/2017/11/30/run-tensorflow-on-aws/index.html">
 <meta property="og:site_name" content="海盘车的领地">
-<meta property="og:description" content="这篇文章整理自 Udacity Deep Learning Nanodegree Foundation 教程的第六课 Cloud Computing。最终创建的 instance 使用的是 Udacity 的 AMI，安装有许多现成的依赖包。最主要的是，可以立即运行 GPU-tensorflow，无需设置 GPU 驱动。 第一步 创建 AWS 账户略 第二部 取得 GPU Instance 权限估">
+<meta property="og:description" content="这篇文章整理自 Udacity Deep Learning Nanodegree Foundation 教程的第六课 Cloud Computing。最终创建的 instance 使用的是 Udacity 的 AMI，安装有许多现成的依赖包。最主要的是，可以立即运行 GPU-tensorflow，无需设置 GPU 驱动。 第一步 创建 AWS 账户（5 分钟）略 第二部 取得 GPU Instan">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-11-30-run-tensorflow-on-aws/p2-large-limit-request.png">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-11-30-run-tensorflow-on-aws/instance-button.png">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-11-30-run-tensorflow-on-aws/instance-type.png">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-11-30-run-tensorflow-on-aws/aws-add-sec-group.png">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-11-30-run-tensorflow-on-aws/stop.png">
-<meta property="og:updated_time" content="2017-12-01T08:00:48.720Z">
+<meta property="og:updated_time" content="2017-12-01T08:09:07.996Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在 AWS 上跑 GPU Tensorflow">
-<meta name="twitter:description" content="这篇文章整理自 Udacity Deep Learning Nanodegree Foundation 教程的第六课 Cloud Computing。最终创建的 instance 使用的是 Udacity 的 AMI，安装有许多现成的依赖包。最主要的是，可以立即运行 GPU-tensorflow，无需设置 GPU 驱动。 第一步 创建 AWS 账户略 第二部 取得 GPU Instance 权限估">
+<meta name="twitter:description" content="这篇文章整理自 Udacity Deep Learning Nanodegree Foundation 教程的第六课 Cloud Computing。最终创建的 instance 使用的是 Udacity 的 AMI，安装有许多现成的依赖包。最主要的是，可以立即运行 GPU-tensorflow，无需设置 GPU 驱动。 第一步 创建 AWS 账户（5 分钟）略 第二部 取得 GPU Instan">
 <meta name="twitter:image" content="http://tuliren.github.io/images/2017-11-30-run-tensorflow-on-aws/p2-large-limit-request.png">
 
 
@@ -373,8 +373,8 @@
 
       
         <p>这篇文章整理自 Udacity <a href="https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101" target="_blank" rel="noopener">Deep Learning Nanodegree Foundation</a> 教程的第六课 Cloud Computing。最终创建的 instance 使用的是 Udacity 的 AMI，安装有许多现成的依赖包。最主要的是，可以立即运行 GPU-tensorflow，无需设置 GPU 驱动。</p>
-<h1 id="第一步-创建-AWS-账户"><a href="#第一步-创建-AWS-账户" class="headerlink" title="第一步 创建 AWS 账户"></a>第一步 创建 AWS 账户</h1><p>略</p>
-<h1 id="第二部-取得-GPU-Instance-权限"><a href="#第二部-取得-GPU-Instance-权限" class="headerlink" title="第二部 取得 GPU Instance 权限"></a>第二部 取得 GPU Instance 权限</h1><p>估计是为了防止误操作导致用户账单爆表，AWS 的高级 instance 是不能随意 launch 的，GPU instance 就是如此。</p>
+<h1 id="第一步-创建-AWS-账户（5-分钟）"><a href="#第一步-创建-AWS-账户（5-分钟）" class="headerlink" title="第一步 创建 AWS 账户（5 分钟）"></a>第一步 创建 AWS 账户（5 分钟）</h1><p>略</p>
+<h1 id="第二部-取得-GPU-Instance-权限（5-分钟）"><a href="#第二部-取得-GPU-Instance-权限（5-分钟）" class="headerlink" title="第二部 取得 GPU Instance 权限（5 分钟）"></a>第二部 取得 GPU Instance 权限（5 分钟）</h1><p>估计是为了防止误操作导致用户账单爆表，AWS 的高级 instance 是不能随意 launch 的，GPU instance 就是如此。</p>
 <p>首先点击<a href="https://console.aws.amazon.com/ec2/v2/home?#Limits" target="_blank" rel="noopener">这个链接</a>查看当前的 instance limit。这里要特别注意，不同区域的 limit 是不一样的，区域可以在右上角切换，一般北美的机器相对便宜。以 <code>p2.xlarge</code> 为例，limit 一般都是 <code>0</code>：</p>
 <img src="/images/2017-11-30-run-tensorflow-on-aws/p2-large-limit-request.png">
 <p>申请权限的步骤是：</p>
@@ -389,7 +389,7 @@
 </li>
 <li>等待请求通过。一般在 48 小时内完成。</li>
 </ul>
-<h1 id="第三步-启动-Instance"><a href="#第三步-启动-Instance" class="headerlink" title="第三步 启动 Instance"></a>第三步 启动 Instance</h1><h2 id="选择-AMI"><a href="#选择-AMI" class="headerlink" title="选择 AMI"></a>选择 AMI</h2><ul>
+<h1 id="第三步-启动-Instance（15-分钟）"><a href="#第三步-启动-Instance（15-分钟）" class="headerlink" title="第三步 启动 Instance（15 分钟）"></a>第三步 启动 Instance（15 分钟）</h1><h2 id="选择-AMI（1-分钟）"><a href="#选择-AMI（1-分钟）" class="headerlink" title="选择 AMI（1 分钟）"></a>选择 AMI（1 分钟）</h2><ul>
 <li>进入 <a href="https://console.aws.amazon.com/ec2/v2/home" target="_blank" rel="noopener">EC2 Management Console</a></li>
 <li>点击 “Launch Instance”<img src="/images/2017-11-30-run-tensorflow-on-aws/instance-button.png" width="150"></li>
 <li>点击 “AWS Marketplace”</li>
@@ -398,7 +398,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="选择-instance-type"><a href="#选择-instance-type" class="headerlink" title="选择 instance type"></a>选择 instance type</h2><ul>
+<h2 id="选择-instance-type（1-分钟）"><a href="#选择-instance-type（1-分钟）" class="headerlink" title="选择 instance type（1 分钟）"></a>选择 instance type（1 分钟）</h2><ul>
 <li>GPU compute</li>
 <li><p>p2.xlarge（或者其他有权限 launch 的 GPU type）</p>
 <img src="/images/2017-11-30-run-tensorflow-on-aws/instance-type.png" width="400">
@@ -407,10 +407,11 @@
 </li>
 <li>先不要 “Launch Instances”</li>
 </ul>
-<h2 id="Security-Groups"><a href="#Security-Groups" class="headerlink" title="Security Groups"></a>Security Groups</h2><p>为了在 instance 上运行 jupyter notebook，需要开放相应的端口，这是通过 security groups 设置完成的。</p>
+<h2 id="Security-Groups（5-分钟）"><a href="#Security-Groups（5-分钟）" class="headerlink" title="Security Groups（5 分钟）"></a>Security Groups（5 分钟）</h2><p>为了在 instance 上运行 jupyter notebook，需要开放相应的端口，这是通过 security groups 设置完成的。</p>
 <ul>
 <li>点击 “Edit security groups”</li>
-<li>如图设置安全组：<img src="/images/2017-11-30-run-tensorflow-on-aws/aws-add-sec-group.png">
+<li><p>如图设置安全组：</p>
+<img src="/images/2017-11-30-run-tensorflow-on-aws/aws-add-sec-group.png">
 <ul>
 <li>选择 “Create a new security group”</li>
 <li>设置 “Security group name”，比如 “Jupyter”</li>
@@ -420,11 +421,10 @@
 <li>选择 “Anywhere” 作为 “Source”，也就是可以从任意一个 IP 访问在 instance 上运行的 jupyter notebook。</li>
 </ul>
 </li>
+<li><p>点击 “Review and Launch”</p>
+</li>
 </ul>
-<ul>
-<li>点击 “Review and Launch”</li>
-</ul>
-<h2 id="Launch"><a href="#Launch" class="headerlink" title="Launch"></a>Launch</h2><ul>
+<h2 id="Launch（5-分钟）"><a href="#Launch（5-分钟）" class="headerlink" title="Launch（5 分钟）"></a>Launch（5 分钟）</h2><ul>
 <li>点击 “Launch” 创建 instance<ul>
 <li>AWS 会要求制定一对 authentication key。这里可以选择 “Create a new key pair” 并 “Download Key Pair”，<code>.pem</code> 文件会开始自动下载。这个文件以后用来进入 instance，所以要妥善保存。</li>
 </ul>
@@ -438,8 +438,8 @@
 <li>Stop 相当于关机，硬盘资料不会丢失，开机之后还可以继续用。关机之后会收取少量的存储费用，不过非常便宜。</li>
 <li>Terminate 相当于销毁 instance。一旦销毁，再需要 instance 就必须重建。销毁之后不会有任何费用。</li>
 </ul>
-<h1 id="第四部-运行"><a href="#第四部-运行" class="headerlink" title="第四部 运行"></a>第四部 运行</h1><h2 id="登陆"><a href="#登陆" class="headerlink" title="登陆"></a>登陆</h2><p>Instance 启动之后，在 EC2 Management Console 里得到 instance 的 IP 地址（<code>x.x.x.x</code>），然后使用 ssh 和 pem 文件登陆：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -i &lt;pem file path&gt; ubuntu@x.x.x.x</span><br></pre></td></tr></table></figure></p>
-<h2 id="设置-Jupyter"><a href="#设置-Jupyter" class="headerlink" title="设置 Jupyter"></a>设置 Jupyter</h2><p>这一步可以省略</p>
+<h1 id="第四部-运行（10-分钟）"><a href="#第四部-运行（10-分钟）" class="headerlink" title="第四部 运行（10 分钟）"></a>第四部 运行（10 分钟）</h1><h2 id="登陆（1-分钟）"><a href="#登陆（1-分钟）" class="headerlink" title="登陆（1 分钟）"></a>登陆（1 分钟）</h2><p>Instance 启动之后，在 EC2 Management Console 里得到 instance 的 IP 地址（<code>x.x.x.x</code>），然后使用 ssh 和 pem 文件登陆：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -i &lt;pem file path&gt; ubuntu@x.x.x.x</span><br></pre></td></tr></table></figure></p>
+<h2 id="设置-Jupyter（5-分钟）"><a href="#设置-Jupyter（5-分钟）" class="headerlink" title="设置 Jupyter（5 分钟）"></a>设置 Jupyter（5 分钟）</h2><p>这一步可以省略</p>
 <ul>
 <li><p>创建 config 文件</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook --generate-config</span><br></pre></td></tr></table></figure>
@@ -448,7 +448,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -ie &quot;s/#c.NotebookApp.ip = &apos;localhost&apos;/#c.NotebookApp.ip = &apos;*&apos;/g&quot; ~/.jupyter/jupyter_notebook_config.py</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>使用 Udacity aind2-dl 测试 instance 和 jupyter notebook。</p>
+<h2 id="测试（5-分钟）"><a href="#测试（5-分钟）" class="headerlink" title="测试（5 分钟）"></a>测试（5 分钟）</h2><p>使用 Udacity aind2-dl 测试 instance 和 jupyter notebook。</p>
 <p>这一步也可以省略。</p>
 <ul>
 <li><p>运行 repo</p>
@@ -695,7 +695,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一步-创建-AWS-账户"><span class="nav-number">1.</span> <span class="nav-text">第一步 创建 AWS 账户</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二部-取得-GPU-Instance-权限"><span class="nav-number">2.</span> <span class="nav-text">第二部 取得 GPU Instance 权限</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三步-启动-Instance"><span class="nav-number">3.</span> <span class="nav-text">第三步 启动 Instance</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#选择-AMI"><span class="nav-number">3.1.</span> <span class="nav-text">选择 AMI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择-instance-type"><span class="nav-number">3.2.</span> <span class="nav-text">选择 instance type</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Security-Groups"><span class="nav-number">3.3.</span> <span class="nav-text">Security Groups</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Launch"><span class="nav-number">3.4.</span> <span class="nav-text">Launch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计费"><span class="nav-number">3.5.</span> <span class="nav-text">计费</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第四部-运行"><span class="nav-number">4.</span> <span class="nav-text">第四部 运行</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#登陆"><span class="nav-number">4.1.</span> <span class="nav-text">登陆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置-Jupyter"><span class="nav-number">4.2.</span> <span class="nav-text">设置 Jupyter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">4.3.</span> <span class="nav-text">测试</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一步-创建-AWS-账户（5-分钟）"><span class="nav-number">1.</span> <span class="nav-text">第一步 创建 AWS 账户（5 分钟）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二部-取得-GPU-Instance-权限（5-分钟）"><span class="nav-number">2.</span> <span class="nav-text">第二部 取得 GPU Instance 权限（5 分钟）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三步-启动-Instance（15-分钟）"><span class="nav-number">3.</span> <span class="nav-text">第三步 启动 Instance（15 分钟）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#选择-AMI（1-分钟）"><span class="nav-number">3.1.</span> <span class="nav-text">选择 AMI（1 分钟）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择-instance-type（1-分钟）"><span class="nav-number">3.2.</span> <span class="nav-text">选择 instance type（1 分钟）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Security-Groups（5-分钟）"><span class="nav-number">3.3.</span> <span class="nav-text">Security Groups（5 分钟）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Launch（5-分钟）"><span class="nav-number">3.4.</span> <span class="nav-text">Launch（5 分钟）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计费"><span class="nav-number">3.5.</span> <span class="nav-text">计费</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第四部-运行（10-分钟）"><span class="nav-number">4.</span> <span class="nav-text">第四部 运行（10 分钟）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#登陆（1-分钟）"><span class="nav-number">4.1.</span> <span class="nav-text">登陆（1 分钟）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置-Jupyter（5-分钟）"><span class="nav-number">4.2.</span> <span class="nav-text">设置 Jupyter（5 分钟）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试（5-分钟）"><span class="nav-number">4.3.</span> <span class="nav-text">测试（5 分钟）</span></a></li></ol></li></ol></div>
             
 
           </div>
