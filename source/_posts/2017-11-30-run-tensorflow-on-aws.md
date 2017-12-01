@@ -1,7 +1,7 @@
 ---
 title: 如何在 AWS 上跑 GPU Tensorflow
 date: 2017-11-30 22:48:23
-tags: [GPU, Tenforflow, AWS]
+tags: [AWS, tensorflow]
 ---
 
 这篇文章整理自 Udacity [Deep Learning Nanodegree Foundation](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101) 教程的第六课 Cloud Computing。最终创建的 instance 使用的是 Udacity 的 AMI，安装有许多现成的依赖包。最主要的是，可以立即运行 GPU-tensorflow，无需设置 GPU 驱动。
