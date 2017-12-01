@@ -94,7 +94,7 @@
 
 
 
-<meta name="description" content="React Syllabus Intro What makes React special? Compositional model Declarative nature The way data flows from parent to child React is just JavaScript     Composition React code composes functions to">
+<meta name="description" content="React Syllabus Intro What makes React special? Compositional model Declarative nature The way data flows from parent to child React is just JavaScript     Compo">
 <meta name="keywords" content="React">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React - Why React?">
@@ -103,7 +103,7 @@
 <meta property="og:description" content="React Syllabus Intro What makes React special? Compositional model Declarative nature The way data flows from parent to child React is just JavaScript     Composition React code composes functions to">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-10-07-react-why-react/data-flow.png">
-<meta property="og:updated_time" content="2017-10-29T06:13:45.592Z">
+<meta property="og:updated_time" content="2017-12-01T07:49:54.559Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React - Why React?">
 <meta name="twitter:description" content="React Syllabus Intro What makes React special? Compositional model Declarative nature The way data flows from parent to child React is just JavaScript     Composition React code composes functions to">
@@ -389,7 +389,7 @@
 </ul>
 </li>
 <li><p>React component</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">// simple components</div><div class="line"><span class="tag">&lt;<span class="name">Page</span> /&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">Article</span> /&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">Sidebar</span> /&gt;</span></div><div class="line"></div><div class="line">// component composition</div><div class="line"><span class="tag">&lt;<span class="name">Page</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">Article</span> /&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">Sidebar</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">Page</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// simple components</span><br><span class="line"><span class="tag">&lt;<span class="name">Page</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">Article</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">Sidebar</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">// component composition</span><br><span class="line"><span class="tag">&lt;<span class="name">Page</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">Article</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">Sidebar</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Page</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <hr>
@@ -398,13 +398,13 @@
 <ul>
 <li>Imperative: expressing a command; commanding.</li>
 <li><p>Exactly <strong><em>what to do</em></strong> and <strong><em>how to do</em></strong> it.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> people = [<span class="string">'Amanda'</span>, <span class="string">'Geoff'</span>, <span class="string">'Michael'</span>, <span class="string">'Richard'</span>, <span class="string">'Ryan'</span>, <span class="string">'Tyler'</span>]</div><div class="line"><span class="keyword">const</span> excitedPeople = []</div><div class="line"></div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; people.length; i++) &#123;</div><div class="line">  excitedPeople[i] = people[i] + <span class="string">'!'</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> people = [<span class="string">'Amanda'</span>, <span class="string">'Geoff'</span>, <span class="string">'Michael'</span>, <span class="string">'Richard'</span>, <span class="string">'Ryan'</span>, <span class="string">'Tyler'</span>]</span><br><span class="line"><span class="keyword">const</span> excitedPeople = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; people.length; i++) &#123;</span><br><span class="line">  excitedPeople[i] = people[i] + <span class="string">'!'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 <li><p>Declarative code</p>
 <ul>
-<li>Declare <strong><em>what to be done</em></strong>.<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> excitedPeople = people.map(<span class="function"><span class="params">name</span> =&gt;</span> name + <span class="string">'!'</span>)</div></pre></td></tr></table></figure>
+<li>Declare <strong><em>what to be done</em></strong>.<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> excitedPeople = people.map(<span class="function"><span class="params">name</span> =&gt;</span> name + <span class="string">'!'</span>)</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
@@ -412,13 +412,13 @@
 <hr>
 <h1 id="Unidirectional-Data-Flow"><a href="#Unidirectional-Data-Flow" class="headerlink" title="Unidirectional Data Flow"></a>Unidirectional Data Flow</h1><ul>
 <li>Data-binding in other frameworks<ul>
-<li><a href="https://angular.io/guide/template-syntax#binding-syntax-an-overview" target="_blank" rel="external">Angular</a><ul>
+<li><a href="https://angular.io/guide/template-syntax#binding-syntax-an-overview" target="_blank" rel="noopener">Angular</a><ul>
 <li>From source to view</li>
 <li>From view to source</li>
 <li>Two-way</li>
 </ul>
 </li>
-<li><a href="https://guides.emberjs.com/v2.13.0/object-model/bindings/" target="_blank" rel="external">Ember</a><ul>
+<li><a href="https://guides.emberjs.com/v2.13.0/object-model/bindings/" target="_blank" rel="noopener">Ember</a><ul>
 <li>Two-way: <code>Ember.computed.alias()</code></li>
 <li>One-way: <code>Ember.computed.oneWay()</code></li>
 </ul>
@@ -440,8 +440,8 @@
 <hr>
 <h1 id="Just-JavaScript"><a href="#Just-JavaScript" class="headerlink" title="Just JavaScript"></a>Just JavaScript</h1><ul>
 <li>JS functional programming<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank" rel="external"><code>Array.map()</code></a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank" rel="external"><code>Array.filter()</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank" rel="noopener"><code>Array.map()</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank" rel="noopener"><code>Array.filter()</code></a></li>
 </ul>
 </li>
 </ul>
@@ -585,7 +585,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -598,7 +598,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
