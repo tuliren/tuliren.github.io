@@ -94,7 +94,7 @@
 
 
 
-<meta name="description" content="React Syllabus Intro React elements: JavaScript objects React elements -&amp;gt; DOM nodes React components: custom elements   Creating Elements and JSXReact.cr">
+<meta name="description" content="React Syllabus Intro React elements: JavaScript objects React elements -&amp;gt; DOM nodes React components: custom elements   Creating Elements and JSXReact.createElement1React.createElement(type, props,">
 <meta name="keywords" content="React">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React - Render UI with React">
@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="海盘车的领地">
 <meta property="og:description" content="React Syllabus Intro React elements: JavaScript objects React elements -&amp;gt; DOM nodes React components: custom elements   Creating Elements and JSXReact.createElement1React.createElement(type, props,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-01T08:27:50.156Z">
+<meta property="og:updated_time" content="2017-12-05T23:39:09.182Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React - Render UI with React">
 <meta name="twitter:description" content="React Syllabus Intro React elements: JavaScript objects React elements -&amp;gt; DOM nodes React components: custom elements   Creating Elements and JSXReact.createElement1React.createElement(type, props,">
@@ -586,7 +586,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -599,7 +599,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -682,7 +682,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Intro"><span class="nav-number">1.</span> <span class="nav-text">Intro</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Creating-Elements-and-JSX"><span class="nav-number">2.</span> <span class="nav-text">Creating Elements and JSX</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#React-createElement"><span class="nav-number">2.1.</span> <span class="nav-text">React.createElement</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-basic"><span class="nav-number">2.1.1.</span> <span class="nav-text">Example - basic</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-dynamic-list"><span class="nav-number">2.1.2.</span> <span class="nav-text">Example - dynamic list</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSX"><span class="nav-number">2.2.</span> <span class="nav-text">JSX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example"><span class="nav-number">2.2.1.</span> <span class="nav-text">Example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-component"><span class="nav-number">2.3.</span> <span class="nav-text">React component</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-1"><span class="nav-number">2.3.1.</span> <span class="nav-text">Example</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Create-React-App"><span class="nav-number">3.</span> <span class="nav-text">Create React App</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Composing-with-Components"><span class="nav-number">4.</span> <span class="nav-text">Composing with Components</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Outro"><span class="nav-number">5.</span> <span class="nav-text">Outro</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Intro"><span class="nav-number">1.</span> <span class="nav-text"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Creating-Elements-and-JSX"><span class="nav-number">2.</span> <span class="nav-text"><a href="#Creating-Elements-and-JSX" class="headerlink" title="Creating Elements and JSX"></a>Creating Elements and JSX</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#React-createElement"><span class="nav-number">2.1.</span> <span class="nav-text"><a href="#React-createElement" class="headerlink" title="React.createElement"></a><code>React.createElement</code></span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-basic"><span class="nav-number">2.1.1.</span> <span class="nav-text"><a href="#Example-basic" class="headerlink" title="Example - basic"></a>Example - basic</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-dynamic-list"><span class="nav-number">2.1.2.</span> <span class="nav-text"><a href="#Example-dynamic-list" class="headerlink" title="Example - dynamic list"></a>Example - dynamic list</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSX"><span class="nav-number">2.2.</span> <span class="nav-text"><a href="#JSX" class="headerlink" title="JSX"></a>JSX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example"><span class="nav-number">2.2.1.</span> <span class="nav-text"><a href="#Example" class="headerlink" title="Example"></a>Example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-component"><span class="nav-number">2.3.</span> <span class="nav-text"><a href="#React-component" class="headerlink" title="React component"></a>React component</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-1"><span class="nav-number">2.3.1.</span> <span class="nav-text"><a href="#Example-1" class="headerlink" title="Example"></a>Example</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Create-React-App"><span class="nav-number">3.</span> <span class="nav-text"><a href="#Create-React-App" class="headerlink" title="Create React App"></a>Create React App</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Composing-with-Components"><span class="nav-number">4.</span> <span class="nav-text"><a href="#Composing-with-Components" class="headerlink" title="Composing with Components"></a>Composing with Components</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Outro"><span class="nav-number">5.</span> <span class="nav-text"><a href="#Outro" class="headerlink" title="Outro"></a>Outro</span></a></li></ol></div>
             
 
           </div>

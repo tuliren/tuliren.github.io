@@ -94,7 +94,7 @@
 
 
 
-<meta name="description" content="Self Driving Car Syllabus SummaryTwo methods  Color selection Edge detection  Setting up the ProblemFeatures for lane lines detection  Color Shape Orientation P">
+<meta name="description" content="Self Driving Car Syllabus SummaryTwo methods  Color selection Edge detection  Setting up the ProblemFeatures for lane lines detection  Color Shape Orientation Position  Color Selection Color channel 0">
 <meta name="keywords" content="Self Driving Car">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Self Driving Car - 02 Project - Finding Lane Lines on the Road">
@@ -112,7 +112,7 @@
 <meta property="og:image" content="http://tuliren.github.io/images/2017-10-08-sdr-project-finding-lane-lines/canny-edge-canny.png">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-10-08-sdr-project-finding-lane-lines/hough-transform-masked-region.png">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-10-08-sdr-project-finding-lane-lines/hough-transform-edge-detection.png">
-<meta property="og:updated_time" content="2017-12-01T08:27:50.156Z">
+<meta property="og:updated_time" content="2017-12-05T23:39:09.182Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Self Driving Car - 02 Project - Finding Lane Lines on the Road">
 <meta name="twitter:description" content="Self Driving Car Syllabus SummaryTwo methods  Color selection Edge detection  Setting up the ProblemFeatures for lane lines detection  Color Shape Orientation Position  Color Selection Color channel 0">
@@ -675,7 +675,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -688,7 +688,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -771,7 +771,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Summary"><span class="nav-number">1.</span> <span class="nav-text">Summary</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Setting-up-the-Problem"><span class="nav-number">2.</span> <span class="nav-text">Setting up the Problem</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Color-Selection"><span class="nav-number">3.</span> <span class="nav-text">Color Selection</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Region-Masking"><span class="nav-number">4.</span> <span class="nav-text">Region Masking</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Finding-Lines-of-Any-Color"><span class="nav-number">5.</span> <span class="nav-text">Finding Lines of Any Color</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Canny-Edge-Detection"><span class="nav-number">6.</span> <span class="nav-text">Canny Edge Detection</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hough-Transform"><span class="nav-number">7.</span> <span class="nav-text">Hough Transform</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Project-Intro"><span class="nav-number">8.</span> <span class="nav-text">Project Intro</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Starter-Kit-Installation"><span class="nav-number">9.</span> <span class="nav-text">Starter Kit Installation</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Summary"><span class="nav-number">1.</span> <span class="nav-text"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Setting-up-the-Problem"><span class="nav-number">2.</span> <span class="nav-text"><a href="#Setting-up-the-Problem" class="headerlink" title="Setting up the Problem"></a>Setting up the Problem</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Color-Selection"><span class="nav-number">3.</span> <span class="nav-text"><a href="#Color-Selection" class="headerlink" title="Color Selection"></a>Color Selection</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Region-Masking"><span class="nav-number">4.</span> <span class="nav-text"><a href="#Region-Masking" class="headerlink" title="Region Masking"></a>Region Masking</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Finding-Lines-of-Any-Color"><span class="nav-number">5.</span> <span class="nav-text"><a href="#Finding-Lines-of-Any-Color" class="headerlink" title="Finding Lines of Any Color"></a>Finding Lines of Any Color</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Canny-Edge-Detection"><span class="nav-number">6.</span> <span class="nav-text"><a href="#Canny-Edge-Detection" class="headerlink" title="Canny Edge Detection"></a>Canny Edge Detection</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hough-Transform"><span class="nav-number">7.</span> <span class="nav-text"><a href="#Hough-Transform" class="headerlink" title="Hough Transform"></a>Hough Transform</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Project-Intro"><span class="nav-number">8.</span> <span class="nav-text"><a href="#Project-Intro" class="headerlink" title="Project Intro"></a>Project Intro</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Starter-Kit-Installation"><span class="nav-number">9.</span> <span class="nav-text"><a href="#Starter-Kit-Installation" class="headerlink" title="Starter Kit Installation"></a>Starter Kit Installation</span></a></li></ol></div>
             
 
           </div>
