@@ -1,7 +1,7 @@
 ---
 title: 2017 健身总结
-date: 2018-01-01 03:52:32
-tags: [2017, 年度总结, 健身]
+date: 2017-12-31 03:52:32
+tags: [年度总结, 健康]
 ---
 
 # 2017 年健身概况
@@ -15,4 +15,4 @@ App 是一月份安装、注册的。正式健身从三月份开始。五、六�
 2018 年继续使用 Keep，计划健身天数翻倍（200 天，即每周 4 天），每次 10 分钟以上，理想状况是至少 30 分钟。目前体脂比根据 SCiO 的测定是 30%，希望能够降下来。
 
 # [2017 Keep 个人报告](https://show.gotokeep.com/event/annualreport2017/5889ce8a31f11619756eda55)
-<img src="/images/2018-01-01-workout-2017-summary/IMG_4270.jpg" width="50%"/>
+<img src="/images/2017-12-31-workout-2017-summary/IMG_4270.jpg" width="50%"/>
