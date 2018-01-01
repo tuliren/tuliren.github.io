@@ -1,7 +1,7 @@
 ---
 title: 读书笔记：查理.芒格的智慧
 date: 2017-11-22 10:10:59
-tags: [读书笔记, 2017-12, 投资]
+tags: [读书笔记, 投资]
 ---
 
 链接：[查理.芒格的智慧——投资的格栅理论（Investing--The Last Liberal Art）](https://book.douban.com/subject/26374572/)

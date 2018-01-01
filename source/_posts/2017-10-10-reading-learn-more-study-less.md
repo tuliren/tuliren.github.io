@@ -1,7 +1,7 @@
 ---
 title: 读书笔记：如何高效学习（Learn More, Study Less）
 date: 2017-10-10 22:04:37
-tags: [读书笔记, 2017-10]
+tags: [读书笔记]
 ---
 
 链接：[如何高效学习](https://book.douban.com/subject/25783654/)

@@ -1,6 +1,6 @@
 ---
 title: 读书笔记：象与骑象人
-tags: [读书笔记, 2017-09]
+tags: [读书笔记]
 ---
 
 链接：[象与骑象人：幸福的假设](https://book.douban.com/subject/20260640/)

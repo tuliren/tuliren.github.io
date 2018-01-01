@@ -1,7 +1,7 @@
 ---
 title: 2017 Udacity 年度总结
 date: 2017-12-31 15:57:20
-tags: [2017, Udacity]
+tags: [Udacity, 年度总结]
 ---
 
 # 2017 Udacity 概况
