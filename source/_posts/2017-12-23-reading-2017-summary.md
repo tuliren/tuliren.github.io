@@ -11,7 +11,7 @@ tags: [阅读总结, 2017]
 --- | ------
 每月阅读 3 本书 | 共阅读 42 本，平均每月 3.5 本
 根据[开智正典](https://www.douban.com/doulist/41691053/)进行阅读 | 14 本书来自[开智正典](https://www.douban.com/doulist/41691053/)或[开智通识部落](https://www.douban.com/doulist/45345711/)，占 30%
-开始写阅读卡片 | 阅读卡片不够系统，改为阅读题纲／笔记。从 9 月份开始边读边组织阅读题纲，完成 8 本书的提纲，目前已[整理发布 7 本](https://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/)
+开始写阅读卡片 | 阅读卡片不够系统，改为阅读题纲／笔记。从 9 月份开始边读边组织阅读提纲，完成 8 本书的提纲，目前已[整理发布 7 本](https://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/)
 
 ![11 本实体书](/images/2017-12-23-reading-2017-summary/2017-physical-books.jpg)
 
