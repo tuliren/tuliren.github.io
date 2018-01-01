@@ -8,7 +8,7 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 01 Jan 2018 01:42:11 GMT</pubDate>
+    <pubDate>Mon, 01 Jan 2018 12:31:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -28,6 +28,25 @@
       <content:encoded><![CDATA[<h1 id="2017-Udacity-概况"><a href="#2017-Udacity-概况" class="headerlink" title="2017 Udacity 概况"></a>2017 Udacity 概况</h1><p>根据 Udacity 发来的年度统计，2017 年我在 Udacity 一共花了 2727 分钟，也就是 45 个小时（这是在线时间，实际时间应该远超于此）。时间主要花在深度学习、自动驾驶和 React 三个 nanodegree 上。其中深度学习主要学习了基本的 deep neural network 和 CNN，后来的 RNN 和 GANs 并没有好好学。自动驾驶仍在进行中。React 完全失败，这个 nanodegree 来不及完成了。</p><h1 id="2018-Udacity-学习计划"><a href="#2018-Udacity-学习计划" class="headerlink" title="2018 Udacity 学习计划"></a>2018 Udacity 学习计划</h1><p>2018 年只有一个目标：完成自动驾驶全部课程。</p><h1 id="2017-Udacity-统计"><a href="#2017-Udacity-统计" class="headerlink" title="2017 Udacity 统计"></a>2017 Udacity 统计</h1><p><img src="/images/2017-12-31-udacity-2017-summary/IMG_4256.jpg" alt=""></p>]]></content:encoded>
       
       <comments>http://tuliren.github.io/2017/12/31/udacity-2017-summary/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>2017 健身总结</title>
+      <link>http://tuliren.github.io/2017/12/31/workout-2017-summary/</link>
+      <guid>http://tuliren.github.io/2017/12/31/workout-2017-summary/</guid>
+      <pubDate>Sun, 31 Dec 2017 03:52:32 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h1 id=&quot;2017-年健身概况&quot;&gt;&lt;a href=&quot;#2017-年健身概况&quot; class=&quot;headerlink&quot; title=&quot;2017 年健身概况&quot;&gt;&lt;/a&gt;2017 年健身概况&lt;/h1&gt;&lt;p&gt;Keep 是一款伟大的软件，带动我在 2017 年开始了持续时间最长且相对有
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="2017-年健身概况"><a href="#2017-年健身概况" class="headerlink" title="2017 年健身概况"></a>2017 年健身概况</h1><p>Keep 是一款伟大的软件，带动我在 2017 年开始了持续时间最长且相对有规律地健身。这一年共运动 99 天（其实按照美国时间算正好 100 天），总时长 45 个小时，平均每天运动 27 分钟。</p><p>App 是一月份安装、注册的。正式健身从三月份开始。五、六月回国，断了两个月。七月份重新开始，到八、九月份，因为工作忙又断了。十月份再次开始，持续到年底。</p><p>经过这一年的锻炼，体重并没有太大变化（从 70 磅降为 67 磅），不过核心肌群应该是稍有加强。在没有充分指导的情况下锻炼，还是有一定风险的。一开始因为连续骑车，没有注意骑车姿势，也没有注意膝关节周边肌肉的训练，导致膝盖疼痛。进行瘦腿训练的时候，大腿极度酸痛，将尽一周之后才好。最近的一次是左手腕关节疼痛，一方面是因为需要用手撑住身体的动作比较多，另一方面是前臂力量不够。因此现在会有意避开对腕关节冲击较大的动作，比如 burpees。</p><h1 id="2018-年健身计划"><a href="#2018-年健身计划" class="headerlink" title="2018 年健身计划"></a>2018 年健身计划</h1><p>2018 年继续使用 Keep，计划健身天数翻倍（200 天，即每周 4 天），每次 10 分钟以上，理想状况是至少 30 分钟。目前体脂比根据 SCiO 的测定是 30%，希望能够降下来。</p><h1 id="2017-Keep-个人报告"><a href="#2017-Keep-个人报告" class="headerlink" title="2017 Keep 个人报告"></a><a href="https://show.gotokeep.com/event/annualreport2017/5889ce8a31f11619756eda55" target="_blank" rel="noopener">2017 Keep 个人报告</a></h1><p><img src="/images/2017-12-31-workout-2017-summary/IMG_4270.jpg" width="50%"></p>]]></content:encoded>
+      
+      <comments>http://tuliren.github.io/2017/12/31/workout-2017-summary/#disqus_thread</comments>
     </item>
     
     <item>
