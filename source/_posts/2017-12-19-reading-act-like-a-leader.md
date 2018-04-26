@@ -1,7 +1,7 @@
 ---
 title: 读书笔记：逆向管理
 date: 2017-12-19 22:34:40
-tags: [读书笔记]
+tags: [读书笔记, 管理]
 ---
 
 链接：[逆向管理（Act Like a Leader, Think Like a Leader）](https://book.douban.com/subject/26827314/)
