@@ -48,6 +48,9 @@ tags: [读书笔记]
   - 发现自己真正想做的事情
   - 开始排入日程
   - 让它们相互平衡、支持、启发，全部实现
+
+{% img /images/2018-09-30-reading-spend-time-on-interesting-things/balanced-life.png 400 %}
+
 - 平衡轮
   - 计划的原则
     - 优先安排需要协作的事项：职业、财务
