@@ -4,10 +4,10 @@
 
 
 <html class="theme-next mist" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -37,7 +37,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -71,23 +71,23 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="AWS,TensorFlow," />
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-
-
-
-  <link rel="alternate" href="/feed.xml" title="海盘车的领地" type="application/atom+xml" />
+  <meta name="keywords" content="AWS,TensorFlow,">
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+  <link rel="alternate" href="/feed.xml" title="海盘车的领地" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2">
 
 
 
@@ -107,7 +107,7 @@
 <meta property="og:image" content="http://tuliren.github.io/images/2017-11-30-run-tensorflow-on-aws/instance-type.png">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-11-30-run-tensorflow-on-aws/aws-add-sec-group.png">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-11-30-run-tensorflow-on-aws/stop.png">
-<meta property="og:updated_time" content="2018-10-12T15:09:11.970Z">
+<meta property="og:updated_time" content="2018-10-21T05:34:43.674Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在 AWS 上跑 GPU Tensorflow">
 <meta name="twitter:description" content="这篇文章整理自 Udacity Deep Learning Nanodegree Foundation 教程的第六课 Cloud Computing。最终创建的 instance 使用的是 Udacity 的 AMI，安装有许多现成的依赖包。最主要的是，可以立即运行 GPU-tensorflow，无需设置 GPU 驱动。 第一步 创建 AWS 账户（5 分钟）略 第二部 取得 GPU Instan">
@@ -140,7 +140,7 @@
 
 
 
-  <link rel="canonical" href="http://tuliren.github.io/2017/11/30/run-tensorflow-on-aws/"/>
+  <link rel="canonical" href="http://tuliren.github.io/2017/11/30/run-tensorflow-on-aws/">
 
 
 
@@ -164,7 +164,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -174,13 +174,13 @@
   <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">海盘车的领地</span>
         <span class="logo-line-after"><i></i></span>
@@ -210,7 +210,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -220,7 +220,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -230,7 +230,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -240,7 +240,7 @@
         <li class="menu-item menu-item-repository">
           <a href="https://github.com/tuliren/tuliren.github.io" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-github-alt"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-github-alt"></i> <br>
             
             源码
           </a>
@@ -250,7 +250,7 @@
         <li class="menu-item menu-item-subscribe">
           <a href="https://tuliren.github.io/feed.xml" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-rss"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-rss"></i> <br>
             
             订阅
           </a>
@@ -284,20 +284,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://tuliren.github.io/2017/11/30/run-tensorflow-on-aws/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tuliren">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/default_avatar.png">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="海盘车的领地">
     </span>
 
@@ -338,8 +338,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/11/30/run-tensorflow-on-aws/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/11/30/run-tensorflow-on-aws/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/11/30/run-tensorflow-on-aws/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -351,7 +350,7 @@
           
             <span class="post-meta-divider">|</span>
             <span class="page-pv"><i class="fa fa-file-o"></i>
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
             </span>
           
 
@@ -577,7 +576,7 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -587,10 +586,8 @@
       
 
       <section class="site-overview sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/default_avatar.png"
-               alt="tuliren" />
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/default_avatar.png" alt="tuliren">
           <p class="site-author-name" itemprop="name">tuliren</p>
            
               <p class="site-description motion-element" itemprop="description"></p>
@@ -674,7 +671,7 @@
         
           <div class="cc-license motion-element" itemprop="license">
             <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank">
-              <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
+              <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons">
             </a>
           </div>
         
@@ -717,7 +714,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div class="copyright">
   
   &copy;  2017 - 
   <span itemprop="copyrightYear">2018</span>
