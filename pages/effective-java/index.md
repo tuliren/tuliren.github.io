@@ -15,3 +15,6 @@ title: Table of Contents
 * [Item 07: memory leak](./item-07.md)
 * [Item 08: no finalizer](./item-08.md)
 * [Item 09: try with resource](./item-09.md)
+
+## Chapter 03 Methods Common to All Objects
+* [Item 10: `equals` method](./item-10.md)
