@@ -107,7 +107,7 @@
 <meta property="og:image" content="http://tuliren.github.io/images/2017-11-30-run-tensorflow-on-aws/instance-type.png">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-11-30-run-tensorflow-on-aws/aws-add-sec-group.png">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-11-30-run-tensorflow-on-aws/stop.png">
-<meta property="og:updated_time" content="2019-04-18T05:09:35.860Z">
+<meta property="og:updated_time" content="2019-05-27T08:04:33.415Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在 AWS 上跑 GPU Tensorflow">
 <meta name="twitter:description" content="这篇文章整理自 Udacity Deep Learning Nanodegree Foundation 教程的第六课 Cloud Computing。最终创建的 instance 使用的是 Udacity 的 AMI，安装有许多现成的依赖包。最主要的是，可以立即运行 GPU-tensorflow，无需设置 GPU 驱动。 第一步 创建 AWS 账户（5 分钟）略 第二部 取得 GPU Instan">
@@ -376,6 +376,7 @@
 <h1 id="第二部-取得-GPU-Instance-权限（5-分钟）"><a href="#第二部-取得-GPU-Instance-权限（5-分钟）" class="headerlink" title="第二部 取得 GPU Instance 权限（5 分钟）"></a>第二部 取得 GPU Instance 权限（5 分钟）</h1><p>估计是为了防止误操作导致用户账单爆表，AWS 的高级 instance 是不能随意 launch 的，GPU instance 就是如此。</p>
 <p>首先点击<a href="https://console.aws.amazon.com/ec2/v2/home?#Limits" target="_blank" rel="noopener">这个链接</a>查看当前的 instance limit。这里要特别注意，不同区域的 limit 是不一样的，区域可以在右上角切换，一般北美的机器相对便宜。以 <code>p2.xlarge</code> 为例，limit 一般都是 <code>0</code>：</p>
 <img src="/images/2017-11-30-run-tensorflow-on-aws/p2-large-limit-request.png">
+
 <p>申请权限的步骤是：</p>
 <ul>
 <li>在 “EC2 Service Limits” 页面，点击需要的 instance 类型（比如 “p2.xlarge”）边上的 “Request limit increase”。这个操作没有任何费用。</li>
@@ -398,17 +399,20 @@
 </li>
 </ul>
 <h2 id="选择-instance-type（1-分钟）"><a href="#选择-instance-type（1-分钟）" class="headerlink" title="选择 instance type（1 分钟）"></a>选择 instance type（1 分钟）</h2><ul>
-<li>GPU compute</li>
+<li><p>GPU compute</p>
+</li>
 <li><p>p2.xlarge（或者其他有权限 launch 的 GPU type）</p>
 <img src="/images/2017-11-30-run-tensorflow-on-aws/instance-type.png" width="400">
 </li>
 <li><p>点击 “Review and Launch”</p>
 </li>
-<li>先不要 “Launch Instances”</li>
+<li><p>先不要 “Launch Instances”</p>
+</li>
 </ul>
 <h2 id="Security-Groups（5-分钟）"><a href="#Security-Groups（5-分钟）" class="headerlink" title="Security Groups（5 分钟）"></a>Security Groups（5 分钟）</h2><p>为了在 instance 上运行 jupyter notebook，需要开放相应的端口，这是通过 security groups 设置完成的。</p>
 <ul>
-<li>点击 “Edit security groups”</li>
+<li><p>点击 “Edit security groups”</p>
+</li>
 <li><p>如图设置安全组：</p>
 <img src="/images/2017-11-30-run-tensorflow-on-aws/aws-add-sec-group.png">
 <ul>
@@ -433,11 +437,14 @@
 </ul>
 <h2 id="计费"><a href="#计费" class="headerlink" title="计费"></a>计费</h2><p>一旦 instance 启动就开始计费了。费用明细可以查看<a href="https://aws.amazon.com/ec2/pricing/on-demand/" target="_blank" rel="noopener">这个链接</a>。由于 GPU instance 比较贵，而且 machine learning 一般不需要实时运行，所以不用的时候要及时关掉 instance。</p>
 <img src="/images/2017-11-30-run-tensorflow-on-aws/stop.png">
+
 <ul>
 <li>Stop 相当于关机，硬盘资料不会丢失，开机之后还可以继续用。关机之后会收取少量的存储费用，不过非常便宜。</li>
 <li>Terminate 相当于销毁 instance。一旦销毁，再需要 instance 就必须重建。销毁之后不会有任何费用。</li>
 </ul>
-<h1 id="第四部-运行（10-分钟）"><a href="#第四部-运行（10-分钟）" class="headerlink" title="第四部 运行（10 分钟）"></a>第四部 运行（10 分钟）</h1><h2 id="登陆（1-分钟）"><a href="#登陆（1-分钟）" class="headerlink" title="登陆（1 分钟）"></a>登陆（1 分钟）</h2><p>Instance 启动之后，在 EC2 Management Console 里得到 instance 的 IP 地址（<code>x.x.x.x</code>），然后使用 ssh 和 pem 文件登陆：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -i &lt;pem file path&gt; ubuntu@x.x.x.x</span><br></pre></td></tr></table></figure></p>
+<h1 id="第四部-运行（10-分钟）"><a href="#第四部-运行（10-分钟）" class="headerlink" title="第四部 运行（10 分钟）"></a>第四部 运行（10 分钟）</h1><h2 id="登陆（1-分钟）"><a href="#登陆（1-分钟）" class="headerlink" title="登陆（1 分钟）"></a>登陆（1 分钟）</h2><p>Instance 启动之后，在 EC2 Management Console 里得到 instance 的 IP 地址（<code>x.x.x.x</code>），然后使用 ssh 和 pem 文件登陆：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -i &lt;pem file path&gt; ubuntu@x.x.x.x</span><br></pre></td></tr></table></figure>
+
 <h2 id="设置-Jupyter（5-分钟）"><a href="#设置-Jupyter（5-分钟）" class="headerlink" title="设置 Jupyter（5 分钟）"></a>设置 Jupyter（5 分钟）</h2><p>这一步可以省略</p>
 <ul>
 <li><p>创建 config 文件</p>
@@ -445,6 +452,7 @@
 </li>
 <li><p>设置 jupyter IP，把 <code>#c.NotebookApp.ip = &#39;localhost&#39;</code> 替换为 <code>#c.NotebookApp.ip = &#39;*&#39;</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -ie &quot;s/#c.NotebookApp.ip = &apos;localhost&apos;/#c.NotebookApp.ip = &apos;*&apos;/g&quot; ~/.jupyter/jupyter_notebook_config.py</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
 <h2 id="测试（5-分钟）"><a href="#测试（5-分钟）" class="headerlink" title="测试（5 分钟）"></a>测试（5 分钟）</h2><p>使用 Udacity aind2-dl 测试 instance 和 jupyter notebook。</p>

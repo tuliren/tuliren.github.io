@@ -103,7 +103,7 @@
 <meta property="og:description" content="React Syllabus Intro What makes React special? Compositional model Declarative nature The way data flows from parent to child React is just JavaScript     Composition React code composes functions to">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://tuliren.github.io/images/2017-10-07-react-why-react/data-flow.png">
-<meta property="og:updated_time" content="2019-04-18T05:09:35.860Z">
+<meta property="og:updated_time" content="2019-05-27T08:04:33.411Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React - Why React?">
 <meta name="twitter:description" content="React Syllabus Intro What makes React special? Compositional model Declarative nature The way data flows from parent to child React is just JavaScript     Composition React code composes functions to">
@@ -389,13 +389,15 @@
 </li>
 <li><p>React component</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// simple components</span><br><span class="line"><span class="tag">&lt;<span class="name">Page</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">Article</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">Sidebar</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">// component composition</span><br><span class="line"><span class="tag">&lt;<span class="name">Page</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">Article</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">Sidebar</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Page</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
 <hr>
 <h1 id="Declarative-Code"><a href="#Declarative-Code" class="headerlink" title="Declarative Code"></a>Declarative Code</h1><ul>
 <li><p>Imperative code</p>
 <ul>
-<li>Imperative: expressing a command; commanding.</li>
+<li><p>Imperative: expressing a command; commanding.</p>
+</li>
 <li><p>Exactly <strong><em>what to do</em></strong> and <strong><em>how to do</em></strong> it.</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> people = [<span class="string">'Amanda'</span>, <span class="string">'Geoff'</span>, <span class="string">'Michael'</span>, <span class="string">'Richard'</span>, <span class="string">'Ryan'</span>, <span class="string">'Tyler'</span>]</span><br><span class="line"><span class="keyword">const</span> excitedPeople = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; people.length; i++) &#123;</span><br><span class="line">  excitedPeople[i] = people[i] + <span class="string">'!'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
@@ -404,6 +406,7 @@
 <li><p>Declarative code</p>
 <ul>
 <li>Declare <strong><em>what to be done</em></strong>.<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> excitedPeople = people.map(<span class="function"><span class="params">name</span> =&gt;</span> name + <span class="string">'!'</span>)</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
 </li>
@@ -434,6 +437,7 @@
 <li>If child component needs to make a change to the data, it would send the updated data to the parent component where the change will actually be made.</li>
 </ul>
 <img src="/images/2017-10-07-react-why-react/data-flow.png" width="400" height="225">
+
 </li>
 </ul>
 <hr>

@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="这几天在系统里看到了这样一个 exception： 1Caused by: org.joda.time.IllegalInstantException: Cannot parse &amp;quot;2019-03-10 02:37:07&amp;quot;: Illegal instant due to time zone offset transition (America/Los_Angeles) 背后的原">
+<meta name="description" content="这几天在系统里看到了这样一个 exception： 1Caused by: org.joda.time.IllegalInstantException: Cannot parse &amp;quot;2019-03-10 02:37:07&amp;quot;: Illegal instant due to time zone offset transition (America/Los_Angeles)  背后的">
 <meta name="keywords" content="Debug">
 <meta property="og:type" content="article">
 <meta property="og:title" content="夏令时引发的 bug">
 <meta property="og:url" content="http://tuliren.github.io/2019/03/15/bug-from-day-light-saving/index.html">
 <meta property="og:site_name" content="海盘车的领地">
-<meta property="og:description" content="这几天在系统里看到了这样一个 exception： 1Caused by: org.joda.time.IllegalInstantException: Cannot parse &amp;quot;2019-03-10 02:37:07&amp;quot;: Illegal instant due to time zone offset transition (America/Los_Angeles) 背后的原">
+<meta property="og:description" content="这几天在系统里看到了这样一个 exception： 1Caused by: org.joda.time.IllegalInstantException: Cannot parse &amp;quot;2019-03-10 02:37:07&amp;quot;: Illegal instant due to time zone offset transition (America/Los_Angeles)  背后的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-18T05:09:35.860Z">
+<meta property="og:updated_time" content="2019-05-27T08:04:33.415Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="夏令时引发的 bug">
-<meta name="twitter:description" content="这几天在系统里看到了这样一个 exception： 1Caused by: org.joda.time.IllegalInstantException: Cannot parse &amp;quot;2019-03-10 02:37:07&amp;quot;: Illegal instant due to time zone offset transition (America/Los_Angeles) 背后的原">
+<meta name="twitter:description" content="这几天在系统里看到了这样一个 exception： 1Caused by: org.joda.time.IllegalInstantException: Cannot parse &amp;quot;2019-03-10 02:37:07&amp;quot;: Illegal instant due to time zone offset transition (America/Los_Angeles)  背后的">
 
 
 
@@ -367,6 +367,7 @@
       
         <p>这几天在系统里看到了这样一个 <code>exception</code>：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Caused by: org.joda.time.IllegalInstantException: Cannot parse &quot;2019-03-10 02:37:07&quot;: Illegal instant due to time zone offset transition (America/Los_Angeles)</span><br></pre></td></tr></table></figure>
+
 <p>背后的原因比较独特，是因为 3 月 10 号，太平洋时间（Pacific Standard Time，PST）转换为太平洋夏令时间（Pacific Daylight Time，PDT），凌晨 2 点直接变成 3 点。<code>02:37</code> 是一个其他时区的时间，但是由于没有时区信息，系统默认使用本地时区进行解析，而对于 PDT 来说 <code>02:37</code> 是一个不存在时间。</p>
 <p>修复这个问题最好的解决办法是，在时间戳中加入时区信息。由于处理这个时间戳的系统，并不需要精确时间信息，所以本问题的实际解决办法是，直接使用 PST 进行解析。</p>
 
