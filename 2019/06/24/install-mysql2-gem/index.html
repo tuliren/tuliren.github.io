@@ -76,7 +76,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="Debug,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -94,18 +94,17 @@
 
 
 
-<meta name="description" content="公司有一段 Ruby 代码偶尔会抛出以下错误：no implicit conversion of nil into Hash。一开始我一直以为，是对某个恰好是 nil 的 Hash 变量进行 element reference 操作（#[]）导致。但是找来找去没有这样的变量，而且对 nil 进行 element reference 的错误信息其实是这样的：undefined method &amp;#39">
-<meta name="keywords" content="Debug">
+<meta name="description" content="每次在新电脑上给 rails 项目安装 mysql2，总会遇到问题。因此在这里做一个汇总，供日后参考。 MySQL老的 mysql2 版本不兼容最新的 MySQL，因此要安装 5.x 版本： 12brew install mysql@5.7brew install mysql-connector-c # 未必需要  根据 brew 的提示，将以下变量添加到 ~/.bash_profile： 123">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ruby 中两个 `nil` 问题引起的 bug">
-<meta property="og:url" content="http://tuliren.github.io/2018/11/05/ruby-nil-debug/index.html">
+<meta property="og:title" content="安装 mysql2">
+<meta property="og:url" content="http://tuliren.github.io/2019/06/24/install-mysql2-gem/index.html">
 <meta property="og:site_name" content="海盘车的领地">
-<meta property="og:description" content="公司有一段 Ruby 代码偶尔会抛出以下错误：no implicit conversion of nil into Hash。一开始我一直以为，是对某个恰好是 nil 的 Hash 变量进行 element reference 操作（#[]）导致。但是找来找去没有这样的变量，而且对 nil 进行 element reference 的错误信息其实是这样的：undefined method &amp;#39">
+<meta property="og:description" content="每次在新电脑上给 rails 项目安装 mysql2，总会遇到问题。因此在这里做一个汇总，供日后参考。 MySQL老的 mysql2 版本不兼容最新的 MySQL，因此要安装 5.x 版本： 12brew install mysql@5.7brew install mysql-connector-c # 未必需要  根据 brew 的提示，将以下变量添加到 ~/.bash_profile： 123">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-06-24T22:45:11.661Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ruby 中两个 `nil` 问题引起的 bug">
-<meta name="twitter:description" content="公司有一段 Ruby 代码偶尔会抛出以下错误：no implicit conversion of nil into Hash。一开始我一直以为，是对某个恰好是 nil 的 Hash 变量进行 element reference 操作（#[]）导致。但是找来找去没有这样的变量，而且对 nil 进行 element reference 的错误信息其实是这样的：undefined method &amp;#39">
+<meta name="twitter:title" content="安装 mysql2">
+<meta name="twitter:description" content="每次在新电脑上给 rails 项目安装 mysql2，总会遇到问题。因此在这里做一个汇总，供日后参考。 MySQL老的 mysql2 版本不兼容最新的 MySQL，因此要安装 5.x 版本： 12brew install mysql@5.7brew install mysql-connector-c # 未必需要  根据 brew 的提示，将以下变量添加到 ~/.bash_profile： 123">
 
 
 
@@ -134,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://tuliren.github.io/2018/11/05/ruby-nil-debug/">
+  <link rel="canonical" href="http://tuliren.github.io/2019/06/24/install-mysql2-gem/">
 
 
 
 
 
-  <title>Ruby 中两个 `nil` 问题引起的 bug | 海盘车的领地</title>
+  <title>安装 mysql2 | 海盘车的领地</title>
   
 
 
@@ -283,7 +282,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://tuliren.github.io/2018/11/05/ruby-nil-debug/">
+    <link itemprop="mainEntityOfPage" href="http://tuliren.github.io/2019/06/24/install-mysql2-gem/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tuliren">
@@ -300,7 +299,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Ruby 中两个 `nil` 问题引起的 bug</h2>
+          <h2 class="post-title" itemprop="name headline">安装 mysql2</h2>
         
 
         <div class="post-meta">
@@ -312,8 +311,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-05T21:58:29+00:00">
-                2018-11-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-24T15:16:51+00:00">
+                2019-06-24
               </time>
             
 
@@ -331,8 +330,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/05/ruby-nil-debug/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/05/ruby-nil-debug/" itemprop="commentCount"></span>
+                <a href="/2019/06/24/install-mysql2-gem/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/24/install-mysql2-gem/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -365,14 +364,30 @@
       
 
       
-        <p>公司有一段 Ruby 代码偶尔会抛出以下错误：<code>no implicit conversion of nil into Hash</code>。一开始我一直以为，是对某个恰好是 <code>nil</code> 的 <code>Hash</code> 变量进行 element reference 操作（<code>#[]</code>）导致。但是找来找去没有这样的变量，而且对 <code>nil</code> 进行 element reference 的错误信息其实是这样的：<code>undefined method &#39;[]&#39; for nil:NilClass</code>。</p>
-<p>Google 之后发现错误信息来自于 hash 的合并（<code>#merge</code>），当合并的对象是 <code>nil</code> 的时候，才会抛出这样的错误信息，因为 <code>merge</code> 试图把传入参数转换成 <code>Hash</code>。这一发现把错误代码的范围缩小到以下三行：</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var1 = collection1.reduce&#123;<span class="params">|m1, m2|</span> m1.merge(m2)&#125;</span><br><span class="line">var2 = collection2.reduce&#123;<span class="params">|m1, m2|</span> m1.merge(m2)&#125;</span><br><span class="line">vars = var1.merge(var2)</span><br></pre></td></tr></table></figure>
+        <p>每次在新电脑上给 <code>rails</code> 项目安装 <code>mysql2</code>，总会遇到问题。因此在这里做一个汇总，供日后参考。</p>
+<h1 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a><code>MySQL</code></h1><p>老的 <code>mysql2</code> 版本不兼容最新的 <code>MySQL</code>，因此要安装 <code>5.x</code> 版本：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install mysql@5.7</span><br><span class="line">brew install mysql-connector-c <span class="comment"># 未必需要</span></span><br></pre></td></tr></table></figure>
 
-<p>然后这里又涉及另一个 <code>nil</code> 相关的问题。实验发现，对空集合调用 <code>reduce</code> 方法，返回的不再是空集合，而是 <code>nil</code>：</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[].reduce&#123;<span class="params">|sum, n|</span> sum + n&#125;</span><br><span class="line">=&gt; nil</span><br><span class="line"></span><br><span class="line">&#123;&#125;.reduce&#123;<span class="params">|sum, n|</span> sum + n&#125;</span><br><span class="line">=&gt; nil</span><br></pre></td></tr></table></figure>
+<p>根据 <code>brew</code> 的提示，将以下变量添加到 <code>~/.bash_profile</code>：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="string">"/usr/local/opt/mysql@5.7/bin:<span class="variable">$PATH</span>"</span></span><br><span class="line"><span class="comment"># For compilers to find mysql@5.7 you may need to set:</span></span><br><span class="line"><span class="comment"># export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"</span></span><br><span class="line"><span class="comment"># export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"</span></span><br></pre></td></tr></table></figure>
 
-<p>至此，原因终于查清。以上代码中 <code>collection2</code> 有时候为空，导致 <code>var2</code> 等于 <code>nil</code>，这个 <code>nil</code> 作为 <code>merge</code> 方法的参数，引发了开头提到的异常。Tricky 的 bug 背后原因往往不止一个。此例也是如此。</p>
+<h1 id="openssl"><a href="#openssl" class="headerlink" title="openssl"></a><code>openssl</code></h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install openssl</span><br></pre></td></tr></table></figure>
+
+<p>根据 <code>brew</code> 的提示，将以下变量添加到 <code>~/.bash_profile</code>：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="string">"/usr/local/opt/openssl/bin:<span class="variable">$PATH</span>"</span></span><br><span class="line"><span class="comment"># For compilers to find openssl you may need to set:</span></span><br><span class="line"><span class="comment"># export LDFLAGS="-L/usr/local/opt/openssl/lib"</span></span><br><span class="line"><span class="comment"># export CPPFLAGS="-I/usr/local/opt/openssl/include"</span></span><br></pre></td></tr></table></figure>
+
+<p><code>LDFLAGS</code> 和 <code>CPPFLAGS</code> 这两个环境变量之后要用，可以去除注释一起添加。</p>
+<h1 id="xcode-select"><a href="#xcode-select" class="headerlink" title="xcode-select"></a><code>xcode-select</code></h1><p>每次升级系统都需要安装：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
+
+<h1 id="mysql2"><a href="#mysql2" class="headerlink" title="mysql2"></a><code>mysql2</code></h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem install mysql2</span><br></pre></td></tr></table></figure>
+
+<p>直接安装或者使用 <code>bundle install</code>，大概率会遇到以下问题：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">linking shared-object mysql2/mysql2.bundle</span><br><span class="line">ld: library not found <span class="keyword">for</span> -lssl</span><br><span class="line">clang: error: linker <span class="built_in">command</span> failed with <span class="built_in">exit</span> code 1 (use -v to see invocation)</span><br><span class="line">make: *** [mysql2.bundle] Error 1</span><br></pre></td></tr></table></figure>
+
+<p>有时，只要安装了最新的 <code>xcode-select</code> 就能解决。如果依然不行，要使用之前 <code>openssl</code> 的编译变量：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># choose version accordingly</span></span><br><span class="line">gem install mysql2 -v <span class="string">'0.5.2'</span> -- --with-ldflags=LDFLAGS --with-cppflags=CPPFLAGS</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -389,7 +404,7 @@
         <ul class="post-copyright">
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://tuliren.github.io/2018/11/05/ruby-nil-debug/" title="Ruby 中两个 `nil` 问题引起的 bug">http://tuliren.github.io/2018/11/05/ruby-nil-debug/</a>
+    <a href="http://tuliren.github.io/2019/06/24/install-mysql2-gem/" title="安装 mysql2">http://tuliren.github.io/2019/06/24/install-mysql2-gem/</a>
   </li>
   <li class="post-copyright-license">
     <strong>许可协议： </strong>
@@ -402,12 +417,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Debug/" rel="tag"># Debug</a>
-          
-        </div>
-      
 
       
       
@@ -417,8 +426,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/28/reading-job-hunting-for-software-engineers/" rel="next" title="读书笔记：程序员跳槽全攻略">
-                <i class="fa fa-chevron-left"></i> 读书笔记：程序员跳槽全攻略
+              <a href="/2019/04/17/reading-buddhism-short-intro/" rel="next" title="读书笔记：佛学概论">
+                <i class="fa fa-chevron-left"></i> 读书笔记：佛学概论
               </a>
             
           </div>
@@ -426,10 +435,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/22/reading-so-good-they-cant-ignore-you/" rel="prev" title="读书笔记：优秀到不能被忽略">
-                读书笔记：优秀到不能被忽略 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -488,8 +493,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/default_avatar.png" alt="tuliren">
           <p class="site-author-name" itemprop="name">tuliren</p>
@@ -588,6 +602,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL"><span class="nav-number">1.</span> <span class="nav-text">MySQL</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#openssl"><span class="nav-number">2.</span> <span class="nav-text">openssl</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#xcode-select"><span class="nav-number">3.</span> <span class="nav-text">xcode-select</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#mysql2"><span class="nav-number">4.</span> <span class="nav-text">mysql2</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -745,9 +775,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://tuliren.github.io/2018/11/05/ruby-nil-debug/';
-          this.page.identifier = '2018/11/05/ruby-nil-debug/';
-          this.page.title = 'Ruby 中两个 `nil` 问题引起的 bug';
+          this.page.url = 'http://tuliren.github.io/2019/06/24/install-mysql2-gem/';
+          this.page.identifier = '2019/06/24/install-mysql2-gem/';
+          this.page.title = '安装 mysql2';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://tuliren.disqus.com/embed.js';
