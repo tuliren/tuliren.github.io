@@ -65,6 +65,9 @@ make: *** [mysql2.bundle] Error 1
 有时，只要安装了最新的 `xcode-select` 就能解决。如果依然不行，要使用之前 `openssl` 的编译变量：
 
 ```sh
+export LDFLAGS="-L/usr/local/opt/openssl/lib ${LDFLAGS}"
+export CPPFLAGS="-I/usr/local/opt/openssl/include ${CPPFLAGS}"
+
 # choose version accordingly
-gem install mysql2 -v '0.5.2' -- --with-ldflags=LDFLAGS --with-cppflags=CPPFLAGS
+gem install mysql2 -v '0.5.2' -- --with-ldflags="${LDFLAGS}" --with-cppflags="${CPPFLAGS}"
 ```
