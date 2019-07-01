@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="海盘车的领地">
 <meta property="og:description" content="每次在新电脑上给 rails 项目安装 mysql2，总会遇到问题。因此在这里做一个汇总，供日后参考。 MySQL老的 mysql2 版本不兼容最新的 MySQL，因此要安装 5.x 版本： 12brew install mysql@5.7brew install mysql-connector-c # 未必需要  根据 brew 的提示，将以下变量添加到 ~/.bash_profile： 123">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-24T22:45:11.661Z">
+<meta property="og:updated_time" content="2019-07-01T18:08:20.113Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="安装 mysql2">
 <meta name="twitter:description" content="每次在新电脑上给 rails 项目安装 mysql2，总会遇到问题。因此在这里做一个汇总，供日后参考。 MySQL老的 mysql2 版本不兼容最新的 MySQL，因此要安装 5.x 版本： 12brew install mysql@5.7brew install mysql-connector-c # 未必需要  根据 brew 的提示，将以下变量添加到 ~/.bash_profile： 123">
@@ -386,7 +386,7 @@
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">linking shared-object mysql2/mysql2.bundle</span><br><span class="line">ld: library not found <span class="keyword">for</span> -lssl</span><br><span class="line">clang: error: linker <span class="built_in">command</span> failed with <span class="built_in">exit</span> code 1 (use -v to see invocation)</span><br><span class="line">make: *** [mysql2.bundle] Error 1</span><br></pre></td></tr></table></figure>
 
 <p>有时，只要安装了最新的 <code>xcode-select</code> 就能解决。如果依然不行，要使用之前 <code>openssl</code> 的编译变量：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># choose version accordingly</span></span><br><span class="line">gem install mysql2 -v <span class="string">'0.5.2'</span> -- --with-ldflags=LDFLAGS --with-cppflags=CPPFLAGS</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> LDFLAGS=<span class="string">"-L/usr/local/opt/openssl/lib <span class="variable">$&#123;LDFLAGS&#125;</span>"</span></span><br><span class="line"><span class="built_in">export</span> CPPFLAGS=<span class="string">"-I/usr/local/opt/openssl/include <span class="variable">$&#123;CPPFLAGS&#125;</span>"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># choose version accordingly</span></span><br><span class="line">gem install mysql2 -v <span class="string">'0.5.2'</span> -- --with-ldflags=<span class="string">"<span class="variable">$&#123;LDFLAGS&#125;</span>"</span> --with-cppflags=<span class="string">"<span class="variable">$&#123;CPPFLAGS&#125;</span>"</span></span><br></pre></td></tr></table></figure>
 
 
       
