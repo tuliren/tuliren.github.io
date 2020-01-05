@@ -8,8 +8,48 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 14 Jul 2019 09:59:44 GMT</pubDate>
+    <pubDate>Sun, 05 Jan 2020 20:34:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>bundle install 问题二则</title>
+      <link>http://tuliren.github.io/2020/01/05/fix-bundle-install/</link>
+      <guid>http://tuliren.github.io/2020/01/05/fix-bundle-install/</guid>
+      <pubDate>Sun, 05 Jan 2020 12:15:37 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;每次在新电脑上运行老旧的 &lt;code&gt;Rails&lt;/code&gt; 项目都有很多问题，之前写过 &lt;a href=&quot;https://www.tuliren.dev/2019/06/24/install-mysql2-gem/&quot; target=&quot;_blank&quot; rel=&quot;noope
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>每次在新电脑上运行老旧的 <code>Rails</code> 项目都有很多问题，之前写过 <a href="https://www.tuliren.dev/2019/06/24/install-mysql2-gem/" target="_blank" rel="noopener">mysql2</a>，今天是安装 <code>Ruby</code> 和 <code>nokogiri</code>。</p><h1 id="rbenv-install"><a href="#rbenv-install" class="headerlink" title="rbenv install"></a><code>rbenv install</code></h1><p>安装项目对应的 <code>Ruby</code> <code>2.3.0</code> 版本是报错，原因和 <a href="https://www.tuliren.dev/2020/01/02/fix-bundle-install/" target="_blank" rel="noopener">openssl</a> 版本有关，在转换到 <code>openssl 1.0</code> 的同时，手动制定 <code>openssl</code> 的目录：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># brew switch openssl 1.0.2s</span></span><br><span class="line"><span class="comment"># export PATH="/usr/local/opt/openssl@1.0/bin:$PATH"</span></span><br><span class="line"><span class="comment"># export LDFLAGS="-L/usr/local/opt/openssl@1.0/lib $&#123;LDFLAGS&#125;"</span></span><br><span class="line"><span class="comment"># export CPPFLAGS="-I/usr/local/opt/openssl@1.0/include $&#123;CPPFLAGS&#125;"</span></span><br><span class="line"></span><br><span class="line">RUBY_CONFIGURE_OPTS=--with-openssl-dir=/usr/<span class="built_in">local</span>/Cellar/openssl/1.0.2s/ rbenv install 2.3.0</span><br></pre></td></tr></table></figure><h1 id="nokogiri"><a href="#nokogiri" class="headerlink" title="nokogiri"></a><code>nokogiri</code></h1><p><code>nokogiri</code> 依赖 <code>libxml</code>。修复方法是先安装 <code>libxml2</code>，再链接成 <code>libxml</code>：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install libxml2</span><br><span class="line">sudo ln -s /usr/<span class="built_in">local</span>/opt/libxml2/include/libxml2/libxml /usr/<span class="built_in">local</span>/include/libxml</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      <comments>http://tuliren.github.io/2020/01/05/fix-bundle-install/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>在 Mac 上使用 openssl 1.0</title>
+      <link>http://tuliren.github.io/2020/01/02/fix-openssl-on-mac/</link>
+      <guid>http://tuliren.github.io/2020/01/02/fix-openssl-on-mac/</guid>
+      <pubDate>Thu, 02 Jan 2020 12:04:51 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;最近在使用 &lt;code&gt;node&lt;/code&gt; 和 &lt;code&gt;rails&lt;/code&gt; 时，接连碰到 &lt;code&gt;openssl&lt;/code&gt; 版本问题：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;dyld: Library not loaded: /usr/local/o
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>最近在使用 <code>node</code> 和 <code>rails</code> 时，接连碰到 <code>openssl</code> 版本问题：</p><blockquote><p>dyld: Library not loaded: /usr/local/opt/openssl/lib/libssl.1.0.0.dylib</p></blockquote><p>原因是 <code>brew</code> 自动安装的往往是 <code>openssl</code> 最新版本 <code>1.1</code>，而很多库依赖的是 <code>1.0</code>。对应的解决方法是让 <code>brew</code> 使用老的版本：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew switch openssl 1.0.2s</span><br></pre></td></tr></table></figure><p>同时更新环境变量：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># change from openssl or openssl@1.1 to openssl@1.0</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="string">"/usr/local/opt/openssl@1.0/bin:<span class="variable">$PATH</span>"</span></span><br><span class="line"><span class="built_in">export</span> LDFLAGS=<span class="string">"-L/usr/local/opt/openssl@1.0/lib <span class="variable">$&#123;LDFLAGS&#125;</span>"</span></span><br><span class="line"><span class="built_in">export</span> CPPFLAGS=<span class="string">"-I/usr/local/opt/openssl@1.0/include <span class="variable">$&#123;CPPFLAGS&#125;</span>"</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      <comments>http://tuliren.github.io/2020/01/02/fix-openssl-on-mac/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>安装 mysql2</title>
@@ -131,7 +171,7 @@
     </item>
     
     <item>
-      <title>Ruby 中两个 `nil` 问题引起的 bug</title>
+      <title>Ruby 中两个 nil 问题引起的 bug</title>
       <link>http://tuliren.github.io/2018/11/05/ruby-nil-debug/</link>
       <guid>http://tuliren.github.io/2018/11/05/ruby-nil-debug/</guid>
       <pubDate>Mon, 05 Nov 2018 21:58:29 GMT</pubDate>
