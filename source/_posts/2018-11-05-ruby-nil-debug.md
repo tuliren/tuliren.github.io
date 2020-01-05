@@ -1,5 +1,5 @@
 ---
-title: Ruby 中两个 `nil` 问题引起的 bug
+title: Ruby 中两个 nil 问题引起的 bug
 date: 2018-11-05 21:58:29
 tags: [Debug]
 ---
