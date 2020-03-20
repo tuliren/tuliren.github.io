@@ -8,8 +8,27 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 09 Feb 2020 01:04:11 GMT</pubDate>
+    <pubDate>Fri, 20 Mar 2020 07:22:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>廷伯根的四个问题</title>
+      <link>http://tuliren.github.io/2020/03/19/tinbergen-four-questions/</link>
+      <guid>http://tuliren.github.io/2020/03/19/tinbergen-four-questions/</guid>
+      <pubDate>Thu, 19 Mar 2020 23:24:40 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;去年某日和 Scale 同事在午餐期间闲聊，有人问：人为什么要睡觉。我回答：这是因为睡觉时，身体可以行使很多白天清醒状态下无法行使的功能，比如生成长期记忆。然后有个同事反驳道：不是这样的；人要睡觉，是因为人作为昼行动物，在夜晚无法有效行动，进化出了和白天非常不同的行动策略，
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>去年某日和 Scale 同事在午餐期间闲聊，有人问：人为什么要睡觉。我回答：这是因为睡觉时，身体可以行使很多白天清醒状态下无法行使的功能，比如生成长期记忆。然后有个同事反驳道：不是这样的；人要睡觉，是因为人作为昼行动物，在夜晚无法有效行动，进化出了和白天非常不同的行动策略，也就是睡觉。我当时觉得我们两个人说的都是对的，只是角度，不过他的角度更有意思。</p><p>今天在《进化心理学》一书中，读到了「廷伯根（Tinbergen）的四个问题」，正是阐释动物行为的四个角度（以下表格整理自（<a href="https://en.wikipedia.org/wiki/Tinbergen%27s_four_questions" target="_blank" rel="noopener">维基百科</a>））：</p><table><thead><tr><th></th><th>动态视角<br>从发展序列的角度解释</th><th>静态视角<br>从个体角度解释</th></tr></thead><tbody><tr><td><strong>近因（proximate view）</strong><br>造成当前行为的直接原因<br>个体器官如何工作</td><td>发育（个体发生 ontogeny）<br>个体/结构如何从发育而来</td><td>因果关系（机理）<br>有机体结构的工作机理</td></tr><tr><td><strong>远因（ultimate view）</strong><br>造成当前行为的终极原因<br>一般从进化的角度来归因<br>为什么物种进化出某种结构/适应</td><td>进化（系统发生 phylogeny）<br>物种某一特质的进化史</td><td>功能（适应性 adaptation）<br>一个行为如何在当前环境下帮助个体存活或繁殖</td></tr></tbody></table><p>这样一看，我和同事的答案之间的差异就一目了然了。我讲的是睡眠的功能因，他说的是进化因，确实是两个不同的角度。</p><p>总结出这四个问题的科学家，是尼古拉斯.廷伯根，一位 20 世纪的动物行为学与鸟类学家，曾获得诺贝尓生理学或医学奖。</p>]]></content:encoded>
+      
+      <comments>http://tuliren.github.io/2020/03/19/tinbergen-four-questions/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>bundle install 问题二则</title>
