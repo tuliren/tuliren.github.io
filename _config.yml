@@ -116,3 +116,5 @@ feed:
 symbols_count_time:
   symbols: false
   time: true
+
+excerpt_length: 150
