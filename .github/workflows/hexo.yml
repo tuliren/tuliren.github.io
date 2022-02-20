@@ -1,0 +1,38 @@
+name: Hexo
+
+on:
+  push:
+    branches: [ hexo ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.14.0
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Update hexo content
+        run: |
+          npx hexo clean
+          npx hexo generate
+      - name: Config git
+        run: |
+          git config --global user.name 'Liren Tu'
+          git config --global user.email 'tuliren.git@outlook.com'
+      - name: Publish new site
+        run: |
+          mkdir .deploy
+          cd .deploy
+          git clone --depth 1 --branch master --single-branch {{ github.repositoryUrl }} . || (git init && git remote add -t master origin {{ github.repositoryUrl }})
+          rm -rf ./*
+          cp -r ../public/* .
+          git add -A .
+          COMMIT_MESSAGE="Site updated on `date '+%Y-%m-%d %H:%M:%S'`"
+          git commit -m "${COMMIT_MESSAGE}"
+          git branch -m master
+          git push -q -u origin master
