@@ -32,7 +32,7 @@ jobs:
           mkdir .deploy
           cd .deploy
           REPO_URL=https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git clone --depth 1 --branch master --single-branch REPO_URL . || (git init && git remote add -t master origin REPO_URL)
+          git clone --depth 1 --branch master --single-branch ${REPO_URL} . || (git init && git remote add -t master origin ${REPO_URL})
           rm -rf ./*
           cp -r ../public/* .
           git add -A .
