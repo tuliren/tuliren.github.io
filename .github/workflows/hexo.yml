@@ -20,6 +20,10 @@ jobs:
         run: |
           npx hexo clean
           npx hexo generate
+      - name: Config git
+        run: |
+          git config --global user.name 'Liren Tu'
+          git config --global user.email 'tuliren.git@outlook.com'
       - name: Publish new site
         run: |
           mkdir .deploy
