@@ -109,9 +109,11 @@ deploy:
   email: tuliren.git@outlook.com
 
 feed:
+  enable: true
   type: rss2
   path: feed.xml
   limit: false
+  content: true
 
 symbols_count_time:
   symbols: false

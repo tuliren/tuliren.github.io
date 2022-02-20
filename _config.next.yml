@@ -94,7 +94,7 @@ menu:
   archives: /archives/ || fa fa-archive
   tags: /tags/ || fa fa-tags
   源码: https://github.com/tuliren/tuliren.github.io || fab fa-github-alt
-  RSS: https://tuliren.github.io/feed.xml || fa fa-rss
+  RSS: /feed.xml || fa fa-rss
   #about: /about/ || fa fa-user
   #categories: /categories/ || fa fa-th
   #schedule: /schedule/ || fa fa-calendar
