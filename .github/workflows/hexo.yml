@@ -25,6 +25,8 @@ jobs:
           npx hexo generate
       - name: Config git
         run: |
+          echo "github.actor: ${{ github.actor }}"
+          echo "GITHUB_ACTOR: ${GITHUB_ACTOR}"
           git config --local user.name "${{ github.actor }}"
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
       - name: Publish new site
