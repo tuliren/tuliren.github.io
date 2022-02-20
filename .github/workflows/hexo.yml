@@ -25,8 +25,8 @@ jobs:
           npx hexo generate
       - name: Config git
         run: |
-          git config --global user.name 'Liren Tu'
-          git config --global user.email 'tuliren.git@outlook.com'
+          git config --local user.name "${{ github.actor }}"
+          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
       - name: Publish new site
         run: |
           mkdir .deploy
