@@ -31,7 +31,8 @@ jobs:
         run: |
           mkdir .deploy
           cd .deploy
-          git clone --depth 1 --branch master --single-branch ${{ github.repositoryUrl }} . || (git init && git remote add -t master origin ${{ github.repositoryUrl }})
+          REPO_URL=https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git clone --depth 1 --branch master --single-branch REPO_URL . || (git init && git remote add -t master origin REPO_URL)
           rm -rf ./*
           cp -r ../public/* .
           git add -A .
