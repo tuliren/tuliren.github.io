@@ -4,9 +4,9 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>海盘车的领地</title>
-    <link>http://tuliren.github.io/</link>
+    <link>https://tuliren.dev/</link>
     
-    <atom:link href="http://tuliren.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://tuliren.dev/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
     <pubDate>Sun, 23 Jan 2022 17:39:00 GMT</pubDate>
@@ -14,8 +14,8 @@
     
     <item>
       <title>《史记》中的初创公司薪酬原则</title>
-      <link>http://tuliren.github.io/2022/01/23/startup-compensation-strategy-based-on-shiji/</link>
-      <guid>http://tuliren.github.io/2022/01/23/startup-compensation-strategy-based-on-shiji/</guid>
+      <link>https://tuliren.dev/2022/01/23/startup-compensation-strategy-based-on-shiji/</link>
+      <guid>https://tuliren.dev/2022/01/23/startup-compensation-strategy-based-on-shiji/</guid>
       <pubDate>Sun, 23 Jan 2022 17:39:00 GMT</pubDate>
       
       <description>《秦始皇本纪第六》中，李斯关于是否应该分封诸侯，是这样说的：
@@ -31,14 +31,14 @@
       
       
       
-      <comments>http://tuliren.github.io/2022/01/23/startup-compensation-strategy-based-on-shiji/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2022/01/23/startup-compensation-strategy-based-on-shiji/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>廷伯根的四个问题</title>
-      <link>http://tuliren.github.io/2020/03/19/tinbergen-four-questions/</link>
-      <guid>http://tuliren.github.io/2020/03/19/tinbergen-four-questions/</guid>
+      <link>https://tuliren.dev/2020/03/19/tinbergen-four-questions/</link>
+      <guid>https://tuliren.dev/2020/03/19/tinbergen-four-questions/</guid>
       <pubDate>Thu, 19 Mar 2020 23:24:40 GMT</pubDate>
       
       <description>去年某日和 Scale
@@ -50,17 +50,17 @@
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E5%8A%A8%E7%89%A9%E8%A1%8C%E4%B8%BA%E5%AD%A6/">动物行为学</category>
+      <category domain="https://tuliren.dev/tags/%E5%8A%A8%E7%89%A9%E8%A1%8C%E4%B8%BA%E5%AD%A6/">动物行为学</category>
       
       
-      <comments>http://tuliren.github.io/2020/03/19/tinbergen-four-questions/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2020/03/19/tinbergen-four-questions/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>bundle install 问题二则</title>
-      <link>http://tuliren.github.io/2020/01/05/fix-bundle-install/</link>
-      <guid>http://tuliren.github.io/2020/01/05/fix-bundle-install/</guid>
+      <link>https://tuliren.dev/2020/01/05/fix-bundle-install/</link>
+      <guid>https://tuliren.dev/2020/01/05/fix-bundle-install/</guid>
       <pubDate>Sun, 05 Jan 2020 12:15:37 GMT</pubDate>
       
       <description>每次在新电脑上运行老旧的 Rails 项目都有很多问题，之前写过 mysql2，今天是安装 Ruby 和 nokogiri。
@@ -77,14 +77,14 @@ rbenv install
       
       
       
-      <comments>http://tuliren.github.io/2020/01/05/fix-bundle-install/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2020/01/05/fix-bundle-install/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>在 Mac 上使用 openssl 1.0</title>
-      <link>http://tuliren.github.io/2020/01/02/fix-openssl-on-mac/</link>
-      <guid>http://tuliren.github.io/2020/01/02/fix-openssl-on-mac/</guid>
+      <link>https://tuliren.dev/2020/01/02/fix-openssl-on-mac/</link>
+      <guid>https://tuliren.dev/2020/01/02/fix-openssl-on-mac/</guid>
       <pubDate>Thu, 02 Jan 2020 12:04:51 GMT</pubDate>
       
       <description>最近在使用 node 和 rails 时，接连碰到 openssl 版本问题：
@@ -100,14 +100,14 @@ rbenv install
       
       
       
-      <comments>http://tuliren.github.io/2020/01/02/fix-openssl-on-mac/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2020/01/02/fix-openssl-on-mac/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>安装 mysql2</title>
-      <link>http://tuliren.github.io/2019/06/24/install-mysql2-gem/</link>
-      <guid>http://tuliren.github.io/2019/06/24/install-mysql2-gem/</guid>
+      <link>https://tuliren.dev/2019/06/24/install-mysql2-gem/</link>
+      <guid>https://tuliren.dev/2019/06/24/install-mysql2-gem/</guid>
       <pubDate>Mon, 24 Jun 2019 15:16:51 GMT</pubDate>
       
       <description>每次在新电脑上给 rails 项目安装 mysql2，总会遇到问题。因此在这里做一个汇总，供日后参考。
@@ -131,14 +131,14 @@ brew install mysql-c...</description>
       
       
       
-      <comments>http://tuliren.github.io/2019/06/24/install-mysql2-gem/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2019/06/24/install-mysql2-gem/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：佛学概论</title>
-      <link>http://tuliren.github.io/2019/04/17/reading-buddhism-short-intro/</link>
-      <guid>http://tuliren.github.io/2019/04/17/reading-buddhism-short-intro/</guid>
+      <link>https://tuliren.dev/2019/04/17/reading-buddhism-short-intro/</link>
+      <guid>https://tuliren.dev/2019/04/17/reading-buddhism-short-intro/</guid>
       <pubDate>Wed, 17 Apr 2019 21:44:53 GMT</pubDate>
       
       <description>链接：佛学概论
@@ -160,19 +160,19 @@ brew install mysql-c...</description>
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
-      <category domain="http://tuliren.github.io/tags/%E4%BD%9B%E5%AD%A6/">佛学</category>
+      <category domain="https://tuliren.dev/tags/%E4%BD%9B%E5%AD%A6/">佛学</category>
       
       
-      <comments>http://tuliren.github.io/2019/04/17/reading-buddhism-short-intro/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2019/04/17/reading-buddhism-short-intro/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：稀缺</title>
-      <link>http://tuliren.github.io/2019/04/06/reading-scarcity/</link>
-      <guid>http://tuliren.github.io/2019/04/06/reading-scarcity/</guid>
+      <link>https://tuliren.dev/2019/04/06/reading-scarcity/</link>
+      <guid>https://tuliren.dev/2019/04/06/reading-scarcity/</guid>
       <pubDate>Sat, 06 Apr 2019 18:32:06 GMT</pubDate>
       
       <description>链接：稀缺——我们是如何陷入贫穷与忙碌的
@@ -193,17 +193,17 @@ brew install mysql-c...</description>
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
       
-      <comments>http://tuliren.github.io/2019/04/06/reading-scarcity/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2019/04/06/reading-scarcity/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>夏令时引发的 bug</title>
-      <link>http://tuliren.github.io/2019/03/15/bug-from-day-light-saving/</link>
-      <guid>http://tuliren.github.io/2019/03/15/bug-from-day-light-saving/</guid>
+      <link>https://tuliren.dev/2019/03/15/bug-from-day-light-saving/</link>
+      <guid>https://tuliren.dev/2019/03/15/bug-from-day-light-saving/</guid>
       <pubDate>Fri, 15 Mar 2019 16:34:11 GMT</pubDate>
       
       <description>这几天在系统里看到了这样一个 exception：
@@ -219,17 +219,17 @@ Caused by: org.joda.time.IllegalInstantException: Cannot parse &quot;2019-03-10 
       
       
       
-      <category domain="http://tuliren.github.io/tags/Debug/">Debug</category>
+      <category domain="https://tuliren.dev/tags/Debug/">Debug</category>
       
       
-      <comments>http://tuliren.github.io/2019/03/15/bug-from-day-light-saving/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2019/03/15/bug-from-day-light-saving/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：让学校重生</title>
-      <link>http://tuliren.github.io/2019/01/08/reading-creative-schools/</link>
-      <guid>http://tuliren.github.io/2019/01/08/reading-creative-schools/</guid>
+      <link>https://tuliren.dev/2019/01/08/reading-creative-schools/</link>
+      <guid>https://tuliren.dev/2019/01/08/reading-creative-schools/</guid>
       <pubDate>Tue, 08 Jan 2019 22:45:59 GMT</pubDate>
       
       <description>链接：让学校重生
@@ -252,19 +252,19 @@ Caused by: org.joda.time.IllegalInstantException: Cannot parse &quot;2019-03-10 
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
-      <category domain="http://tuliren.github.io/tags/%E6%95%99%E8%82%B2/">教育</category>
+      <category domain="https://tuliren.dev/tags/%E6%95%99%E8%82%B2/">教育</category>
       
       
-      <comments>http://tuliren.github.io/2019/01/08/reading-creative-schools/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2019/01/08/reading-creative-schools/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：优秀到不能被忽略</title>
-      <link>http://tuliren.github.io/2018/12/22/reading-so-good-they-cant-ignore-you/</link>
-      <guid>http://tuliren.github.io/2018/12/22/reading-so-good-they-cant-ignore-you/</guid>
+      <link>https://tuliren.dev/2018/12/22/reading-so-good-they-cant-ignore-you/</link>
+      <guid>https://tuliren.dev/2018/12/22/reading-so-good-they-cant-ignore-you/</guid>
       <pubDate>Sat, 22 Dec 2018 11:45:20 GMT</pubDate>
       
       <description>&gt; “正确地工作”胜过“找到正确的工作”。不要执迷于寻找自己真正的“天职”，而要去掌握稀缺而宝贵的技能。一旦积累到了职场资本，就可以用它来获取在工作内容和工作方式上的自主力，以及用来找到并实践某项改变人生的使命。不再纠结哪一条发展道路才是真正的“天职”所在。只要正确对待，不管选择哪条道路，都会拥有一...</description>
@@ -275,17 +275,17 @@ Caused by: org.joda.time.IllegalInstantException: Cannot parse &quot;2019-03-10 
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
       
-      <comments>http://tuliren.github.io/2018/12/22/reading-so-good-they-cant-ignore-you/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2018/12/22/reading-so-good-they-cant-ignore-you/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Ruby 中两个 nil 问题引起的 bug</title>
-      <link>http://tuliren.github.io/2018/11/05/ruby-nil-debug/</link>
-      <guid>http://tuliren.github.io/2018/11/05/ruby-nil-debug/</guid>
+      <link>https://tuliren.dev/2018/11/05/ruby-nil-debug/</link>
+      <guid>https://tuliren.dev/2018/11/05/ruby-nil-debug/</guid>
       <pubDate>Mon, 05 Nov 2018 21:58:29 GMT</pubDate>
       
       <description>公司有一段 Ruby 代码偶尔会抛出以下错误：no implicit conversion of nil into Hash。一开始我一直以为，是对某个恰好是
@@ -297,17 +297,17 @@ nil 的 Hash 变量进行 element reference 操作（#[]）导致。但是找来
       
       
       
-      <category domain="http://tuliren.github.io/tags/Debug/">Debug</category>
+      <category domain="https://tuliren.dev/tags/Debug/">Debug</category>
       
       
-      <comments>http://tuliren.github.io/2018/11/05/ruby-nil-debug/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2018/11/05/ruby-nil-debug/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：程序员跳槽全攻略</title>
-      <link>http://tuliren.github.io/2018/10/28/reading-job-hunting-for-software-engineers/</link>
-      <guid>http://tuliren.github.io/2018/10/28/reading-job-hunting-for-software-engineers/</guid>
+      <link>https://tuliren.dev/2018/10/28/reading-job-hunting-for-software-engineers/</link>
+      <guid>https://tuliren.dev/2018/10/28/reading-job-hunting-for-software-engineers/</guid>
       <pubDate>Sun, 28 Oct 2018 16:28:55 GMT</pubDate>
       
       <description>链接：程序员跳槽全攻略
@@ -332,17 +332,17 @@ nil 的 Hash 变量进行 element reference 操作（#[]）导致。但是找来
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
       
-      <comments>http://tuliren.github.io/2018/10/28/reading-job-hunting-for-software-engineers/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2018/10/28/reading-job-hunting-for-software-engineers/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：把时间浪费在好玩的事情上</title>
-      <link>http://tuliren.github.io/2018/09/30/reading-spend-time-on-interesting-things/</link>
-      <guid>http://tuliren.github.io/2018/09/30/reading-spend-time-on-interesting-things/</guid>
+      <link>https://tuliren.dev/2018/09/30/reading-spend-time-on-interesting-things/</link>
+      <guid>https://tuliren.dev/2018/09/30/reading-spend-time-on-interesting-things/</guid>
       <pubDate>Sun, 30 Sep 2018 04:07:53 GMT</pubDate>
       
       <description>链接：把时间浪费在好玩的事情上
@@ -374,17 +374,17 @@ nil 的 Hash 变量进行 element reference 操作（#[]）导致。但是找来
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
       
-      <comments>http://tuliren.github.io/2018/09/30/reading-spend-time-on-interesting-things/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2018/09/30/reading-spend-time-on-interesting-things/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：指数基金投资指南</title>
-      <link>http://tuliren.github.io/2018/07/23/reading-index-fund-investment-guide/</link>
-      <guid>http://tuliren.github.io/2018/07/23/reading-index-fund-investment-guide/</guid>
+      <link>https://tuliren.dev/2018/07/23/reading-index-fund-investment-guide/</link>
+      <guid>https://tuliren.dev/2018/07/23/reading-index-fund-investment-guide/</guid>
       <pubDate>Mon, 23 Jul 2018 18:50:33 GMT</pubDate>
       
       <description>链接：指数基金投资指南
@@ -403,19 +403,19 @@ nil 的 Hash 变量进行 element reference 操作（#[]）导致。但是找来
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
-      <category domain="http://tuliren.github.io/tags/%E6%8A%95%E8%B5%84/">投资</category>
+      <category domain="https://tuliren.dev/tags/%E6%8A%95%E8%B5%84/">投资</category>
       
       
-      <comments>http://tuliren.github.io/2018/07/23/reading-index-fund-investment-guide/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2018/07/23/reading-index-fund-investment-guide/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：随意搜寻</title>
-      <link>http://tuliren.github.io/2018/07/15/reading-ambient-findability/</link>
-      <guid>http://tuliren.github.io/2018/07/15/reading-ambient-findability/</guid>
+      <link>https://tuliren.dev/2018/07/15/reading-ambient-findability/</link>
+      <guid>https://tuliren.dev/2018/07/15/reading-ambient-findability/</guid>
       <pubDate>Sun, 15 Jul 2018 14:46:28 GMT</pubDate>
       
       <description>链接：随意搜寻
@@ -435,21 +435,21 @@ nil 的 Hash 变量进行 element reference 操作（#[]）导致。但是找来
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
-      <category domain="http://tuliren.github.io/tags/%E4%BF%A1%E6%81%AF/">信息</category>
+      <category domain="https://tuliren.dev/tags/%E4%BF%A1%E6%81%AF/">信息</category>
       
-      <category domain="http://tuliren.github.io/tags/%E5%86%B3%E7%AD%96/">决策</category>
+      <category domain="https://tuliren.dev/tags/%E5%86%B3%E7%AD%96/">决策</category>
       
       
-      <comments>http://tuliren.github.io/2018/07/15/reading-ambient-findability/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2018/07/15/reading-ambient-findability/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：《玩具屋》九讲</title>
-      <link>http://tuliren.github.io/2018/06/02/reading-lecture-on-dolls-house/</link>
-      <guid>http://tuliren.github.io/2018/06/02/reading-lecture-on-dolls-house/</guid>
+      <link>https://tuliren.dev/2018/06/02/reading-lecture-on-dolls-house/</link>
+      <guid>https://tuliren.dev/2018/06/02/reading-lecture-on-dolls-house/</guid>
       <pubDate>Sat, 02 Jun 2018 19:58:37 GMT</pubDate>
       
       <description>链接：《玩具屋》九讲
@@ -473,19 +473,19 @@ nil 的 Hash 变量进行 element reference 操作（#[]）导致。但是找来
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
-      <category domain="http://tuliren.github.io/tags/%E6%96%87%E5%AD%A6/">文学</category>
+      <category domain="https://tuliren.dev/tags/%E6%96%87%E5%AD%A6/">文学</category>
       
       
-      <comments>http://tuliren.github.io/2018/06/02/reading-lecture-on-dolls-house/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2018/06/02/reading-lecture-on-dolls-house/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：The One Minute Manager</title>
-      <link>http://tuliren.github.io/2018/04/26/reading-one-minute-manager/</link>
-      <guid>http://tuliren.github.io/2018/04/26/reading-one-minute-manager/</guid>
+      <link>https://tuliren.dev/2018/04/26/reading-one-minute-manager/</link>
+      <guid>https://tuliren.dev/2018/04/26/reading-one-minute-manager/</guid>
       <pubDate>Thu, 26 Apr 2018 11:45:01 GMT</pubDate>
       
       <description>链接：The One Minute Manager
@@ -507,19 +507,19 @@ Effective managers
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
-      <category domain="http://tuliren.github.io/tags/%E7%AE%A1%E7%90%86/">管理</category>
+      <category domain="https://tuliren.dev/tags/%E7%AE%A1%E7%90%86/">管理</category>
       
       
-      <comments>http://tuliren.github.io/2018/04/26/reading-one-minute-manager/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2018/04/26/reading-one-minute-manager/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：深度工作</title>
-      <link>http://tuliren.github.io/2018/01/26/reading-deep-work/</link>
-      <guid>http://tuliren.github.io/2018/01/26/reading-deep-work/</guid>
+      <link>https://tuliren.dev/2018/01/26/reading-deep-work/</link>
+      <guid>https://tuliren.dev/2018/01/26/reading-deep-work/</guid>
       <pubDate>Fri, 26 Jan 2018 00:24:01 GMT</pubDate>
       
       <description>&gt; 如果你愿意跨过舒适区和恐惧，将自己的头脑发挥到极致，创造出有价值的东西，你将会如前人一样发现，深度能造就富有效率和意义的生活。
@@ -537,17 +537,17 @@ Deep Work - Rules for Focused Success in a Distracted World
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
       
-      <comments>http://tuliren.github.io/2018/01/26/reading-deep-work/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2018/01/26/reading-deep-work/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>2017 Udacity 年度总结</title>
-      <link>http://tuliren.github.io/2017/12/31/udacity-2017-summary/</link>
-      <guid>http://tuliren.github.io/2017/12/31/udacity-2017-summary/</guid>
+      <link>https://tuliren.dev/2017/12/31/udacity-2017-summary/</link>
+      <guid>https://tuliren.dev/2017/12/31/udacity-2017-summary/</guid>
       <pubDate>Sun, 31 Dec 2017 15:57:20 GMT</pubDate>
       
       <description>2017 Udacity 概况
@@ -562,19 +562,19 @@ Deep Work - Rules for Focused Success in a Distracted World
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">年度总结</category>
+      <category domain="https://tuliren.dev/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">年度总结</category>
       
-      <category domain="http://tuliren.github.io/tags/Udacity/">Udacity</category>
+      <category domain="https://tuliren.dev/tags/Udacity/">Udacity</category>
       
       
-      <comments>http://tuliren.github.io/2017/12/31/udacity-2017-summary/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/12/31/udacity-2017-summary/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>2017 健身总结</title>
-      <link>http://tuliren.github.io/2017/12/31/workout-2017-summary/</link>
-      <guid>http://tuliren.github.io/2017/12/31/workout-2017-summary/</guid>
+      <link>https://tuliren.dev/2017/12/31/workout-2017-summary/</link>
+      <guid>https://tuliren.dev/2017/12/31/workout-2017-summary/</guid>
       <pubDate>Sun, 31 Dec 2017 03:52:32 GMT</pubDate>
       
       <description>2017 年健身概况
@@ -590,19 +590,19 @@ App 是一月份安装、注册的。正式健身从三月份开始。五、六�
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">年度总结</category>
+      <category domain="https://tuliren.dev/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">年度总结</category>
       
-      <category domain="http://tuliren.github.io/tags/%E5%81%A5%E5%BA%B7/">健康</category>
+      <category domain="https://tuliren.dev/tags/%E5%81%A5%E5%BA%B7/">健康</category>
       
       
-      <comments>http://tuliren.github.io/2017/12/31/workout-2017-summary/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/12/31/workout-2017-summary/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>2017 阅读总结</title>
-      <link>http://tuliren.github.io/2017/12/25/reading-2017-summary/</link>
-      <guid>http://tuliren.github.io/2017/12/25/reading-2017-summary/</guid>
+      <link>https://tuliren.dev/2017/12/25/reading-2017-summary/</link>
+      <guid>https://tuliren.dev/2017/12/25/reading-2017-summary/</guid>
       <pubDate>Mon, 25 Dec 2017 17:08:25 GMT</pubDate>
       
       <description>2017 阅读概况
@@ -618,19 +618,19 @@ App 是一月份安装、注册的。正式健身从三月份开始。五、六�
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E9%98%85%E8%AF%BB%E6%80%BB%E7%BB%93/">阅读总结</category>
+      <category domain="https://tuliren.dev/tags/%E9%98%85%E8%AF%BB%E6%80%BB%E7%BB%93/">阅读总结</category>
       
-      <category domain="http://tuliren.github.io/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">年度总结</category>
+      <category domain="https://tuliren.dev/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">年度总结</category>
       
       
-      <comments>http://tuliren.github.io/2017/12/25/reading-2017-summary/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/12/25/reading-2017-summary/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：逆向管理</title>
-      <link>http://tuliren.github.io/2017/12/19/reading-act-like-a-leader/</link>
-      <guid>http://tuliren.github.io/2017/12/19/reading-act-like-a-leader/</guid>
+      <link>https://tuliren.dev/2017/12/19/reading-act-like-a-leader/</link>
+      <guid>https://tuliren.dev/2017/12/19/reading-act-like-a-leader/</guid>
       <pubDate>Tue, 19 Dec 2017 22:34:40 GMT</pubDate>
       
       <description>链接：逆向管理（Act Like a Leader, Think Like a Leader）
@@ -646,19 +646,19 @@ App 是一月份安装、注册的。正式健身从三月份开始。五、六�
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
-      <category domain="http://tuliren.github.io/tags/%E7%AE%A1%E7%90%86/">管理</category>
+      <category domain="https://tuliren.dev/tags/%E7%AE%A1%E7%90%86/">管理</category>
       
       
-      <comments>http://tuliren.github.io/2017/12/19/reading-act-like-a-leader/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/12/19/reading-act-like-a-leader/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>移除自动驾驶笔记</title>
-      <link>http://tuliren.github.io/2017/12/17/remove-self-driving-car-notes/</link>
-      <guid>http://tuliren.github.io/2017/12/17/remove-self-driving-car-notes/</guid>
+      <link>https://tuliren.dev/2017/12/17/remove-self-driving-car-notes/</link>
+      <guid>https://tuliren.dev/2017/12/17/remove-self-driving-car-notes/</guid>
       <pubDate>Sun, 17 Dec 2017 22:34:41 GMT</pubDate>
       
       <description>Udacity 自动驾驶课程的笔记，原本是同时同步在 GitHub 和这个博客的。当时设想的流程是
@@ -679,17 +679,17 @@ App 是一月份安装、注册的。正式健身从三月份开始。五、六�
       
       
       
-      <category domain="http://tuliren.github.io/tags/Udacity/">Udacity</category>
+      <category domain="https://tuliren.dev/tags/Udacity/">Udacity</category>
       
       
-      <comments>http://tuliren.github.io/2017/12/17/remove-self-driving-car-notes/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/12/17/remove-self-driving-car-notes/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>定投股票的选择</title>
-      <link>http://tuliren.github.io/2017/12/05/stock-strategy/</link>
-      <guid>http://tuliren.github.io/2017/12/05/stock-strategy/</guid>
+      <link>https://tuliren.dev/2017/12/05/stock-strategy/</link>
+      <guid>https://tuliren.dev/2017/12/05/stock-strategy/</guid>
       <pubDate>Tue, 05 Dec 2017 15:35:38 GMT</pubDate>
       
       <description>最近在考虑定投。现在有以下几种策略：
@@ -708,17 +708,17 @@ App 是一月份安装、注册的。正式健身从三月份开始。五、六�
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E6%8A%95%E8%B5%84/">投资</category>
+      <category domain="https://tuliren.dev/tags/%E6%8A%95%E8%B5%84/">投资</category>
       
       
-      <comments>http://tuliren.github.io/2017/12/05/stock-strategy/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/12/05/stock-strategy/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>如何在 AWS 上跑 GPU Tensorflow</title>
-      <link>http://tuliren.github.io/2017/11/30/run-tensorflow-on-aws/</link>
-      <guid>http://tuliren.github.io/2017/11/30/run-tensorflow-on-aws/</guid>
+      <link>https://tuliren.dev/2017/11/30/run-tensorflow-on-aws/</link>
+      <guid>https://tuliren.dev/2017/11/30/run-tensorflow-on-aws/</guid>
       <pubDate>Thu, 30 Nov 2017 22:48:23 GMT</pubDate>
       
       <description>这篇文章整理自 Udacity Deep Learning Nanodegree Foundation 教程的第六课 Cloud Computing。最终创建的
@@ -730,19 +730,19 @@ instance 使用的是 Udacity 的 AMI，安装有许多现成的依赖包。最�
       
       
       
-      <category domain="http://tuliren.github.io/tags/AWS/">AWS</category>
+      <category domain="https://tuliren.dev/tags/AWS/">AWS</category>
       
-      <category domain="http://tuliren.github.io/tags/TensorFlow/">TensorFlow</category>
+      <category domain="https://tuliren.dev/tags/TensorFlow/">TensorFlow</category>
       
       
-      <comments>http://tuliren.github.io/2017/11/30/run-tensorflow-on-aws/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/11/30/run-tensorflow-on-aws/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：查理.芒格的智慧</title>
-      <link>http://tuliren.github.io/2017/11/22/reading-investing/</link>
-      <guid>http://tuliren.github.io/2017/11/22/reading-investing/</guid>
+      <link>https://tuliren.dev/2017/11/22/reading-investing/</link>
+      <guid>https://tuliren.dev/2017/11/22/reading-investing/</guid>
       <pubDate>Wed, 22 Nov 2017 10:10:59 GMT</pubDate>
       
       <description>链接：查理.芒格的智慧——投资的格栅理论（Investing–The Last Liberal Art）
@@ -760,19 +760,19 @@ instance 使用的是 Udacity 的 AMI，安装有许多现成的依赖包。最�
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
-      <category domain="http://tuliren.github.io/tags/%E6%8A%95%E8%B5%84/">投资</category>
+      <category domain="https://tuliren.dev/tags/%E6%8A%95%E8%B5%84/">投资</category>
       
       
-      <comments>http://tuliren.github.io/2017/11/22/reading-investing/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/11/22/reading-investing/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：经验的疆界（The Ambiguities of Experience）</title>
-      <link>http://tuliren.github.io/2017/10/28/reading-the-ambiguities-of-experience/</link>
-      <guid>http://tuliren.github.io/2017/10/28/reading-the-ambiguities-of-experience/</guid>
+      <link>https://tuliren.dev/2017/10/28/reading-the-ambiguities-of-experience/</link>
+      <guid>https://tuliren.dev/2017/10/28/reading-the-ambiguities-of-experience/</guid>
       <pubDate>Sat, 28 Oct 2017 13:07:07 GMT</pubDate>
       
       <description>&gt; 通过想象理解世界是人类美好而独特的一面，通过有目的的问题解决适应环境、取得进步，也是人类美好而独特的一面。智慧涉及优雅地诠释经验，正如故事讲述和模型建造的美丽所反映的那样。智慧还涉及有效地适应环境，正如利用经验提高生产率所反映的那样。经验的启示，既是人类想象之壮丽的标志，又是有效解决问题的工具。...</description>
@@ -783,17 +783,17 @@ instance 使用的是 Udacity 的 AMI，安装有许多现成的依赖包。最�
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
       
-      <comments>http://tuliren.github.io/2017/10/28/reading-the-ambiguities-of-experience/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/10/28/reading-the-ambiguities-of-experience/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：如何高效学习（Learn More, Study Less）</title>
-      <link>http://tuliren.github.io/2017/10/10/reading-learn-more-study-less/</link>
-      <guid>http://tuliren.github.io/2017/10/10/reading-learn-more-study-less/</guid>
+      <link>https://tuliren.dev/2017/10/10/reading-learn-more-study-less/</link>
+      <guid>https://tuliren.dev/2017/10/10/reading-learn-more-study-less/</guid>
       <pubDate>Tue, 10 Oct 2017 22:04:37 GMT</pubDate>
       
       <description>链接：如何高效学习
@@ -812,17 +812,17 @@ instance 使用的是 Udacity 的 AMI，安装有许多现成的依赖包。最�
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
       
-      <comments>http://tuliren.github.io/2017/10/10/reading-learn-more-study-less/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/10/10/reading-learn-more-study-less/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>React - Render UI with React</title>
-      <link>http://tuliren.github.io/2017/10/08/react-render-ui-with-react/</link>
-      <guid>http://tuliren.github.io/2017/10/08/react-render-ui-with-react/</guid>
+      <link>https://tuliren.dev/2017/10/08/react-render-ui-with-react/</link>
+      <guid>https://tuliren.dev/2017/10/08/react-render-ui-with-react/</guid>
       <pubDate>Sun, 08 Oct 2017 18:37:43 GMT</pubDate>
       
       <description>React Syllabus
@@ -842,17 +842,17 @@ Intro
       
       
       
-      <category domain="http://tuliren.github.io/tags/React/">React</category>
+      <category domain="https://tuliren.dev/tags/React/">React</category>
       
       
-      <comments>http://tuliren.github.io/2017/10/08/react-render-ui-with-react/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/10/08/react-render-ui-with-react/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>React - Why React?</title>
-      <link>http://tuliren.github.io/2017/10/07/react-why-react/</link>
-      <guid>http://tuliren.github.io/2017/10/07/react-why-react/</guid>
+      <link>https://tuliren.dev/2017/10/07/react-why-react/</link>
+      <guid>https://tuliren.dev/2017/10/07/react-why-react/</guid>
       <pubDate>Sat, 07 Oct 2017 17:09:25 GMT</pubDate>
       
       <description>React Syllabus
@@ -872,17 +872,17 @@ Intro
       
       
       
-      <category domain="http://tuliren.github.io/tags/React/">React</category>
+      <category domain="https://tuliren.dev/tags/React/">React</category>
       
       
-      <comments>http://tuliren.github.io/2017/10/07/react-why-react/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/10/07/react-why-react/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Udacity React Nanodegree Curriculum</title>
-      <link>http://tuliren.github.io/2017/10/07/react-syllabus/</link>
-      <guid>http://tuliren.github.io/2017/10/07/react-syllabus/</guid>
+      <link>https://tuliren.dev/2017/10/07/react-syllabus/</link>
+      <guid>https://tuliren.dev/2017/10/07/react-syllabus/</guid>
       <pubDate>Sat, 07 Oct 2017 17:01:05 GMT</pubDate>
       
       <description>React Fundamentals
@@ -902,17 +902,17 @@ Intro
       
       
       
-      <category domain="http://tuliren.github.io/tags/React/">React</category>
+      <category domain="https://tuliren.dev/tags/React/">React</category>
       
       
-      <comments>http://tuliren.github.io/2017/10/07/react-syllabus/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/10/07/react-syllabus/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：如何阅读一本书</title>
-      <link>http://tuliren.github.io/2017/10/07/reading-how-to-read-a-book/</link>
-      <guid>http://tuliren.github.io/2017/10/07/reading-how-to-read-a-book/</guid>
+      <link>https://tuliren.dev/2017/10/07/reading-how-to-read-a-book/</link>
+      <guid>https://tuliren.dev/2017/10/07/reading-how-to-read-a-book/</guid>
       <pubDate>Sat, 07 Oct 2017 16:37:36 GMT</pubDate>
       
       <description>链接：如何阅读一本书
@@ -941,17 +941,17 @@ Intro
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
       
-      <comments>http://tuliren.github.io/2017/10/07/reading-how-to-read-a-book/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/10/07/reading-how-to-read-a-book/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：象与骑象人</title>
-      <link>http://tuliren.github.io/2017/09/21/reading-the-happiness-hypothesis/</link>
-      <guid>http://tuliren.github.io/2017/09/21/reading-the-happiness-hypothesis/</guid>
+      <link>https://tuliren.dev/2017/09/21/reading-the-happiness-hypothesis/</link>
+      <guid>https://tuliren.dev/2017/09/21/reading-the-happiness-hypothesis/</guid>
       <pubDate>Thu, 21 Sep 2017 00:00:00 GMT</pubDate>
       
       <description>链接：象与骑象人：幸福的假设
@@ -977,17 +977,17 @@ Intro
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
       
-      <comments>http://tuliren.github.io/2017/09/21/reading-the-happiness-hypothesis/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/09/21/reading-the-happiness-hypothesis/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Python 相关程序安装</title>
-      <link>http://tuliren.github.io/2017/09/10/python-installation/</link>
-      <guid>http://tuliren.github.io/2017/09/10/python-installation/</guid>
+      <link>https://tuliren.dev/2017/09/10/python-installation/</link>
+      <guid>https://tuliren.dev/2017/09/10/python-installation/</guid>
       <pubDate>Sun, 10 Sep 2017 17:07:16 GMT</pubDate>
       
       <description>Python 相关的程序实在是太多了，不仅有 Python 2 和 3，在 Mac 还可以通过 brew
@@ -1005,19 +1005,19 @@ Python 安装
       
       
       
-      <category domain="http://tuliren.github.io/tags/Python/">Python</category>
+      <category domain="https://tuliren.dev/tags/Python/">Python</category>
       
-      <category domain="http://tuliren.github.io/tags/%E8%AE%BE%E7%BD%AE/">设置</category>
+      <category domain="https://tuliren.dev/tags/%E8%AE%BE%E7%BD%AE/">设置</category>
       
       
-      <comments>http://tuliren.github.io/2017/09/10/python-installation/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/09/10/python-installation/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：专念</title>
-      <link>http://tuliren.github.io/2017/09/07/reading-mindfulness/</link>
-      <guid>http://tuliren.github.io/2017/09/07/reading-mindfulness/</guid>
+      <link>https://tuliren.dev/2017/09/07/reading-mindfulness/</link>
+      <guid>https://tuliren.dev/2017/09/07/reading-mindfulness/</guid>
       <pubDate>Thu, 07 Sep 2017 02:46:14 GMT</pubDate>
       
       <description>链接：专念：积极心理学的力量
@@ -1037,17 +1037,17 @@ Python 安装
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
       
-      <comments>http://tuliren.github.io/2017/09/07/reading-mindfulness/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/09/07/reading-mindfulness/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>读书笔记：轻断食</title>
-      <link>http://tuliren.github.io/2017/08/24/reading-fast-diet/</link>
-      <guid>http://tuliren.github.io/2017/08/24/reading-fast-diet/</guid>
+      <link>https://tuliren.dev/2017/08/24/reading-fast-diet/</link>
+      <guid>https://tuliren.dev/2017/08/24/reading-fast-diet/</guid>
       <pubDate>Thu, 24 Aug 2017 10:45:00 GMT</pubDate>
       
       <description>链接：轻断食
@@ -1073,19 +1073,19 @@ Python 安装
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      <category domain="https://tuliren.dev/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
       
-      <category domain="http://tuliren.github.io/tags/%E5%81%A5%E5%BA%B7/">健康</category>
+      <category domain="https://tuliren.dev/tags/%E5%81%A5%E5%BA%B7/">健康</category>
       
       
-      <comments>http://tuliren.github.io/2017/08/24/reading-fast-diet/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2017/08/24/reading-fast-diet/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>2016 阅读总结</title>
-      <link>http://tuliren.github.io/2016/12/11/reading-2016-summary/</link>
-      <guid>http://tuliren.github.io/2016/12/11/reading-2016-summary/</guid>
+      <link>https://tuliren.dev/2016/12/11/reading-2016-summary/</link>
+      <guid>https://tuliren.dev/2016/12/11/reading-2016-summary/</guid>
       <pubDate>Sun, 11 Dec 2016 15:00:00 GMT</pubDate>
       
       <description>2016 年定下本月 3 本书的目标。现在年关将至，手头正在读的书年底之前应该是读不完了。所以可以进行总结了。
@@ -1099,12 +1099,12 @@ Rails》和《未来简史》。可惜现在已...</description>
       
       
       
-      <category domain="http://tuliren.github.io/tags/%E9%98%85%E8%AF%BB%E6%80%BB%E7%BB%93/">阅读总结</category>
+      <category domain="https://tuliren.dev/tags/%E9%98%85%E8%AF%BB%E6%80%BB%E7%BB%93/">阅读总结</category>
       
-      <category domain="http://tuliren.github.io/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">年度总结</category>
+      <category domain="https://tuliren.dev/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">年度总结</category>
       
       
-      <comments>http://tuliren.github.io/2016/12/11/reading-2016-summary/#disqus_thread</comments>
+      <comments>https://tuliren.dev/2016/12/11/reading-2016-summary/#disqus_thread</comments>
       
     </item>
     
