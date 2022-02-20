@@ -1,0 +1,11 @@
+zh-CN:
+  menu:
+    repository: 源码
+    rss: 订阅
+  post:
+    comments:
+      disqus: 评论
+en:
+  menu:
+    repository: Repository
+    rss: RSS
