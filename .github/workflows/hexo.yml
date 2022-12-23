@@ -3,6 +3,8 @@ name: Hexo
 on:
   push:
     branches: [ hexo ]
+  pull_request:
+    branches: [ hexo ]
 
 jobs:
   build:
@@ -28,6 +30,7 @@ jobs:
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
       - name: Publish new site
+        if: github.ref == 'refs/heads/hexo'
         run: |
           mkdir .deploy
           cd .deploy
@@ -40,3 +43,6 @@ jobs:
           git commit -m "${COMMIT_MESSAGE}"
           git branch -m master
           git push -q -u origin master
+      - name: Run Stoat Action
+        uses: stoat-dev/stoat-action@v0
+        if: always()
