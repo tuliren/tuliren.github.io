@@ -3,8 +3,6 @@ name: Hexo
 on:
   push:
     branches: [ hexo ]
-  pull_request:
-    branches: [ hexo ]
 
 jobs:
   build:
@@ -30,7 +28,6 @@ jobs:
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
       - name: Publish new site
-        if: github.ref == 'refs/heads/hexo'
         run: |
           mkdir .deploy
           cd .deploy

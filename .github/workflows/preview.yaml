@@ -1,0 +1,29 @@
+name: Preview
+
+on:
+  push:
+    branches: [ hexo ]
+  pull_request:
+    branches: [ hexo ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Setup Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.14.0
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Update hexo content
+        run: |
+          npx hexo clean
+          npx hexo generate
+      - name: Run Stoat Action
+        uses: stoat-dev/stoat-action@v0
+        if: always()
