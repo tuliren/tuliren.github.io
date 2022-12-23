@@ -1,4 +1,4 @@
-name: Hexo
+name: Deploy
 
 on:
   push:
