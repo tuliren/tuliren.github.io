@@ -13,5 +13,5 @@ npm install
 ```
 
 ## Deploy
-- Deploy is automatic by Github action (see [`deploy.yml`](.github/workflows/deploy.yml)).
+- Deploy is automatic by Github action (see [`deploy.yml`](.github/workflows/deploy.yaml)).
 - The updated hexo contents are pushed to the `master` branch, which is rendered as Github page.
