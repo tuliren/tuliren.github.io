@@ -99,6 +99,11 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# Plausible
+plausible:
+  enable: true
+  domain: tuliren.dev
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
