@@ -1,0 +1,20 @@
+{
+  "index": {
+    "title": "Home",
+    "type": "page"
+  },
+  "projects": {
+    "title": "Projects",
+    "type": "page"
+  },
+  "blog": {
+    "title": "Blog",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://linkedin.com/in/tuliren",
+    "newWindow": true
+  }
+}

@@ -4,6 +4,10 @@ date: 2024-05-19 19:15:42
 tags: [AI, evolution]
 ---
 
+# Why is AI so important? An Outline
+
+2024-05-19
+
 Life has existed for hundreds of millions of years, but only for the purpose of existence. I recently watched a documentary about dinosaurs and other prehistoric animals (the Prehistoric Planet from Apple TV). These species developed such complicated machinery and behavior patterns, only to hunt, to mate, and to survive. They had no ability to question why they had to do those things in the first place, because they were tightly controlled by their genes. They were vectors.
 
 Then came Homo sapiens, us humans. Our genes happened to grant us more flexibility and autonomy so that we could handle more complicated situations, better compete with other species, and spread our genomes. The amount of flexibility was probably more than desirable from the genes’ perspective. Because of this flexibility, we developed much more than our primate counterparts: language, logic, critical thinking, and civilization. We started to seek purposes and question the meanings of our existence. When philosophers concluded that there was no predefined meaning (based on what I have read), and biologists found that we existed merely as vectors for our genes, we stopped caring about what the genes want. The fact that we could choose not to have children was direct evidence that we have the ability to rebel against our genes.

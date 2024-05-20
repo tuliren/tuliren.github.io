@@ -1,31 +1,31 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
+  "name": "liren-personal-site",
+  "version": "0.0.1",
+  "description": "Liren Personal Site",
   "scripts": {
-    "build": "hexo generate",
-    "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "hexo": {
-    "version": "7.2.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuliren/tuliren.github.io.git"
   },
+  "author": "Liren Tu",
+  "license": "CC BY-NC-SA 4.0",
+  "bugs": {
+    "url": "https://github.com/tuliren/tuliren.github.io/issues"
+  },
+  "homepage": "https://github.com/tuliren/tuliren.github.io",
   "dependencies": {
-    "hexo": "^7.2.0",
-    "hexo-generator-archive": "^2.0.0",
-    "hexo-generator-category": "^2.0.0",
-    "hexo-generator-feed": "^3.0.0",
-    "hexo-generator-index": "^3.0.0",
-    "hexo-generator-tag": "^2.0.0",
-    "hexo-plain-excerpt": "^1.0.0",
-    "hexo-plausible-analytics": "^0.3.0",
-    "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^6.3.0",
-    "hexo-renderer-stylus": "^3.0.1",
-    "hexo-server": "^3.0.0",
-    "hexo-theme-landscape": "^1.0.0",
-    "hexo-word-counter": "^0.2.0"
+    "next": "^13.0.6",
+    "nextra": "latest",
+    "nextra-theme-docs": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "license": "by-nc-sa"
+  "devDependencies": {
+    "@types/node": "18.11.10",
+    "typescript": "^4.9.3"
+  }
 }
