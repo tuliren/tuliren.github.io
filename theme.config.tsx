@@ -1,6 +1,5 @@
 import React from 'react'
 import { DocsThemeConfig, useConfig } from 'nextra-theme-docs'
-import { Cards, Card } from 'nextra/components'
 
 const getDate = (route: string): string => {
   const tokens = route.split('/')
@@ -19,8 +18,8 @@ const config: DocsThemeConfig = {
   main({children}) {
     const { frontMatter } = useConfig();
     return <>
-      <h1>{frontMatter.title}</h1>
-      <p>{new Date(frontMatter.date).toLocaleDateString()}</p>
+      {/*<h1>{frontMatter.title}</h1>*/}
+      {/*<p>{new Date(frontMatter.date).toLocaleDateString()}</p>*/}
       {children}
     </>
   },
