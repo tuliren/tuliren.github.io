@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "liren-personal-site",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Liren Personal Site",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/tuliren/tuliren.github.io.git"
   },
-  "author": "Shu Ding <g@shud.in>",
-  "license": "MIT",
+  "author": "Liren Tu",
+  "license": "CC BY-NC-SA 4.0",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/tuliren/tuliren.github.io/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://github.com/tuliren/tuliren.github.io",
   "dependencies": {
     "next": "^13.0.6",
     "nextra": "latest",
