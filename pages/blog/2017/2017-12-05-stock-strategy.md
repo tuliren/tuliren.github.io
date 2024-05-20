@@ -28,6 +28,6 @@ tags: [投资]
 
 综合考虑策略和目标，决定选择定投一两个 index / ETF + 一两家 GAFATA 公司。定投金额为每月到期卖出的上一年 ESPP。
 
-# CHANGELOG
+## CHANGELOG
 - 2017-12-21 小修改，增加 changelog
 - 2017-12-05 创建

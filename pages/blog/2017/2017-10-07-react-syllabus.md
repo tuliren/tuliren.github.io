@@ -4,7 +4,7 @@ date: 2017-10-07 17:01:05
 tags: [React]
 ---
 
-# React Fundamentals
+## React Fundamentals
 - [Why React?](/2017/10/07/react-why-react)
 - [Render UI with React](/2017/10/08/react-render-ui-with-react)
 - State Management
@@ -14,7 +14,7 @@ tags: [React]
 
 ----
 
-# React & Redux
+## React & Redux
 - Why Redux?
 - Redux Core
 - React & Redux
@@ -24,7 +24,7 @@ tags: [React]
 
 ----
 
-# React Native
+## React Native
 - Up and Running with React Native
 - React vs React Native
 - Styling & Layout

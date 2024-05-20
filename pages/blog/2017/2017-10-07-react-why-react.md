@@ -4,9 +4,9 @@ date: 2017-10-07 17:09:25
 tags: [React]
 ---
 
-[React Syllabus](/2017/10/07/react-syllabus)
+[React Syllabus](./2017-10-07-react-syllabus)
 
-# Intro
+## Intro
 - What makes React special?
   - Compositional model
   - Declarative nature
@@ -15,7 +15,7 @@ tags: [React]
 
 ----
 
-# Composition
+## Composition
 
 - React code composes functions to get UI.
 
@@ -39,7 +39,7 @@ tags: [React]
 
 ----
 
-# Declarative Code
+## Declarative Code
 - Imperative code
   - Imperative: expressing a command; commanding.
   - Exactly ***what to do*** and ***how to do*** it.
@@ -61,7 +61,7 @@ tags: [React]
 
 ----
 
-# Unidirectional Data Flow
+## Unidirectional Data Flow
 - Data-binding in other frameworks
   - [Angular](https://angular.io/guide/template-syntax#binding-syntax-an-overview)
     - From source to view
@@ -82,7 +82,7 @@ tags: [React]
 
 ----
 
-# Just JavaScript
+## Just JavaScript
 
 - JS functional programming
   - [`Array.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)

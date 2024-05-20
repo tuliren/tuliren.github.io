@@ -4,18 +4,18 @@ date: 2017-10-08 18:37:43
 tags: [React]
 ---
 
-[React Syllabus](/2017/10/07/react-syllabus)
+[React Syllabus](./2017-10-07-react-syllabus)
 
-# Intro
+## Intro
 - React elements: JavaScript objects
 - React elements -> DOM nodes
 - React components: custom elements
 
 ----
 
-# Creating Elements and JSX
+## Creating Elements and JSX
 
-## `React.createElement`
+### `React.createElement`
 ```js
 React.createElement(type, props, content);
 ```
@@ -32,7 +32,7 @@ React.createElement(type, props, content);
   - React element
   - React component
 
-### Example - basic
+#### Example - basic
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -51,7 +51,7 @@ ReactDOM.render(
   - Apps built with React have a single `root` DOM node.
   - `element` is inserted into the `root` DOM node.
 
-### Example - dynamic list
+#### Example - dynamic list
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -77,12 +77,12 @@ ReactDOM.render(
 ```
   - A unique `key` prop is needed when defining a list. `key` helps React track specific child elements as the state changes in the app.
 
-## JSX
+### JSX
 - A syntax extention to `React.createElement`.
 - JSX is compiled to JavaScript.
 - JSX returns a single element as well.
 
-### Example
+#### Example
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -107,7 +107,7 @@ ReactDOM.render(
 )
 ```
 
-## React component
+### React component
 - Reusable pieces of code that groups React elements together.
 - Factory to create React elements.
 - Component should have
@@ -115,7 +115,7 @@ ReactDOM.render(
   - Well-defined interfaces.
 - Required method: `render`.
 
-### Example
+#### Example
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -150,22 +150,22 @@ ReactDOM.render(
 
 ----
 
-# Create React App
+## Create React App
 - `Webpack` bundles all assets (JavaScript files, CSS, images, etc).
 - `Babel` transpiles JSX to JavaScript.
 - `create-react-app` manages all the above setup.
 
 ```sh
 npm install -g create-react-app
-# -g: install globally
+## -g: install globally
 
 create-react-app <app>
-# installs react, react-dom and react-scripts
-# creates the app
+## installs react, react-dom and react-scripts
+## creates the app
 
 cd <app>/
 yarn start
-# package manager by facebook
+## package manager by facebook
 ```
 
 - Edit `App.js` file.
@@ -173,7 +173,7 @@ yarn start
 
 ----
 
-# Composing with Components
+## Composing with Components
 - Component composition
   - Reuse components
   - Allow different configuration of components
@@ -181,9 +181,9 @@ yarn start
 ```js
 class ContactList extends Component {
   render() {
-    const people = this.props.contacts
+    const people = this.props.contacts;
 
-    ...
+    // ...
   }
 }
 
@@ -192,15 +192,15 @@ class App extends Component {
     return (
       <div className='App'>
         <ContactList contacts={[
-          { name: 'Michael' }
-          { name: 'Ryan' }
-          { name: 'Tyler' }
+          { name: 'Michael' },
+          { name: 'Ryan' },
+          { name: 'Tyler' },
         ]}/>
 
         <ContactList contacts={[
-          { name: 'Amanda' }
-          { name: 'Richard' }
-          { name: 'Geoff' }
+          { name: 'Amanda' },
+          { name: 'Richard' },
+          { name: 'Geoff' },
         ]}/>
       </div>
     )
@@ -210,7 +210,7 @@ class App extends Component {
 
 ----
 
-# Outro 
+## Outro 
 - JSX uses JavaScript to describe UI elements.
 - React components group UI elements, and can be composed together.
 - `create-react-app`
