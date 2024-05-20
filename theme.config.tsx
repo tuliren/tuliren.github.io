@@ -42,13 +42,6 @@ const config: DocsThemeConfig = {
   feedback: {
     content: null
   },
-  gitTimestamp({ timestamp }) {
-    return (
-      <span>
-        Last updated on {timestamp.toLocaleDateString()}
-      </span>
-    );
-  },
   footer: {
     text: (
       <span>
