@@ -1,5 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig, useConfig } from 'nextra-theme-docs'
+import { useRouter } from "next/router";
 
 const getDate = (route: string): string => {
   const tokens = route.split('/')
@@ -48,6 +49,14 @@ const config: DocsThemeConfig = {
       </span>
     )
   },
+  useNextSeoProps() {
+    const { asPath } = useRouter()
+    if (asPath !== '/') {
+      return {
+        titleTemplate: '%s – 海盘车的领地'
+      }
+    }
+  }
 }
 
 export default config
