@@ -1,0 +1,27 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ hexo ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: hexo
+          submodules: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+      - name: Install dependencies
+        run: yarn install
+      - name: Build website
+        run: yarn build
+      - name: Run Stoat Action
+        uses: stoat-dev/stoat-action@v0
+        if: always()
