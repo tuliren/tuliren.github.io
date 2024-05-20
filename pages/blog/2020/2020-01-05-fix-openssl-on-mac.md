@@ -1,7 +1,6 @@
 ---
 title: 在 Mac 上使用 openssl 1.0
 date: 2020-01-02 12:04:51
-tags:
 ---
 
 最近在使用 `node` 和 `rails` 时，接连碰到 `openssl` 版本问题：

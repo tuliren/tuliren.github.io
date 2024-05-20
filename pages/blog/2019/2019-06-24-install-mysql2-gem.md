@@ -6,7 +6,7 @@ tags:
 
 每次在新电脑上给 `rails` 项目安装 `mysql2`，总会遇到问题。因此在这里做一个汇总，供日后参考。
 
-# `MySQL`
+## `MySQL`
 老的 `mysql2` 版本不兼容最新的 `MySQL`，因此要安装 `5.x` 版本：
 
 ```sh
@@ -23,7 +23,7 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 # export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
 ```
 
-# `openssl`
+## `openssl`
 
 ```sh
 brew install openssl
@@ -40,14 +40,14 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 `LDFLAGS` 和 `CPPFLAGS` 这两个环境变量之后要用，可以去除注释一起添加。
 
-# `xcode-select`
+## `xcode-select`
 每次升级系统都需要安装：
 
 ```sh
 xcode-select --install
 ```
 
-# `mysql2`
+## `mysql2`
 
 ```sh
 gem install mysql2
