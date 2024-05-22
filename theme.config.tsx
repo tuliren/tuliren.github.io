@@ -1,8 +1,8 @@
 import React from 'react'
-import { DocsThemeConfig, useConfig } from 'nextra-theme-docs'
-import { useRouter } from "next/router";
+import {DocsThemeConfig, useConfig} from 'nextra-theme-docs'
+import {useRouter} from "next/router";
 import ProjectTitle from "./components/ProjectTitle";
-import {Center, Group, Pill, Space, Text, Title} from "@mantine/core";
+import {Center, Pill, Text, Title} from "@mantine/core";
 
 const getDate = (route: string): string => {
   const tokens = route.split('/')
@@ -13,11 +13,17 @@ const getDate = (route: string): string => {
 }
 
 const config: DocsThemeConfig = {
-  logo: <ProjectTitle title="海盘车的领地" />,
+  logo: <ProjectTitle title="海盘车的领地"/>,
   project: {
     link: 'https://github.com/tuliren/tuliren.github.io',
   },
   docsRepositoryBase: 'https://github.com/tuliren/tuliren.github.io/tree/main',
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta property="og:description" content="Liren personal site"/>
+    </>
+  ),
   main({children}) {
     const {frontMatter} = useConfig();
     const {asPath} = useRouter();
@@ -27,9 +33,9 @@ const config: DocsThemeConfig = {
     return <>
       <Title order={1} pt="xl">{frontMatter.title}</Title>
       {frontMatter.date != null && (
-        <Center>
-          <Text c="dimmed">{new Date(frontMatter.date).toLocaleDateString()}</Text>
-        </Center>
+          <Center>
+            <Text c="dimmed">{new Date(frontMatter.date).toLocaleDateString()}</Text>
+          </Center>
       )}
       {children}
     </>
@@ -37,7 +43,7 @@ const config: DocsThemeConfig = {
   sidebar: {
     defaultMenuCollapseLevel: 1,
     autoCollapse: true,
-    titleComponent({ title, type, route }) {
+    titleComponent({title, type, route}) {
       if (route.split('/').length < 4) {
         return <>{title}</>;
       } else {
@@ -54,14 +60,15 @@ const config: DocsThemeConfig = {
       if (frontMatter.tags == null || frontMatter.tags.length === 0) {
         return null;
       }
+      console.log(frontMatter.tags)
       return (
-        <>
-          <Pill.Group>
-            {frontMatter.tags.map((tag: string) => (
-                <Pill key={tag} size="md">{tag}</Pill>
-            ))}
-          </Pill.Group>
-        </>
+          <>
+            <Pill.Group>
+              {frontMatter.tags.map?.((tag: string) => (
+                  <Pill key={tag} size="md">{tag}</Pill>
+              ))}
+            </Pill.Group>
+          </>
       )
     }
   },
@@ -70,12 +77,12 @@ const config: DocsThemeConfig = {
   },
   footer: {
     text: (
-      <span>
+        <span>
         CC BY-NC-SA 4.0 {new Date().getFullYear()} © Liren Tu
       </span>
     )
   },
-  gitTimestamp({ timestamp }) {
+  gitTimestamp({timestamp}) {
     const {asPath} = useRouter();
     if (asPath === '/') {
       return null;
@@ -83,7 +90,7 @@ const config: DocsThemeConfig = {
     return <Text size="xs" c="dimmed">最近更新：{timestamp.toLocaleDateString()}</Text>;
   },
   useNextSeoProps() {
-    const { asPath } = useRouter()
+    const {asPath} = useRouter()
     if (asPath !== '/') {
       return {
         titleTemplate: '%s – 海盘车的领地'
