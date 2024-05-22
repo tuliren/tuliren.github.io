@@ -7,8 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format:check": "yarn prettier \"{.,components,pages}/**/*.{md,mdx,ts,tsx}\" --check",
-    "format:write": "yarn prettier \"{.,components,pages}/**/*.{md,mdx,ts,tsx}\" --write"
+    "format:check": "yarn prettier \"{.,components,pages}/**/*.{mdx,ts,tsx}\" --check",
+    "format:write": "yarn prettier \"{.,components,pages}/**/*.{mdx,ts,tsx}\" --write"
   },
   "repository": {
     "type": "git",
