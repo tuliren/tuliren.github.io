@@ -1,8 +1,5 @@
 # JavaScript Notes
 
-> [!NOTE]
-> This repo has been deprecated. Its contents have been merged into [https://liren.dev/javascript](https://liren.dev/javascript).
-
 ## Intro to JavaScript
 Source: [Udacity 803](https://www.udacity.com/course/intro-to-javascript--ud803)
 * [Overview](intro-to-javascript/01-javascript.md)
