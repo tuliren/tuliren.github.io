@@ -194,7 +194,7 @@ cat2.isHungry;
   - A property that returns a reference to the constructor function that creates the object.
   - Objects created with literal notation are constructed with the `Object()` constructor function.
 
-## `__proto__`
+## `_proto_`
 - An object is secretly linked to its constructor function's `prototype` object through that instance's `__proto__` property.
 
 ```js
