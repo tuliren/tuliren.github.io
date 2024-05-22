@@ -49,7 +49,7 @@ const config: DocsThemeConfig = {
     defaultMenuCollapseLevel: 1,
     autoCollapse: true,
     titleComponent({ title, type, route }) {
-      if (route.split('/').length < 4) {
+      if (!route.startsWith('/blog') || route.split('/').length < 4) {
         return <>{title}</>;
       } else {
         return (
