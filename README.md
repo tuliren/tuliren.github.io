@@ -1,6 +1,6 @@
 # 海盘车的领地
 
-[![Deploy](https://github.com/tuliren/tuliren.github.io/actions/workflows/deploy.yaml/badge.svg)](https://github.com/tuliren/tuliren.github.io/actions/workflows/deploy.yaml) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Build](https://github.com/tuliren/tuliren.github.io/actions/workflows/build.yaml/badge.svg)](https://github.com/tuliren/tuliren.github.io/actions/workflows/build.yaml) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ## Create New Post
 
