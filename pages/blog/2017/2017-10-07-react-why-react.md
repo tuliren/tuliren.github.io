@@ -7,62 +7,69 @@ tags: [React]
 [React Syllabus](./2017-10-07-react-syllabus)
 
 ## Intro
+
 - What makes React special?
   - Compositional model
   - Declarative nature
   - The way data flows from parent to child
   - React is just JavaScript
 
-----
+---
 
 ## Composition
 
 - React code composes functions to get UI.
 
 - Composition
+
   - Combine simple functions to build complicated ones.
   - Good function follows DOT rule (Do One Thing).
 
 - React component
+
 ```html
 // simple components
 <Page />
-<Article />
+<article />
 <Sidebar />
 
 // component composition
 <Page>
-  <Article />
+  <article />
   <Sidebar />
 </Page>
 ```
 
-----
+---
 
 ## Declarative Code
+
 - Imperative code
+
   - Imperative: expressing a command; commanding.
-  - Exactly ***what to do*** and ***how to do*** it.
+  - Exactly **_what to do_** and **_how to do_** it.
 
     ```js
-    const people = ['Amanda', 'Geoff', 'Michael', 'Richard', 'Ryan', 'Tyler']
-    const excitedPeople = []
+    const people = ['Amanda', 'Geoff', 'Michael', 'Richard', 'Ryan', 'Tyler'];
+    const excitedPeople = [];
 
     for (let i = 0; i < people.length; i++) {
-      excitedPeople[i] = people[i] + '!'
+      excitedPeople[i] = people[i] + '!';
     }
     ```
 
 - Declarative code
-  - Declare ***what to be done***.
+  - Declare **_what to be done_**.
     ```js
-    const excitedPeople = people.map(name => name + '!')
+    const excitedPeople = people.map((name) => name + '!');
     ```
 
-----
+---
 
 ## Unidirectional Data Flow
+
 - Data-binding in other frameworks
+
   - [Angular](https://angular.io/guide/template-syntax#binding-syntax-an-overview)
     - From source to view
     - From view to source
@@ -71,8 +78,8 @@ tags: [React]
     - Two-way: `Ember.computed.alias()`
     - One-way: `Ember.computed.oneWay()`
 
-
 - React's data-flow
+
   - Data lives in the parent component.
   - Data is accessible by both the parent and child components.
   - Only the parent component can change the data.
@@ -80,7 +87,7 @@ tags: [React]
 
   {% img /images/2017-10-07-react-why-react/data-flow.png 400 225 %}
 
-----
+---
 
 ## Just JavaScript
 

@@ -11,6 +11,7 @@ For example, Destiny.xyz has all their reports [here](https://destiny.xyz/tech10
 ![portfolio](/images/2024/startup-valuation-change.png)
 
 In this report, the numbers look pretty gloomy.
+
 - Brex almost halved in value over one year (at least from Destiny's perspective): 4.1M in March 2022 became 2.1M in June 2023.
 - Stripe did even worse in a similar timeframe: 3.5M in Jan 2022 went down to 0.99M in June 2023, an over 70% decrease.
 
