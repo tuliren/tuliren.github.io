@@ -60,7 +60,6 @@ const config: DocsThemeConfig = {
       if (frontMatter.tags == null || frontMatter.tags.length === 0) {
         return null;
       }
-      console.log(frontMatter.tags)
       return (
           <>
             <Pill.Group>
