@@ -1,18 +1,21 @@
 {
   "index": {
-    "title": "Home",
+    "title": "主页",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "blog": {
+    "title": "博客",
     "type": "page"
   },
   "projects": {
-    "title": "Projects",
-    "type": "page"
-  },
-  "blog": {
-    "title": "Blog",
+    "title": "项目",
     "type": "page"
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "LinkedIn ↗",
     "type": "page",
     "href": "https://linkedin.com/in/tuliren",
     "newWindow": true
