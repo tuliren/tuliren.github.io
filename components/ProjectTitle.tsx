@@ -1,25 +1,15 @@
-import { FC } from "react";
-import { Title } from "@mantine/core";
+import React, { FC } from "react";
+import {Text, Title} from "@mantine/core";
 
 interface ProjectTitleProps {
   title: string;
 }
 
-const ProjectTitle: FC<ProjectTitleProps> = ({title}) => {
+const ProjectTitle: FC<ProjectTitleProps> = ({ title }) => {
   return (
-    <Title
-      order={2}
-      size="30px"
-      fw={800}
-      style={{
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-        backgroundClip: 'text',
-        backgroundImage: 'linear-gradient(90deg, #0070c9, #e66465 25%)',
-      }}
-    >
+    <Text component="span" variant="gradient" fw={800} gradient={{ from: '#0070c9', to: '#e66465', deg: 45 }} inherit>
       {title}
-    </Title>
+    </Text>
   );
 }
 

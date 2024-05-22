@@ -2,6 +2,7 @@ import React from 'react'
 import { DocsThemeConfig, useConfig } from 'nextra-theme-docs'
 import { useRouter } from "next/router";
 import Script from "next/script";
+import ProjectTitle from "./components/ProjectTitle";
 
 const getDate = (route: string): string => {
   const tokens = route.split('/')
@@ -12,7 +13,7 @@ const getDate = (route: string): string => {
 }
 
 const config: DocsThemeConfig = {
-  logo: <span>海盘车的领地</span>,
+  logo: <ProjectTitle title="海盘车的领地" />,
   project: {
     link: 'https://github.com/tuliren/tuliren.github.io',
   },

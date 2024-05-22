@@ -1,16 +1,13 @@
 import { Container, Text, Button, Group } from '@mantine/core';
 import classes from './HeroTitle.module.css';
+import ProjectTitle from "./ProjectTitle";
 
 export function HeroTitle() {
   return (
       <div className={classes.wrapper}>
         <Container size={700} className={classes.inner}>
           <h1 className={classes.title}>
-
-            <Text component="span" variant="gradient" gradient={{ from: '#0070c9', to: '#e66465' }} inherit>
-              海盘车的领地
-            </Text>
-
+            <ProjectTitle title="海盘车的领地" />
           </h1>
 
           {/*<Text className={classes.description} color="dimmed">*/}
