@@ -18,14 +18,6 @@ const config: DocsThemeConfig = {
     link: 'https://github.com/tuliren/tuliren.github.io',
   },
   docsRepositoryBase: 'https://github.com/tuliren/tuliren.github.io/tree/main',
-  head: (
-    <>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <meta property="og:title" content="海盘车的领地"/>
-      <meta property="og:description" content="Liren personal site"/>
-      <Script defer data-domain="tuliren.dev" src="https://plausible.io/js/script.js" />
-    </>
-  ),
   main({children}) {
     const {frontMatter} = useConfig();
     return <>
