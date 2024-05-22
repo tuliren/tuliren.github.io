@@ -6,6 +6,8 @@ tags: [AI, evolution]
 
 # Why is AI so important? An Outline
 
+# Why is AI so important? An Outline
+
 2024-05-19
 
 Life has existed for hundreds of millions of years, but only for the purpose of existence. I recently watched a documentary about dinosaurs and other prehistoric animals (the Prehistoric Planet from Apple TV). These species developed such complicated machinery and behavior patterns, only to hunt, to mate, and to survive. They had no ability to question why they had to do those things in the first place, because they were tightly controlled by their genes. They were vectors.

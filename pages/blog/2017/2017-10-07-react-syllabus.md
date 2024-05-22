@@ -4,6 +4,8 @@ date: 2017-10-07 17:01:05
 tags: [React]
 ---
 
+# Udacity React Nanodegree Curriculum
+
 ## React Fundamentals
 - [Why React?](/2017/10/07/react-why-react)
 - [Render UI with React](/2017/10/08/react-render-ui-with-react)

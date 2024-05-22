@@ -4,6 +4,8 @@ date: 2024-02-08 15:20:41
 tags:
 ---
 
+# Apple Vision Pro 初体验
+
 ![apple-vision-pro](/images/2024/apple-vision-pro.jpg)
 
 Apple vision pro 到手五天。虽然近视镜片还没有收到，清晰度大打折扣，但是效果依然震憾。在影音娱乐方面，vision pro 完全秒杀影院，所有 2D 视频直接升级成 IMAX，专属的沉浸式影片更是任意门，让人穿越到宇宙的任何时空——我看到了暴龙幼崽在我手边喝水，时光机终于被造出来了！

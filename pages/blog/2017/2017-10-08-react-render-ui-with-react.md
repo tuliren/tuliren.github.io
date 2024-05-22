@@ -4,6 +4,8 @@ date: 2017-10-08 18:37:43
 tags: [React]
 ---
 
+# React - Render UI with React
+
 [React Syllabus](./2017-10-07-react-syllabus)
 
 ## Intro

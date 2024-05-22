@@ -4,6 +4,8 @@ date: 2017-10-07 17:09:25
 tags: [React]
 ---
 
+# React - Why React?
+
 [React Syllabus](./2017-10-07-react-syllabus)
 
 ## Intro

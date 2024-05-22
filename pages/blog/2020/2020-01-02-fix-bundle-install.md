@@ -3,6 +3,8 @@ title: bundle install 问题二则
 date: 2020-01-05 12:15:37
 ---
 
+# bundle install 问题二则
+
 每次在新电脑上运行老旧的 `Rails` 项目都有很多问题，之前写过 [mysql2](https://www.tuliren.dev/2019/06/24/install-mysql2-gem/)，今天是安装 `Ruby` 和 `nokogiri`。
 
 ## `rbenv install`

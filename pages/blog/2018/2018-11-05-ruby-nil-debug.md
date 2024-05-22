@@ -4,6 +4,8 @@ date: 2018-11-05 21:58:29
 tags: [Debug]
 ---
 
+# Ruby 中两个 nil 问题引起的 bug
+
 公司有一段 Ruby 代码偶尔会抛出以下错误：`no implicit conversion of nil into Hash`。一开始我一直以为，是对某个恰好是 `nil` 的 `Hash` 变量进行 element reference 操作（`#[]`）导致。但是找来找去没有这样的变量，而且对 `nil` 进行 element reference 的错误信息其实是这样的：`undefined method '[]' for nil:NilClass`。
 
 Google 之后发现错误信息来自于 hash 的合并（`#merge`），当合并的对象是 `nil` 的时候，才会抛出这样的错误信息，因为 `merge` 试图把传入参数转换成 `Hash`。这一发现把错误代码的范围缩小到以下三行：

@@ -4,6 +4,8 @@ date: 2024-02-01 15:13:07
 tags: startup
 ---
 
+# Startup validation change from financial report
+
 Recently I learnt that it is possible to find out a startup's valuation change without a fundraising event or an insider source: through investment agency's financial reports.
 
 For example, Destiny.xyz has all their reports [here](https://destiny.xyz/tech100) under the `Fund Documents` section. In the latest `2023 Semi-Annual Report`, their entire portfolio is summarized on page 15:
