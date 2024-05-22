@@ -1,3 +1,6 @@
 .next
 .idea
 node_modules
+examples/javascript/javascript-promises/exoplanet-explorer
+examples/javascript/javascript-testing/jasmine-test
+examples/javascript/web-tooling-automation/project

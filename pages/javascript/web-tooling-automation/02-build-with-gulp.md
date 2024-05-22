@@ -16,10 +16,12 @@
     - Convert files to in-memory stream and no tmp files - signficantly less I/O
 
 ## Initialize Project
-```js
+
+```sh
 npm init
 npm install --save-dev gulp
 ```
+
 - `gulp` will show up in the `devDependencies` section in `package.json`.
 
 ## Create `gulpfile`
