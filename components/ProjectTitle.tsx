@@ -1,4 +1,4 @@
-import { Text, Title } from '@mantine/core';
+import { Text } from '@mantine/core';
 import React, { FC } from 'react';
 
 interface ProjectTitleProps {

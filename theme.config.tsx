@@ -101,11 +101,14 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps() {
     const { asPath } = useRouter();
-    if (asPath !== '/') {
+    if (asPath === '/') {
       return {
-        titleTemplate: '%s – 海盘车的领地',
+        titleTemplate: '海盘车的领地',
       };
     }
+    return {
+      titleTemplate: '%s – 海盘车的领地',
+    };
   },
 };
 
