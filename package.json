@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format:check": "yarn prettier \"{.,components,pages}/**/*.{mdx,ts,tsx}\" --check",
+    "format:write": "yarn prettier \"{.,components,pages}/**/*.{mdx,ts,tsx}\" --write"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   },
   "homepage": "https://github.com/tuliren/tuliren.github.io",
   "dependencies": {
+    "@mantine/core": "^7.9.2",
+    "@mantine/hooks": "^7.9.2",
     "next": "^14.2.3",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
@@ -26,7 +30,12 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "20.12.12",
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.15.0",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "3.2.5",
     "typescript": "^5.4.5"
   }
 }
