@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Title } from "@mantine/core";
 
 interface ProjectTitleProps {
   title: string;
@@ -6,7 +7,10 @@ interface ProjectTitleProps {
 
 const ProjectTitle: FC<ProjectTitleProps> = ({title}) => {
   return (
-    <h1
+    <Title
+      order={2}
+      size="30px"
+      fw={800}
       style={{
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
@@ -15,7 +19,7 @@ const ProjectTitle: FC<ProjectTitleProps> = ({title}) => {
       }}
     >
       {title}
-    </h1>
+    </Title>
   );
 }
 
