@@ -4,8 +4,6 @@ date: 2019-04-06 18:32:06
 tags: [读书笔记]
 ---
 
-# 读书笔记：稀缺
-
 链接：[稀缺——我们是如何陷入贫穷与忙碌的](https://book.douban.com/subject/26178426/)
 
 ## 稀缺心态（scarcity mindset）

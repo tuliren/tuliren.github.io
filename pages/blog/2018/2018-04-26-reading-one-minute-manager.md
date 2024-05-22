@@ -4,8 +4,6 @@ date: 2018-04-26 11:45:01
 tags: [读书笔记, 管理]
 ---
 
-# 读书笔记：The One Minute Manager
-
 链接：[The One Minute Manager](https://book.douban.com/subject/1422161/)
 
 ## Summary
