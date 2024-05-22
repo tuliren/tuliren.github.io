@@ -2,7 +2,7 @@ import React from 'react'
 import { DocsThemeConfig, useConfig } from 'nextra-theme-docs'
 import { useRouter } from "next/router";
 import ProjectTitle from "./components/ProjectTitle";
-import {Center, Text, Title} from "@mantine/core";
+import {Center, Group, Pill, Space, Text, Title} from "@mantine/core";
 
 const getDate = (route: string): string => {
   const tokens = route.split('/')
@@ -48,6 +48,22 @@ const config: DocsThemeConfig = {
   toc: {
     float: true,
     backToTop: true,
+    title: '目录',
+    extraContent() {
+      const {frontMatter} = useConfig();
+      if (frontMatter.tags == null || frontMatter.tags.length === 0) {
+        return null;
+      }
+      return (
+        <>
+          <Pill.Group>
+            {frontMatter.tags.map((tag: string) => (
+                <Pill key={tag} size="md">{tag}</Pill>
+            ))}
+          </Pill.Group>
+        </>
+      )
+    }
   },
   feedback: {
     content: null
