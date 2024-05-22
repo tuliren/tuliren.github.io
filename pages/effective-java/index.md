@@ -6,15 +6,15 @@ title: Table of Contents
 
 ## Chapter 02 Creating and Destroying Objects
 
-* [Item 01: static factory](./item-01.md)
-* [Item 02: builder](./item-02.md)
-* [Item 03: enum singleton](./item-03.md)
-* [Item 04: private constructor](./item-04.md)
-* [Item 05: dependency injection](./item-05.md)
-* [Item 06: prefer primitives](./item-06.md)
-* [Item 07: memory leak](./item-07.md)
-* [Item 08: no finalizer](./item-08.md)
-* [Item 09: try with resource](./item-09.md)
+* [Item 01: static factory](/effective-java/item-01.md)
+* [Item 02: builder](/effective-java/item-02.md)
+* [Item 03: enum singleton](/effective-java/item-03.md)
+* [Item 04: private constructor](/effective-java/item-04.md)
+* [Item 05: dependency injection](/effective-java/item-05.md)
+* [Item 06: prefer primitives](/effective-java/item-06.md)
+* [Item 07: memory leak](/effective-java/item-07.md)
+* [Item 08: no finalizer](/effective-java/item-08.md)
+* [Item 09: try with resource](/effective-java/item-09.md)
 
 ## Chapter 03 Methods Common to All Objects
-* [Item 10: `equals` method](./item-10.md)
+* [Item 10: `equals` method](/effective-java/item-10.md)
