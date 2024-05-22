@@ -1,7 +1,11 @@
-# Effective Java Notes
+---
+title: Table of Contents
+---
+
 [Third Edition](https://www.pearson.com/us/higher-education/program/Bloch-Effective-Java-3rd-Edition/PGM1763855.html) by Joshua Bloch
 
 ## Chapter 02 Creating and Destroying Objects
+
 * [Item 01: static factory](./item-01.md)
 * [Item 02: builder](./item-02.md)
 * [Item 03: enum singleton](./item-03.md)

@@ -17,6 +17,22 @@
     "title": "项目",
     "type": "page"
   },
+  "notes": {
+    "title": "笔记",
+    "type": "menu",
+    "items": {
+      "effective-java": {
+        "title": "Effective Java",
+        "href": "/effective-java"
+      }
+    }
+  },
+  "effective-java": {
+    "title": "Effective Java",
+    "contact": {
+      "display": "hidden"
+    }
+  },
   "contact": {
     "title": "LinkedIn ↗",
     "type": "page",
