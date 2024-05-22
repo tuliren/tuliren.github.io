@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/tuliren/tuliren.github.io",
   "dependencies": {
+    "@mantine/core": "^7.9.2",
+    "@mantine/hooks": "^7.9.2",
     "next": "^14.2.3",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
@@ -27,6 +29,9 @@
   },
   "devDependencies": {
     "@types/node": "20.12.12",
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.15.0",
+    "postcss-simple-vars": "^7.0.1",
     "typescript": "^5.4.5"
   }
 }
