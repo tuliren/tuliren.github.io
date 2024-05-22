@@ -1,7 +1,6 @@
-import { Button, Container, Group, Text } from '@mantine/core';
-
+import { Container, Text, Button, Group } from '@mantine/core';
 import classes from './HeroTitle.module.css';
-import ProjectTitle from './ProjectTitle';
+import ProjectTitle from "./ProjectTitle";
 
 export function HeroTitle() {
   return (

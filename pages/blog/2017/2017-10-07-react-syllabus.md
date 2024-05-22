@@ -5,7 +5,6 @@ tags: [React]
 ---
 
 ## React Fundamentals
-
 - [Why React?](/2017/10/07/react-why-react)
 - [Render UI with React](/2017/10/08/react-render-ui-with-react)
 - State Management
@@ -13,10 +12,9 @@ tags: [React]
 - React Router
 - Project: MyReads
 
----
+----
 
 ## React & Redux
-
 - Why Redux?
 - Redux Core
 - React & Redux
@@ -24,10 +22,9 @@ tags: [React]
 - Redux Middleware
 - Project: Readable
 
----
+----
 
 ## React Native
-
 - Up and Running with React Native
 - React vs React Native
 - Styling & Layout

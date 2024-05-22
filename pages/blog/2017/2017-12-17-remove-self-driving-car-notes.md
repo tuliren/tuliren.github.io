@@ -5,7 +5,6 @@ tags: [Udacity]
 ---
 
 Udacity 自动驾驶课程的笔记，原本是同时同步在 GitHub 和这个博客的。当时设想的流程是
-
 - 课程
   - 视频
   - Python notebook 详细笔记
