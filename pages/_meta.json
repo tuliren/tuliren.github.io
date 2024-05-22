@@ -2,6 +2,7 @@
   "index": {
     "title": "主页",
     "type": "page",
+    "display": "hidden",
     "theme": {
       "layout": "full"
     }
@@ -24,14 +25,22 @@
       "effective-java": {
         "title": "Effective Java",
         "href": "/effective-java"
+      },
+      "javascript": {
+        "title": "JavaScript",
+        "href": "/javascript"
       }
     }
   },
   "effective-java": {
     "title": "Effective Java",
-    "contact": {
-      "display": "hidden"
-    }
+    "type": "page",
+    "display": "hidden"
+  },
+  "javascript": {
+    "title": "JavaScript",
+    "type": "page",
+    "display": "hidden"
   },
   "contact": {
     "title": "LinkedIn ↗",
