@@ -7,6 +7,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <ColorSchemeScript defaultColorScheme="auto" />
+        <link rel="icon" href="/favicon.svg" />
         <script defer data-domain="tuliren.dev" src="https://plausible.io/js/script.js"></script>
       </Head>
       <body>
