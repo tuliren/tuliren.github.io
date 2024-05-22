@@ -8,7 +8,8 @@ export default function Document() {
       <Head>
         <ColorSchemeScript defaultColorScheme="auto" />
         <link rel="icon" href="/favicon.svg" />
-        <script defer data-domain="tuliren.dev" src="https://plausible.io/js/script.js"></script>
+        <script defer data-domain="tuliren.dev" src="https://plausible.io/js/script.js" />
+        <script src="https://cdn.jsdelivr.net/npm/@annotatejs/web@0/dist/index.umd.js" async />
       </Head>
       <body>
         <Main />
