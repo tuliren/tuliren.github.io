@@ -8,7 +8,10 @@
   },
   "blog": {
     "title": "博客",
-    "type": "page"
+    "type": "page",
+    "theme": {
+      "typesetting": "article"
+    }
   },
   "projects": {
     "title": "项目",

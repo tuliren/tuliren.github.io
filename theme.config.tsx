@@ -1,8 +1,8 @@
 import React from 'react'
 import { DocsThemeConfig, useConfig } from 'nextra-theme-docs'
 import { useRouter } from "next/router";
-import Script from "next/script";
 import ProjectTitle from "./components/ProjectTitle";
+import {Center, Text, Title} from "@mantine/core";
 
 const getDate = (route: string): string => {
   const tokens = route.split('/')
@@ -20,9 +20,17 @@ const config: DocsThemeConfig = {
   docsRepositoryBase: 'https://github.com/tuliren/tuliren.github.io/tree/main',
   main({children}) {
     const {frontMatter} = useConfig();
+    const {asPath} = useRouter();
+    if (asPath === '/') {
+      return children;
+    }
     return <>
-      {/*<h1>{frontMatter.title}</h1>*/}
-      {/*<p>{new Date(frontMatter.date).toLocaleDateString()}</p>*/}
+      <Title order={1} pt="xl">{frontMatter.title}</Title>
+      {frontMatter.date != null && (
+        <Center>
+          <Text c="dimmed">{new Date(frontMatter.date).toLocaleDateString()}</Text>
+        </Center>
+      )}
       {children}
     </>
   },
@@ -50,6 +58,13 @@ const config: DocsThemeConfig = {
         CC BY-NC-SA 4.0 {new Date().getFullYear()} © Liren Tu
       </span>
     )
+  },
+  gitTimestamp({ timestamp }) {
+    const {asPath} = useRouter();
+    if (asPath === '/') {
+      return null;
+    }
+    return <Text size="xs" c="dimmed">最近更新：{timestamp.toLocaleDateString()}</Text>;
   },
   useNextSeoProps() {
     const { asPath } = useRouter()
