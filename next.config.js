@@ -7,7 +7,7 @@ module.exports = withNextra({
   async redirects() {
     return [
       {
-        source: '/:year/:month/:day/:slug',
+        source: '/:year(\\d{4})/:month(\\d{2})/:day(\\d{2})/:slug*',
         destination: '/blog/:year/:year-:month-:day-:slug',
         permanent: true,
       },
