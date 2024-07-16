@@ -3,4 +3,14 @@ const withNextra = require('nextra')({
   themeConfig: './theme.config.tsx',
 });
 
-module.exports = withNextra({});
+module.exports = withNextra({
+  async redirects() {
+    return [
+      {
+        source: '/:year/:month/:day/:slug',
+        destination: '/blog/:year/:year-:month-:day-:slug',
+        permanent: true,
+      },
+    ]
+  },
+});
