@@ -20,6 +20,11 @@ module.exports = withNextra({
         source: '/effective-java-notes',
         destination: '/effective-java',
         permanent: true,
+      },
+      {
+        source: '/dinner',
+        destination: 'https://tuliren.github.io/dinner',
+        permanent: true,
       }
     ]
   },
