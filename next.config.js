@@ -11,6 +11,16 @@ module.exports = withNextra({
         destination: '/blog/:year/:year-:month-:day-:slug',
         permanent: true,
       },
+      {
+        source: '/javascript-notes',
+        destination: '/javascript',
+        permanent: true,
+      },
+      {
+        source: '/effective-java-notes',
+        destination: '/effective-java',
+        permanent: true,
+      }
     ]
   },
 });
